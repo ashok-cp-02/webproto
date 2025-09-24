@@ -666,6 +666,637 @@
     },
     "correlationId": ""
   },
+  "Ticket_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Stage 1"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Stage 2"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "Ticket_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Leads",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Annamalai V",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "ab196a8f-b628-413f-8414-fa9d731cca72",
+                  "name": "Ticket ID",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "time_zone",
+                  "visible": true,
+                  "displayapiname": "lead_name",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "7b0bb530-0d49-4c6a-a860-fc02d233c2b4",
+                  "name": "Ticket Title",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "country",
+                  "visible": false,
+                  "displayapiname": "country",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "8f64d27c-712f-49d6-ae74-8ddaafac3dfd",
+                  "name": "Category",
+                  "lablekey": "lbl-users-language",
+                  "columnwidth": 150,
+                  "seqno": 3,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "language",
+                  "visible": false,
+                  "displayapiname": "language",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "9d1eff5c-ec5e-45c3-9a02-df6499b86e41",
+                  "name": "Subcategory",
+                  "lablekey": "lbl-users-doj",
+                  "columnwidth": 150,
+                  "seqno": 4,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "datetime",
+                  "api_name": "date_of_joining",
+                  "visible": false,
+                  "displayapiname": "date_of_joining",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-aeee-3a17094a6c9a",
+                  "name": "Category",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "lead_source",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "55555555-5555-5555-5555-555555555501",
+                  "name": "Ticket Title",
+                  "lablekey": "lbl-user-displayname",
+                  "columnwidth": 150,
+                  "seqno": 6,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "display_name",
+                  "visible": true,
+                  "displayapiname": "lead_owner",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "63bac56b-5470-47bd-abe9-6ea45926cdc9",
+                  "name": "Subcategory",
+                  "lablekey": "lbl-users-employeeid",
+                  "columnwidth": 150,
+                  "seqno": 7,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "employee_id",
+                  "visible": true,
+                  "displayapiname": "created_on",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "1f2701f2-de1b-4c72-b41f-32e3c586bb1d",
+                  "name": "Department",
+                  "lablekey": "lbl-users-Mobile",
+                  "columnwidth": 150,
+                  "seqno": 8,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "mobile",
+                  "visible": false,
+                  "displayapiname": "mobile",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "21956e74-d8cd-42ce-80f4-145e52f84407",
+                  "name": "Created By",
+                  "lablekey": "lbl-users-Phone",
+                  "columnwidth": 150,
+                  "seqno": 9,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "phone",
+                  "visible": true,
+                  "displayapiname": "lifecycle_status",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "21956e74-d8cd-12ce-80f4-145e52f84407",
+                  "name": "Created On",
+                  "lablekey": "lbl-users-Phone",
+                  "columnwidth": 150,
+                  "seqno": 19,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "phone",
+                  "visible": true,
+                  "displayapiname": "lifecycle_stage",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "21956e74-d8cd-13ce-80f4-145e52f84407",
+                  "name": "Status",
+                  "lablekey": "lbl-users-Phone",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "phone",
+                  "visible": true,
+                  "displayapiname": "job_title",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "21956e74-d8cd-14ce-80f4-145e52f84407",
+                  "name": "Ticket Age",
+                  "lablekey": "lbl-users-Phone",
+                  "columnwidth": 150,
+                  "seqno": 21,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "phone",
+                  "visible": true,
+                  "displayapiname": "primary_number",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Ticket Title",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "display_name",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Ticket ID",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": []
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "Ticket_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Lead",
+        "owner": "Annamalai V",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "55555555-5555-5555-5555-555555555501",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "display_name",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555502",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "email",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555503",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "uniqueidentifier",
+            "api_name": "role",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555504",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "numeric",
+            "api_name": "reporting_to",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555505",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "datetime",
+            "api_name": "created_on",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555506",
+            "seqno": 60,
+            "masterid": "1011",
+            "controltype": null,
+            "attrtype": "bit",
+            "api_name": "is_active",
+            "columnwidth": 150
+          },
+          {
+            "id": "ab196a8f-b628-413f-8414-fa9d731cca72",
+            "seqno": 9,
+            "masterid": "1009",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "time_zone",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-aeee-3a17094a6c9a",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "job_title",
+            "columnwidth": 150
+          },
+          {
+            "id": "63bac56b-5470-47bd-abe9-6ea45926cdc9",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "employee_id",
+            "columnwidth": 150
+          },
+          {
+            "id": "21956e74-d8cd-13ce-80f4-145e52f84407",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "employee_id",
+            "columnwidth": 150
+          },
+          {
+            "id": "21956e74-d8cd-12ce-80f4-145e52f84407",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "employee_id",
+            "columnwidth": 150
+          },
+          {
+            "id": "21956e74-d8cd-42ce-80f4-145e52f84407",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "employee_id",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "Ticket_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 2,
+          "lead_name": "TCK-1001",
+          "lead_source": "Communication",
+          "created_on": "Server Issue",
+          "lead_owner": "Email Not Syncing",
+          "lifecycle_status": "OnBoarding",
+          "lifecycle_stage": "Stage 1",
+          "job_title": "Open",
+          "primary_number": "7129 32 2332",
+          "country": "Ticket Title",
+          "language": "Category",
+          "date_of_joining": "Subcategory",
+          "mobile": "Department"
+        },
+        {
+          "id": 3,
+          "lead_name": "TCK-1002",
+          "lead_source": "Data Request",
+          "created_on": "Requirement",
+          "email": "emma.w@company.com",
+          "lead_owner": "Request for new dataset",
+          "lifecycle_status": "Contacted",
+          "lifecycle_stage": "Stage 2",
+          "job_title": "New",
+          "primary_number": "9134 45 6789"
+        },
+        {
+          "id": 4,
+          "lead_name": "TCK-1003",
+          "lead_source": "Feature Request",
+          "created_on": "Approval",
+          "email": "michael.t@example.com",
+          "lead_owner": "Future enhancement in CRM",
+          "lifecycle_status": "Qualified",
+          "lifecycle_stage": "Stage 3",
+          "job_title": "In Progress",
+          "primary_number": "8129 56 4433"
+        },
+        {
+          "id": 5,
+          "lead_name": "TCK-1004",
+          "lead_source": "Invoice",
+          "created_on": "Clarification",
+          "email": "sophia.r@samplemail.com",
+          "lead_owner": "Invoice correction",
+          "lifecycle_status": "Negotiation",
+          "lifecycle_stage": "Stage 4",
+          "job_title": "Resolved",
+          "primary_number": "7890 23 9987"
+        },
+        {
+          "id": 6,
+          "lead_name": "TCK-1005",
+          "lead_source": "Software Access",
+          "created_on": "Request",
+          "email": "david.l@company.com",
+          "lead_owner": "Access to HR software",
+          "lifecycle_status": "OnBoarding",
+          "lifecycle_stage": "Stage 1",
+          "job_title": "Closed",
+          "primary_number": "6234 67 1122"
+        },
+        {
+          "id": 7,
+          "lead_name": "TCK-1006",
+          "lead_source": "Product Discount",
+          "created_on": "Approval",
+          "email": "linda.d@example.com",
+          "lead_owner": "Product discount approval",
+          "lifecycle_status": "Contacted",
+          "lifecycle_stage": "Stage 2",
+          "job_title": "Hold",
+          "primary_number": "9012 34 5567",
+          "timezone": "Eastern"
+        },
+        {
+          "id": 8,
+          "lead_name": "TCK-1007",
+          "lead_source": "Communication",
+          "created_on": "Execution",
+          "email": "james.b@company.com",
+          "lead_owner": "Sever downtime issue",
+          "lifecycle_status": "Qualified",
+          "lifecycle_stage": "Stage 3",
+          "job_title": "Reopen",
+          "primary_number": "7456 28 3399",
+          "timezone": "Mountain"
+        },
+        {
+          "id": 9,
+          "lead_name": "TCK-1008",
+          "lead_source": "Invoice",
+          "created_on": "Clarification",
+          "email": "olivia.m@samplemail.com",
+          "lead_owner": "Clarification on tax invoice",
+          "lifecycle_status": "Negotiation",
+          "lifecycle_stage": "Stage 4",
+          "job_title": "New",
+          "primary_number": "6789 17 4455",
+          "timezone": "Central"
+        },
+        {
+          "id": 10,
+          "lead_name": "TCK-1009",
+          "lead_source": "Permission",
+          "created_on": "Request",
+          "email": "robert.k@example.com",
+          "lead_owner": "Request for AWS credentials",
+          "lifecycle_status": "OnBoarding",
+          "lifecycle_stage": "Stage 1",
+          "job_title": "Open",
+          "primary_number": "7123 89 1200",
+          "timezone": "Pacific"
+        },
+        {
+          "id": 11,
+          "lead_name": "TCK-1010",
+          "lead_source": "Data Request",
+          "created_on": "Requirement",
+          "email": "mia.j@company.com",
+          "lead_owner": "Requirement doc submission",
+          "lifecycle_status": "Contacted",
+          "lifecycle_stage": "Stage 2",
+          "job_title": "Closed",
+          "primary_number": "8234 56 7789",
+          "timezone": "Eastern"
+        },
+        {
+          "id": 12,
+          "lead_name": "TCK-1011",
+          "lead_source": "Software Access",
+          "created_on": "Approval",
+          "email": "william.n@example.com",
+          "lead_owner": "Laptop access permission",
+          "lifecycle_status": "Qualified",
+          "lifecycle_stage": "Stage 3",
+          "job_title": "In Progress",
+          "primary_number": "6543 21 9876",
+          "timezone": "Mountain"
+        },
+        {
+          "id": 13,
+          "lead_name": "TCK-1012",
+          "lead_source": "Product Discount",
+          "created_on": "Request",
+          "email": "isabella.v@samplemail.com",
+          "lead_owner": "Disconut request from client",
+          "lifecycle_status": "Negotiation",
+          "lifecycle_stage": "Stage 4",
+          "job_title": "Resolved",
+          "primary_number": "7891 34 2233",
+          "timezone": "Central"
+        },
+        {
+          "id": 14,
+          "lead_name": "TCK-1013",
+          "lead_source": "Communication",
+          "created_on": "Clarification",
+          "email": "daniel.p@company.com",
+          "lead_owner": "Payroll clarification",
+          "lifecycle_status": "OnBoarding",
+          "lifecycle_stage": "Stage 1",
+          "job_title": "Open",
+          "primary_number": "7321 45 9987",
+          "timezone": "Pacific"
+        },
+        {
+          "id": 15,
+          "lead_name": "TCK-1014",
+          "lead_source": "Feature Request",
+          "created_on": "Execution",
+          "email": "ella.h@example.com",
+          "lead_owner": "Execution of new feature",
+          "lifecycle_status": "Contacted",
+          "lifecycle_stage": "Stage 2",
+          "job_title": "New",
+          "primary_number": "9123 47 8899",
+          "timezone": "Eastern"
+        },
+        {
+          "id": 16,
+          "lead_name": "TCK-1015",
+          "lead_source": "Permission",
+          "created_on": "Server Issue",
+          "email": "matthew.r@samplemail.com",
+          "lead_owner": "VPN connection",
+          "lifecycle_status": "Qualified",
+          "lifecycle_stage": "Stage 3",
+          "job_title": "Hold",
+          "primary_number": "8546 12 3345",
+          "timezone": "Mountain"
+        }
+      ],
+      "totalRecords": 15
+    },
+    "correlationId": ""
+  },
   "lead_FormFields": {
     "statusCode": 200,
     "message": "FormConfiguration Data",
