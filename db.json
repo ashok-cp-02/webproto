@@ -688,6 +688,24 @@
           ],
           "isactive": true,
           "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1012,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Active"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Inactive"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
         }
       ],
       "correlationId": null
@@ -924,17 +942,48 @@
                   "istitle": false,
                   "isdate": false,
                   "islookup": false
+                },
+                {
+                  "id": "cb196a8f-b628-413f-8414-fa9d731cca72",
+                  "name": "Ticket Title",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "ticket_title",
+                  "visible": true,
+                  "displayapiname": "ticket_title",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
                 }
               ],
               "filterfields": [
                 {
-                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
-                  "name": "Ticket Title",
-                  "lablekey": "lbl-user-username",
-                  "seqno": 10,
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Ticket ID",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
                   "filtercontroltype": "textbox",
                   "isquickfilter": true,
-                  "api_name": "display_name",
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "96666666-6666-6666-6666-666666666603",
+                  "name": "Created On",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 25,
+                  "filtercontroltype": "datepicker",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
                   "islookup": false,
                   "masterid": "",
                   "apioutputskey": null,
@@ -942,15 +991,15 @@
                   "apioutputvalue": null
                 },
                 {
-                  "id": "66666666-6666-6666-6666-666666666603",
-                  "name": "Ticket ID",
+                  "id": "16666666-6666-6666-6666-666666666603",
+                  "name": "Status",
                   "lablekey": "lbl-user-status",
-                  "seqno": 20,
-                  "filtercontroltype": "multiselect",
+                  "seqno": 30,
+                  "filtercontroltype": "dropdown",
                   "isquickfilter": true,
                   "api_name": "is_active",
                   "islookup": false,
-                  "masterid": "1011",
+                  "masterid": "1012",
                   "apioutputskey": null,
                   "isvisible": false,
                   "apioutputvalue": null
@@ -988,6 +1037,15 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "display_name",
+            "columnwidth": 150
+          },
+          {
+            "id": "cb196a8f-b628-413f-8414-fa9d731cca72",
+            "seqno": 11,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "ticket_title",
             "columnwidth": 150
           },
           {
@@ -1158,7 +1216,8 @@
           "language":"Emily Davis",
           "mobile":"9/1/2025",
           "country":"9/5/2025",
-          "lead_owner":"4 days"
+          "lead_owner":"4 days",
+          "ticket_title":"Email not syncing"
         },
         {
           "id": 3,
@@ -1174,7 +1233,8 @@
           "language":"Michael Brown",
           "mobile":"9/10/2025",
           "country":"9/20/2025",
-          "lead_owner":"10 days"
+          "lead_owner":"10 days",
+          "ticket_title":"Request for new dataset"
         },
         {
           "id": 4,
@@ -1190,7 +1250,8 @@
           "language":"Daniel Lee",
           "mobile":"9/5/2025",
           "country":"9/25/2025",
-          "lead_owner":"20 days"
+          "lead_owner":"20 days",
+           "ticket_title":"Feature enhancement in CRM"
         },
         {
           "id": 5,
@@ -1206,7 +1267,8 @@
           "language":"Sophia Wilson",
           "mobile":"8/28/2025",
           "country":"9/3/2025",
-          "lead_owner":"6 days"
+          "lead_owner":"6 days",
+          "ticket_title":"Invoice correction"
         },
         {
           "id": 6,
@@ -1222,7 +1284,8 @@
           "language":"Ethan Walker",
           "mobile":"9/3/2025",
           "country":"9/6/2025",
-          "lead_owner":"3 days"
+          "lead_owner":"3 days",
+          "ticket_title":"Access to HR software"
         },
         {
           "id": 7,
@@ -1239,7 +1302,8 @@
           "mobile":"9/12/2025",
           "country":"9/12/2025",
           "timezone": "Eastern",
-          "lead_owner":"18 days"
+          "lead_owner":"18 days",
+          "ticket_title":"Product discount approval"
         },
         {
           "id": 8,
@@ -1256,7 +1320,8 @@
           "mobile":"9/7/2025",
           "country":"9/9/2025",
           "lead_owner":"2 days",
-          "timezone": "Mountain"
+          "timezone": "Mountain",
+          "ticket_title":"Server downtime issue"
         },
         {
           "id": 9,
@@ -1273,7 +1338,8 @@
           "mobile":"9/15/2025",
           "country":"9/15/2025",
           "lead_owner":"7 days",
-          "timezone": "Central"
+          "timezone": "Central",
+          "ticket_title":"Clarification on tax invoice"
         },
         {
           "id": 10,
@@ -1290,7 +1356,8 @@
           "mobile":"9/14/2025",
           "country":"9/14/2025",
           "lead_owner":"4 days",
-          "timezone": "Pacific"
+          "timezone": "Pacific",
+          "ticket_title":"Request for AWS credentials"
         },
         {
           "id": 11,
@@ -1307,7 +1374,8 @@
           "mobile":"8/25/2025",
           "country":"9/1/2025",
           "lead_owner":"7 days",
-          "timezone": "Eastern"
+          "timezone": "Eastern",
+          "ticket_title":"Requirement doc submission"
         },
         {
           "id": 12,
@@ -1324,7 +1392,8 @@
           "mobile":"9/11/2025",
           "country":"9/11/2025",
           "lead_owner":"8 days",
-          "timezone": "Mountain"
+          "timezone": "Mountain",
+          "ticket_title":"Laptop access permission"
         },
         {
           "id": 13,
@@ -1341,7 +1410,8 @@
           "mobile":"9/6/2025",
           "country":"9/6/2025",
           "lead_owner":"6 days",
-          "timezone": "Central"
+          "timezone": "Central",
+          "ticket_title":"Discount request from client"
         },
         {
           "id": 14,
@@ -1358,7 +1428,8 @@
           "mobile":"9/8/2025",
           "country":"9/8/2025",
           "lead_owner":"7 days",
-          "timezone": "Pacific"
+          "timezone": "Pacific",
+          "ticket_title":"Payroll clarification"
         },
         {
           "id": 15,
@@ -1375,7 +1446,8 @@
           "mobile":"9/16/2025",
           "country":"9/16/2025",
           "lead_owner":"12 days",
-          "timezone": "Eastern"
+          "timezone": "Eastern",
+          "ticket_title":"Execution of new feature"
         },
         {
           "id": 16,
@@ -1392,7 +1464,8 @@
           "mobile":"9/13/2025",
           "country":"9/17/2025",
           "lead_owner":"4 days",
-          "timezone": "Mountain"
+          "timezone": "Mountain",
+          "ticket_title":"VPN connection"
         }
       ],
       "totalRecords": 15
