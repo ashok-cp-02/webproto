@@ -707,7 +707,7 @@
           "isactive": true,
           "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
         },
-         {
+        {
           "id": 1001,
           "valuekey": "userstatus",
           "labels": {},
@@ -781,7 +781,7 @@
           "isactive": true,
           "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
         },
-          {
+        {
           "id": 1002,
           "valuekey": "userstatus",
           "labels": {},
@@ -855,7 +855,7 @@
           "isactive": true,
           "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
         },
-          {
+        {
           "id": 1003,
           "valuekey": "userstatus",
           "labels": {},
@@ -929,7 +929,7 @@
           "isactive": true,
           "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
         },
-                  {
+        {
           "id": 1004,
           "valuekey": "userstatus",
           "labels": {},
@@ -955,7 +955,7 @@
           "isactive": true,
           "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
         },
-         {
+        {
           "id": 1005,
           "valuekey": "userstatus",
           "labels": {},
@@ -989,7 +989,7 @@
           "isactive": true,
           "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
         },
-         {
+        {
           "id": 1070,
           "valuekey": "userstatus",
           "labels": {},
@@ -1517,7 +1517,6 @@
             "api_name": "lead_owner",
             "columnwidth": 150
           }
-          
         ]
       },
       "correlationId": ""
@@ -1538,12 +1537,12 @@
           "priority": "High",
           "status": "Open",
           "primary_number": "IT/Admin",
-          "language":"Emily Davis",
-          "mobile":"9/1/2025",
-          "country":"9/5/2025",
-          "lead_owner":"4 days",
-          "TicketDescription":"Email not syncing",
-          "ticketowner":"Sarah Thomas"
+          "language": "Emily Davis",
+          "mobile": "9/1/2025",
+          "country": "9/5/2025",
+          "lead_owner": "4 days",
+          "TicketDescription": "Email not syncing",
+          "ticketowner": "Sarah Thomas"
         },
         {
           "id": 3,
@@ -1556,12 +1555,12 @@
           "priority": "Medium",
           "status": "New",
           "primary_number": "Product Analyst",
-          "language":"Michael Brown",
-          "mobile":"9/10/2025",
-          "country":"9/20/2025",
-          "lead_owner":"10 days",
-          "TicketDescription":"Request for new dataset",
-          "ticketowner":"Bruce Lee"
+          "language": "Michael Brown",
+          "mobile": "9/10/2025",
+          "country": "9/20/2025",
+          "lead_owner": "10 days",
+          "TicketDescription": "Request for new dataset",
+          "ticketowner": "Bruce Lee"
         },
         {
           "id": 4,
@@ -1574,12 +1573,12 @@
           "priority": "Critical",
           "status": "In Progress",
           "primary_number": "Development",
-          "language":"Daniel Lee",
-          "mobile":"9/5/2025",
-          "country":"9/25/2025",
-          "lead_owner":"20 days",
-           "TicketDescription":"Feature enhancement in CRM",
-          "ticketowner":"David Millar"
+          "language": "Daniel Lee",
+          "mobile": "9/5/2025",
+          "country": "9/25/2025",
+          "lead_owner": "20 days",
+          "TicketDescription": "Feature enhancement in CRM",
+          "ticketowner": "David Millar"
         },
         {
           "id": 5,
@@ -1592,12 +1591,12 @@
           "priority": "Medium",
           "status": "Resolved",
           "primary_number": "Finance",
-          "language":"Sophia Wilson",
-          "mobile":"8/28/2025",
-          "country":"9/3/2025",
-          "lead_owner":"6 days",
-          "TicketDescription":"Invoice correction",
-          "ticketowner":"Amanda Davis"
+          "language": "Sophia Wilson",
+          "mobile": "8/28/2025",
+          "country": "9/3/2025",
+          "lead_owner": "6 days",
+          "TicketDescription": "Invoice correction",
+          "ticketowner": "Amanda Davis"
         },
         {
           "id": 6,
@@ -1610,12 +1609,12 @@
           "priority": "Low",
           "status": "Closed",
           "primary_number": "Human Resource",
-          "language":"Ethan Walker",
-          "mobile":"9/3/2025",
-          "country":"9/6/2025",
-          "lead_owner":"3 days",
-          "TicketDescription":"Access to HR software",
-          "ticketowner":"Sarah Thomas"
+          "language": "Ethan Walker",
+          "mobile": "9/3/2025",
+          "country": "9/6/2025",
+          "lead_owner": "3 days",
+          "TicketDescription": "Access to HR software",
+          "ticketowner": "Sarah Thomas"
         },
         {
           "id": 7,
@@ -1628,13 +1627,13 @@
           "priority": "High",
           "status": "Hold",
           "primary_number": "Sales",
-          "language":"Mia Thomas",
-          "mobile":"9/12/2025",
-          "country":"9/12/2025",
+          "language": "Mia Thomas",
+          "mobile": "9/12/2025",
+          "country": "9/12/2025",
           "timezone": "Eastern",
-          "lead_owner":"18 days",
-          "TicketDescription":"Product discount approval",
-          "ticketowner":"John Robert"
+          "lead_owner": "18 days",
+          "TicketDescription": "Product discount approval",
+          "ticketowner": "John Robert"
         },
         {
           "id": 8,
@@ -1647,13 +1646,13 @@
           "priority": "Critical",
           "status": "Reopen",
           "primary_number": "Admin",
-          "language":"Lucas Martin",
-          "mobile":"9/7/2025",
-          "country":"9/9/2025",
-          "lead_owner":"2 days",
+          "language": "Lucas Martin",
+          "mobile": "9/7/2025",
+          "country": "9/9/2025",
+          "lead_owner": "2 days",
           "timezone": "Mountain",
-          "TicketDescription":"Server downtime issue",
-          "ticketowner":"Sarah Thomas"
+          "TicketDescription": "Server downtime issue",
+          "ticketowner": "Sarah Thomas"
         },
         {
           "id": 9,
@@ -1666,13 +1665,13 @@
           "priority": "Medium",
           "status": "New",
           "primary_number": "Finance",
-          "language":"Mason Taylor",
-          "mobile":"9/15/2025",
-          "country":"9/15/2025",
-          "lead_owner":"7 days",
+          "language": "Mason Taylor",
+          "mobile": "9/15/2025",
+          "country": "9/15/2025",
+          "lead_owner": "7 days",
           "timezone": "Central",
-          "TicketDescription":"Clarification on tax invoice",
-          "ticketowner":"Bruce Lee"
+          "TicketDescription": "Clarification on tax invoice",
+          "ticketowner": "Bruce Lee"
         },
         {
           "id": 10,
@@ -1685,13 +1684,13 @@
           "priority": "High",
           "status": "Open",
           "primary_number": "Development",
-          "language":"Charlotte Hill",
-          "mobile":"9/14/2025",
-          "country":"9/14/2025",
-          "lead_owner":"4 days",
+          "language": "Charlotte Hill",
+          "mobile": "9/14/2025",
+          "country": "9/14/2025",
+          "lead_owner": "4 days",
           "timezone": "Pacific",
-          "TicketDescription":"Request for AWS credentials",
-          "ticketowner":"John Robert"
+          "TicketDescription": "Request for AWS credentials",
+          "ticketowner": "John Robert"
         },
         {
           "id": 11,
@@ -1704,13 +1703,13 @@
           "priority": "Low",
           "status": "Closed",
           "primary_number": "Product Analyst",
-          "language":"Liam Green",
-          "mobile":"8/25/2025",
-          "country":"9/1/2025",
-          "lead_owner":"7 days",
+          "language": "Liam Green",
+          "mobile": "8/25/2025",
+          "country": "9/1/2025",
+          "lead_owner": "7 days",
           "timezone": "Eastern",
-          "TicketDescription":"Requirement doc submission",
-          "ticketowner":"Jr Trump"
+          "TicketDescription": "Requirement doc submission",
+          "ticketowner": "Jr Trump"
         },
         {
           "id": 12,
@@ -1723,13 +1722,13 @@
           "priority": "Medium",
           "status": "In Progress",
           "primary_number": "Admin",
-          "language":"Benjamin Lewis",
-          "mobile":"9/11/2025",
-          "country":"9/11/2025",
-          "lead_owner":"8 days",
+          "language": "Benjamin Lewis",
+          "mobile": "9/11/2025",
+          "country": "9/11/2025",
+          "lead_owner": "8 days",
           "timezone": "Mountain",
-          "TicketDescription":"Laptop access permission",
-          "ticketowner":"Daisy James"
+          "TicketDescription": "Laptop access permission",
+          "ticketowner": "Daisy James"
         },
         {
           "id": 13,
@@ -1742,13 +1741,13 @@
           "priority": "High",
           "status": "Resolved",
           "primary_number": "Sales",
-          "language":"Ella Perez",
-          "mobile":"9/6/2025",
-          "country":"9/6/2025",
-          "lead_owner":"6 days",
+          "language": "Ella Perez",
+          "mobile": "9/6/2025",
+          "country": "9/6/2025",
+          "lead_owner": "6 days",
           "timezone": "Central",
-          "TicketDescription":"Discount request from client",
-          "ticketowner":"Sarah Thomas"
+          "TicketDescription": "Discount request from client",
+          "ticketowner": "Sarah Thomas"
         },
         {
           "id": 14,
@@ -1761,13 +1760,13 @@
           "priority": "Medium",
           "status": "Open",
           "primary_number": "Human Resource",
-          "language":"Grace Evans",
-          "mobile":"9/8/2025",
-          "country":"9/8/2025",
-          "lead_owner":"7 days",
+          "language": "Grace Evans",
+          "mobile": "9/8/2025",
+          "country": "9/8/2025",
+          "lead_owner": "7 days",
           "timezone": "Pacific",
-          "TicketDescription":"Payroll clarification",
-          "ticketowner":"Bruce Lee"
+          "TicketDescription": "Payroll clarification",
+          "ticketowner": "Bruce Lee"
         },
         {
           "id": 15,
@@ -1780,13 +1779,13 @@
           "priority": "Critical",
           "status": "New",
           "primary_number": "Development",
-          "language":"Amelia Rivera",
-          "mobile":"9/16/2025",
-          "country":"9/16/2025",
-          "lead_owner":"12 days",
+          "language": "Amelia Rivera",
+          "mobile": "9/16/2025",
+          "country": "9/16/2025",
+          "lead_owner": "12 days",
           "timezone": "Eastern",
-          "TicketDescription":"Execution of new feature",
-          "ticketowner":"Sarah Thomas"
+          "TicketDescription": "Execution of new feature",
+          "ticketowner": "Sarah Thomas"
         },
         {
           "id": 16,
@@ -1799,37 +1798,48 @@
           "priority": "High",
           "status": "Hold",
           "primary_number": "IT/Admin",
-          "language":"Harper Brooks",
-          "mobile":"9/13/2025",
-          "country":"9/17/2025",
-          "lead_owner":"4 days",
+          "language": "Harper Brooks",
+          "mobile": "9/13/2025",
+          "country": "9/17/2025",
+          "lead_owner": "4 days",
           "timezone": "Mountain",
-          "TicketDescription":"VPN connection",
-          "ticketowner":"Jessica Lee"
+          "TicketDescription": "VPN connection",
+          "ticketowner": "Jessica Lee"
         }
       ],
       "totalRecords": 15
     },
     "correlationId": ""
   },
-  "Ticket_GetLookupMasterDatasforaddById":
-  {
+  "Ticket_GetLookupMasterDatasforaddById": {
     "statusCode": 1000,
     "message": "List of Masters for Tenant",
-    "data": {
-        "lookupentityid": null,
-        "lookupvalues": [
-            {
-                "islookup": true,
-                "masterid": "FDDA1982-EA22-438E-8508-56D4F1021D57",
-                "mastervalues": "[{\"optionid\":\"47E73ACB-7B02-43B7-89BD-03B8646A9E69\",\"optionvalue\":\"Dev User\"},{\"optionid\":\"7DD943C2-D18D-43F2-84E9-C74228116534\",\"optionvalue\":\"New Role Test\"},{\"optionid\":\"A5FC1AB4-AE2B-4F20-8C17-AAC5BE140FBB\",\"optionvalue\":\"r1\"},{\"optionid\":\"66263F71-1BC5-4C6F-9623-C1D1CB0B9F07\",\"optionvalue\":\"Tenant Administrator\"}]",
-                "totalcount": 4
-            }
-        ]
-    },
+    "data": [
+      {
+        "id": 1011,
+        "valuekey": "userstatus",
+        "labels": "lbl-userstatus",
+        "jsonmetadata": null,
+        "masterdata": [
+          {
+            "id": "101101",
+            "valueKey": "Active",
+            "isactive": false,
+            "sequence": null
+          },
+          {
+            "id": "101102",
+            "valueKey": "Inactive",
+            "isactive": false,
+            "sequence": null
+          }
+        ],
+        "isactive": true,
+        "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+      }
+    ],
     "correlationId": null
-},
-
+  },
 
   "Ticket_listpage_getlistconfigbyid": {
     "result": {
@@ -2029,7 +2039,7 @@
                   "isdate": false,
                   "islookup": false
                 },
-                 {
+                {
                   "id": "11956e74-d8cd-12ce-80f4-145e52f84407",
                   "name": "Ticket Owner",
                   "lablekey": "lbl-users-Phone",
@@ -2155,7 +2165,7 @@
                   "isvisible": false,
                   "apioutputvalue": null
                 },
-                                {
+                {
                   "id": "56666666-6666-6666-6666-666666666603",
                   "name": "Created On",
                   "lablekey": "lbl-user-status",
@@ -8620,22 +8630,22 @@
       "succeeded": true
     }
   },
- "GetUploadFiles":{
+  "GetUploadFiles": {
     "statusCode": 200,
     "message": "mgs_fileuploadsuccess",
     "data": {
-        "statusCode": 200,
-        "message": "mgs_fileuploadsuccess",
-        "uploadedFiles": [
-            {
-                "fileId": "06b13132-c4b3-4c19-23e7-08de05bbebb8",
-                "fileName": "Screenshot (3).png",
-                "locationFileName": "3b785b24-9683-40f2-8b0b-661375541062.png",
-                "fileSize": 147385,
-                "path": "D:\\Data\\WebApplication\\ArcPlatformP600\\API\\src\\v1\\modules\\FileManagement\\storage\\Filestorage\\Tenant\\ameriprise\\3b785b24-9683-40f2-8b0b-661375541062.png",
-                "uploadDate": "2025-10-07T16:10:41.072659Z"
-            }
-        ]
+      "statusCode": 200,
+      "message": "mgs_fileuploadsuccess",
+      "uploadedFiles": [
+        {
+          "fileId": "06b13132-c4b3-4c19-23e7-08de05bbebb8",
+          "fileName": "Screenshot (3).png",
+          "locationFileName": "3b785b24-9683-40f2-8b0b-661375541062.png",
+          "fileSize": 147385,
+          "path": "D:\\Data\\WebApplication\\ArcPlatformP600\\API\\src\\v1\\modules\\FileManagement\\storage\\Filestorage\\Tenant\\ameriprise\\3b785b24-9683-40f2-8b0b-661375541062.png",
+          "uploadDate": "2025-10-07T16:10:41.072659Z"
+        }
+      ]
     },
     "correlationId": "",
     "timestamp": "2025-10-07T16:10:41.0797513Z",
@@ -8644,5 +8654,652 @@
     "hasErrors": false,
     "hasWarnings": false,
     "isSuccess": true
-}
+  },
+  "billinvoice_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Customer A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Customer B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Customer C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Customer D"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "New"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Paid"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Unpaid"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Partially Paid"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "billinvoice_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Invoices",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Inv01",
+                  "name": "Invocie Number",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "InvocieNumber",
+                  "visible": true,
+                  "displayapiname": "InvocieNumber",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv02",
+                  "name": "Customer Name",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "CustomerName",
+                  "visible": true,
+                  "displayapiname": "CustomerName",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv03",
+                  "name": "Invoice Date",
+                  "lablekey": "lbl-users-language",
+                  "columnwidth": 150,
+                  "seqno": 3,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "language",
+                  "visible": true,
+                  "displayapiname": "InvoiceDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv04",
+                  "name": "Due Date",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "DueDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv05",
+                  "name": "Invoice Status",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 15,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "InvoiceStatus",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv06",
+                  "name": "Amount Due",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "AmountDue",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv07",
+                  "name": "Payment Status",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 17,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaymentStatus",
+                  "visible": true,
+                  "displayapiname": "PaymentStatus",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv08",
+                  "name": "Due Days",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "DueDays",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv09",
+                  "name": "Pending Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "PendingAmount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Invoice Number",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "invoice_number",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Customer Name",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666604",
+                  "name": "Invoice Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Payment Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": [
+                {
+                  "id": "Inv07",
+                  "name": "Payment Status",
+                  "labelkey": "lbl-Workitem-chunk",
+                  "seqno": 1,
+                  "api_name": "PaymentStatus",
+                  "type": "vertical",
+                  "direction": "asc",
+                  "masterid": "351000000",
+                  "displayapiname": "PaymentStatus"
+                },
+
+                {
+                  "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+                  "name": "Invoice Status",
+                  "labelkey": "lbl-Workitem-priority",
+                  "seqno": 4,
+                  "api_name": "column6",
+                  "type": "Horizontal",
+                  "direction": "-",
+                  "masterid": "7041",
+                  "displayapiname": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "billinvoice_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Invoices",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [
+          {
+            "id": "d94b9810-3bd7-4275-bf15-8862ddf44fb9",
+            "type": "Horizontal",
+            "direction": "asc",
+            "defaultvalue": "",
+            "api_name": "column41",
+            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+            "seq": null
+          }
+        ],
+        "columns": [
+          {
+            "id": "Inv01",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "InvocieNumber",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv02",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "CustomerName",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv03",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "InvoiceDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv04",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "DueDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv05",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "InvoiceStatus",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv06",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "AmountDue",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv07",
+            "seqno": 70,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaymentStatus",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv08",
+            "seqno": 80,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "DueDays",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv09",
+            "seqno": 90,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PendingAmount",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "billinvoice_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "InvocieNumber": "Inv_011",
+          "CustomerName": "Customer A",
+          "InvoiceDate": "04/14/2025",
+          "DueDate": "05/20/2025",
+          "InvoiceStatus": "New",
+          "AmountDue": "$500.90",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "10",
+          "PendingAmount": "$500.90"
+        },
+        {
+          "id": 2,
+          "InvocieNumber": "Inv_010",
+          "CustomerName": "Customer B",
+          "InvoiceDate": "04/17/2025",
+          "DueDate": "05/21/2025",
+          "InvoiceStatus": "New",
+          "AmountDue": "$123.36",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "-12",
+          "PendingAmount": "$123.36"
+        },
+        {
+          "id": 3,
+          "InvocieNumber": "Inv_009",
+          "CustomerName": "Customer C",
+          "InvoiceDate": "04/20/2025",
+          "DueDate": "05/30/2025",
+          "InvoiceStatus": "Paid",
+          "AmountDue": "$123.36",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "18",
+          "PendingAmount": "$123.36"
+        },
+        {
+          "id": 4,
+          "InvocieNumber": "Inv_008",
+          "CustomerName": "Customer D",
+          "InvoiceDate": "04/22/2025",
+          "DueDate": "05/30/2025",
+          "InvoiceStatus": "Unpaid",
+          "AmountDue": "$100.25",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "18",
+          "PendingAmount": "$100.25"
+        },
+        {
+          "id": 5,
+          "InvocieNumber": "Inv_007",
+          "CustomerName": "Customer A",
+          "InvoiceDate": "05/04/2025",
+          "DueDate": "05/21/2025",
+          "InvoiceStatus": "Unpaid",
+          "AmountDue": "$456.87",
+          "PaymentStatus": "Partially Paid",
+          "DueDays": "-18",
+          "PendingAmount": "$54.01"
+        },
+        {
+          "id": 6,
+          "InvocieNumber": "Inv_012",
+          "CustomerName": "Customer E",
+          "InvoiceDate": "05/01/2025",
+          "DueDate": "06/05/2025",
+          "InvoiceStatus": "Unpaid",
+          "AmountDue": "$789.50",
+          "PaymentStatus": "Paid",
+          "DueDays": "5",
+          "PendingAmount": "$0.00"
+        },
+        {
+          "id": 7,
+          "InvocieNumber": "Inv_013",
+          "CustomerName": "Customer F",
+          "InvoiceDate": "05/03/2025",
+          "DueDate": "06/04/2025",
+          "InvoiceStatus": "Paid",
+          "AmountDue": "$210.40",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "3",
+          "PendingAmount": "$210.40"
+        },
+        {
+          "id": 8,
+          "InvocieNumber": "Inv_014",
+          "CustomerName": "Customer G",
+          "InvoiceDate": "05/06/2025",
+          "DueDate": "06/01/2025",
+          "InvoiceStatus": "Paid",
+          "AmountDue": "$350.00",
+          "PaymentStatus": "Partially Paid",
+          "DueDays": "-8",
+          "PendingAmount": "$120.00"
+        },
+        {
+          "id": 9,
+          "InvocieNumber": "Inv_015",
+          "CustomerName": "Customer H",
+          "InvoiceDate": "05/08/2025",
+          "DueDate": "06/10/2025",
+          "InvoiceStatus": "Paid",
+          "AmountDue": "$999.99",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "12",
+          "PendingAmount": "$999.99"
+        },
+        {
+          "id": 10,
+          "InvocieNumber": "Inv_016",
+          "CustomerName": "Customer I",
+          "InvoiceDate": "05/10/2025",
+          "DueDate": "06/02/2025",
+          "InvoiceStatus": "New",
+          "AmountDue": "$640.20",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "1",
+          "PendingAmount": "$640.20"
+        },
+        {
+          "id": 11,
+          "InvocieNumber": "Inv_017",
+          "CustomerName": "Customer J",
+          "InvoiceDate": "05/12/2025",
+          "DueDate": "06/18/2025",
+          "InvoiceStatus": "Paid",
+          "AmountDue": "$80.75",
+          "PaymentStatus": "Paid",
+          "DueDays": "20",
+          "PendingAmount": "$0.00"
+        },
+        {
+          "id": 12,
+          "InvocieNumber": "Inv_018",
+          "CustomerName": "Customer K",
+          "InvoiceDate": "05/15/2025",
+          "DueDate": "06/05/2025",
+          "InvoiceStatus": "New",
+          "AmountDue": "$275.80",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "5",
+          "PendingAmount": "$275.80"
+        },
+        {
+          "id": 13,
+          "InvocieNumber": "Inv_019",
+          "CustomerName": "Customer L",
+          "InvoiceDate": "05/16/2025",
+          "DueDate": "06/20/2025",
+          "InvoiceStatus": "Paid",
+          "AmountDue": "$150.10",
+          "PaymentStatus": "Partially Paid",
+          "DueDays": "-15",
+          "PendingAmount": "$50.00"
+        },
+        {
+          "id": 14,
+          "InvocieNumber": "Inv_020",
+          "CustomerName": "Customer M",
+          "InvoiceDate": "05/18/2025",
+          "DueDate": "06/08/2025",
+          "InvoiceStatus": "New",
+          "AmountDue": "$725.60",
+          "PaymentStatus": "Paid",
+          "DueDays": "8",
+          "PendingAmount": "$0.00"
+        },
+        {
+          "id": 15,
+          "InvocieNumber": "Inv_021",
+          "CustomerName": "Customer N",
+          "InvoiceDate": "05/19/2025",
+          "DueDate": "06/12/2025",
+          "InvoiceStatus": "Unpaid",
+          "AmountDue": "$540.00",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "6",
+          "PendingAmount": "$540.00"
+        }
+      ],
+      "totalRecords": 15,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "New"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Unpaid"
+        }
+      ]
+    },
+    "correlationId": ""
+  }
 }
