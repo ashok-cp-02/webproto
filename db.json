@@ -8959,15 +8959,15 @@
               ],
               "groupbyfields": [
                 {
-                  "id": "Inv07",
-                  "name": "Payment Status",
+                  "id": "Inv02",
+                  "name": "Customer Name",
                   "labelkey": "lbl-Workitem-chunk",
                   "seqno": 1,
-                  "api_name": "PaymentStatus",
+                  "api_name": "CustomerName",
                   "type": "vertical",
                   "direction": "asc",
                   "masterid": "351000000",
-                  "displayapiname": "PaymentStatus"
+                  "displayapiname": "CustomerName"
                 },
 
                 {
@@ -8975,7 +8975,7 @@
                   "name": "Invoice Status",
                   "labelkey": "lbl-Workitem-priority",
                   "seqno": 4,
-                  "api_name": "column6",
+                  "api_name": "InvoiceStatus",
                   "type": "Horizontal",
                   "direction": "-",
                   "masterid": "7041",
@@ -9006,11 +9006,20 @@
         "filters": [],
         "groupby": [
           {
-            "id": "d94b9810-3bd7-4275-bf15-8862ddf44fb9",
+            "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
             "type": "Horizontal",
             "direction": "asc",
-            "defaultvalue": "",
-            "api_name": "column41",
+            "defaultvalue": "All",
+            "api_name": "InvoiceStatus",
+            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+            "seq": null
+          },
+          {
+            "id": "Inv02",
+            "type": "vertical",
+            "direction": "asc",
+            "defaultvalue": "All",
+            "api_name": "CustomerName",
             "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
             "seq": null
           }
@@ -9110,7 +9119,7 @@
         {
           "id": 1,
           "InvocieNumber": "Inv_011",
-          "CustomerName": "Customer A",
+          "CustomerName": "John Miller",
           "InvoiceDate": "04/14/2025",
           "DueDate": "05/20/2025",
           "InvoiceStatus": "New",
@@ -9122,7 +9131,7 @@
         {
           "id": 2,
           "InvocieNumber": "Inv_010",
-          "CustomerName": "Customer B",
+          "CustomerName": "Sarah Johnson",
           "InvoiceDate": "04/17/2025",
           "DueDate": "05/21/2025",
           "InvoiceStatus": "New",
@@ -9134,7 +9143,7 @@
         {
           "id": 3,
           "InvocieNumber": "Inv_009",
-          "CustomerName": "Customer C",
+          "CustomerName": "David Smith",
           "InvoiceDate": "04/20/2025",
           "DueDate": "05/30/2025",
           "InvoiceStatus": "Paid",
@@ -9146,7 +9155,7 @@
         {
           "id": 4,
           "InvocieNumber": "Inv_008",
-          "CustomerName": "Customer D",
+          "CustomerName": "John Miller",
           "InvoiceDate": "04/22/2025",
           "DueDate": "05/30/2025",
           "InvoiceStatus": "Unpaid",
@@ -9158,7 +9167,7 @@
         {
           "id": 5,
           "InvocieNumber": "Inv_007",
-          "CustomerName": "Customer A",
+          "CustomerName": "Sarah Johnson",
           "InvoiceDate": "05/04/2025",
           "DueDate": "05/21/2025",
           "InvoiceStatus": "Unpaid",
@@ -9170,7 +9179,7 @@
         {
           "id": 6,
           "InvocieNumber": "Inv_012",
-          "CustomerName": "Customer E",
+          "CustomerName": "David Smith",
           "InvoiceDate": "05/01/2025",
           "DueDate": "06/05/2025",
           "InvoiceStatus": "Unpaid",
@@ -9182,7 +9191,7 @@
         {
           "id": 7,
           "InvocieNumber": "Inv_013",
-          "CustomerName": "Customer F",
+          "CustomerName": "John Miller",
           "InvoiceDate": "05/03/2025",
           "DueDate": "06/04/2025",
           "InvoiceStatus": "Paid",
@@ -9194,7 +9203,7 @@
         {
           "id": 8,
           "InvocieNumber": "Inv_014",
-          "CustomerName": "Customer G",
+          "CustomerName": "Sarah Johnson",
           "InvoiceDate": "05/06/2025",
           "DueDate": "06/01/2025",
           "InvoiceStatus": "Paid",
@@ -9206,19 +9215,19 @@
         {
           "id": 9,
           "InvocieNumber": "Inv_015",
-          "CustomerName": "Customer H",
+          "CustomerName": "David Smith",
           "InvoiceDate": "05/08/2025",
           "DueDate": "06/10/2025",
           "InvoiceStatus": "Paid",
           "AmountDue": "$999.99",
-          "PaymentStatus": "Unpaid",
+          "PaymentStatus": "Paid",
           "DueDays": "12",
           "PendingAmount": "$999.99"
         },
         {
           "id": 10,
           "InvocieNumber": "Inv_016",
-          "CustomerName": "Customer I",
+          "CustomerName": "John Miller",
           "InvoiceDate": "05/10/2025",
           "DueDate": "06/02/2025",
           "InvoiceStatus": "New",
@@ -9230,7 +9239,7 @@
         {
           "id": 11,
           "InvocieNumber": "Inv_017",
-          "CustomerName": "Customer J",
+          "CustomerName": "Sarah Johnson",
           "InvoiceDate": "05/12/2025",
           "DueDate": "06/18/2025",
           "InvoiceStatus": "Paid",
@@ -9242,7 +9251,7 @@
         {
           "id": 12,
           "InvocieNumber": "Inv_018",
-          "CustomerName": "Customer K",
+          "CustomerName": "David Smith",
           "InvoiceDate": "05/15/2025",
           "DueDate": "06/05/2025",
           "InvoiceStatus": "New",
@@ -9254,7 +9263,7 @@
         {
           "id": 13,
           "InvocieNumber": "Inv_019",
-          "CustomerName": "Customer L",
+          "CustomerName": "John Miller",
           "InvoiceDate": "05/16/2025",
           "DueDate": "06/20/2025",
           "InvoiceStatus": "Paid",
@@ -9266,7 +9275,7 @@
         {
           "id": 14,
           "InvocieNumber": "Inv_020",
-          "CustomerName": "Customer M",
+          "CustomerName": "Sarah Johnson",
           "InvoiceDate": "05/18/2025",
           "DueDate": "06/08/2025",
           "InvoiceStatus": "New",
@@ -9278,14 +9287,74 @@
         {
           "id": 15,
           "InvocieNumber": "Inv_021",
-          "CustomerName": "Customer N",
+          "CustomerName": "David Smith",
           "InvoiceDate": "05/19/2025",
           "DueDate": "06/12/2025",
           "InvoiceStatus": "Unpaid",
           "AmountDue": "$540.00",
-          "PaymentStatus": "Unpaid",
+          "PaymentStatus": "Partially Paid",
           "DueDays": "6",
           "PendingAmount": "$540.00"
+        },
+        {
+          "id": 16,
+          "InvocieNumber": "Inv_022",
+          "CustomerName": "John Miller",
+          "InvoiceDate": "05/21/2025",
+          "DueDate": "06/15/2025",
+          "InvoiceStatus": "New",
+          "AmountDue": "$420.00",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "10",
+          "PendingAmount": "$420.00"
+        },
+        {
+          "id": 17,
+          "InvocieNumber": "Inv_023",
+          "CustomerName": "Sarah Johnson",
+          "InvoiceDate": "05/22/2025",
+          "DueDate": "06/18/2025",
+          "InvoiceStatus": "Paid",
+          "AmountDue": "$310.50",
+          "PaymentStatus": "Paid",
+          "DueDays": "14",
+          "PendingAmount": "$0.00"
+        },
+        {
+          "id": 18,
+          "InvocieNumber": "Inv_024",
+          "CustomerName": "David Smith",
+          "InvoiceDate": "05/23/2025",
+          "DueDate": "06/19/2025",
+          "InvoiceStatus": "Unpaid",
+          "AmountDue": "$870.75",
+          "PaymentStatus": "Paid",
+          "DueDays": "13",
+          "PendingAmount": "$870.75"
+        },
+        {
+          "id": 19,
+          "InvocieNumber": "Inv_025",
+          "CustomerName": "John Miller",
+          "InvoiceDate": "05/24/2025",
+          "DueDate": "06/14/2025",
+          "InvoiceStatus": "Partially Paid",
+          "AmountDue": "$605.40",
+          "PaymentStatus": "Partially Paid",
+          "DueDays": "-2",
+          "PendingAmount": "$120.40"
+        },
+        {
+          "id": 20,
+          "InvocieNumber": "Inv_026",
+          "CustomerName": "Sarah Johnson",
+          "InvoiceDate": "05/25/2025",
+          "DueDate": "06/22/2025",
+          "InvoiceStatus": "New",
+          "AmountDue": "$980.20",
+          "PaymentStatus": "Unpaid",
+          "DueDays": "16",
+          "PendingAmount": "$980.20"
         }
       ],
       "totalRecords": 15,
@@ -9297,6 +9366,868 @@
         {
           "groupbyid": "2",
           "groupbytext": "Unpaid"
+        }
+      ]
+    },
+    "correlationId": ""
+  },
+  "billpayment_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Customer A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Customer B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Customer C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Customer D"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "New"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Paid"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Unpaid"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Partially Paid"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "billpayment_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Invoices",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Inv01",
+                  "name": "Invocie Number",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "InvocieNumber",
+                  "visible": true,
+                  "displayapiname": "InvocieNumber",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv02",
+                  "name": "Customer Name",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "CustomerName",
+                  "visible": true,
+                  "displayapiname": "CustomerName",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv022",
+                  "name": "Invoice Date",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "InvoiceDate",
+                  "visible": true,
+                  "displayapiname": "InvoiceDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "Inv03",
+                  "name": "Due Date",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "DueDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv04",
+                  "name": "Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "Amount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv05",
+                  "name": "Due Days",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "DueDays",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv06",
+                  "name": "Paid Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "PaidAmount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv07",
+                  "name": "Paid date",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "PaidDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv08",
+                  "name": "Payment Status",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 17,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaymentStatus",
+                  "visible": true,
+                  "displayapiname": "PaymentStatus",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "Inv09",
+                  "name": "Balance Due",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "BalanceDue",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "Inv10",
+                  "name": "Flag",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 200,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": "groupdropdown",
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "Flag",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv11",
+                  "name": "Promise Pay",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "PromisePay",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv12",
+                  "name": "Aging Days",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "AgingDays",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Invoice Number",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "invoice_number",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Customer Name",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Payment Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": [
+                {
+                  "id": "Inv02",
+                  "name": "Customer Name",
+                  "labelkey": "lbl-Workitem-chunk",
+                  "seqno": 1,
+                  "api_name": "CustomerName",
+                  "type": "vertical",
+                  "direction": "asc",
+                  "masterid": "351000000",
+                  "displayapiname": "CustomerName"
+                },
+
+                {
+                  "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+                  "name": "Payment Status",
+                  "labelkey": "lbl-Workitem-priority",
+                  "seqno": 4,
+                  "api_name": "PaymentStatus",
+                  "type": "Horizontal",
+                  "direction": "-",
+                  "masterid": "7041",
+                  "displayapiname": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "billpayment_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Payments",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [
+          {
+            "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+            "type": "Horizontal",
+            "direction": "asc",
+            "defaultvalue": "All",
+            "api_name": "PaymentStatus",
+            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+            "seq": null
+          },
+          {
+            "id": "Inv02",
+            "type": "vertical",
+            "direction": "asc",
+            "defaultvalue": "All",
+            "api_name": "CustomerName",
+            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+            "seq": null
+          }
+        ],
+        "columns": [
+          {
+            "id": "Inv01",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "InvocieNumber",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv02",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "CustomerName",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv022",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "InvoiceDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv03",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "DueDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv04",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Amount",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv05",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "DueDays",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv06",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaidAmount",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv07",
+            "seqno": 70,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaidDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv08",
+            "seqno": 80,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaymentStatus",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv09",
+            "seqno": 90,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "BalanceDue",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv10",
+            "seqno": 100,
+            "masterid": "0",
+            "controltype": "groupdropdown",
+            "attrtype": "nvarchar",
+            "api_name": "Flag",
+            "columnwidth": 200
+          },
+          {
+            "id": "Inv11",
+            "seqno": 110,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PromisePay",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "billpayment_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "InvocieNumber": "INV_001",
+          "CustomerName": "John Doe",
+          "InvoiceDate": "04/14/2025",
+          "DueDate": "05/20/2025",
+          "Amount": "$500.90",
+          "DueDays": "10",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "PaymentStatus": "Unpaid",
+          "BalanceDue": "$500.90",
+          "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D21E\"}]",
+          "PromisePay": "Yes",
+          "AgingDays": "10"
+        },
+        {
+          "id": 2,
+          "InvocieNumber": "INV_002",
+          "CustomerName": "Michael Smith",
+          "InvoiceDate": "03/18/2025",
+          "DueDate": "04/25/2025",
+          "Amount": "$920.40",
+          "DueDays": "20",
+          "PaidAmount": "$920.40",
+          "PaidDate": "04/20/2025",
+          "PaymentStatus": "Paid",
+          "BalanceDue": "$0.00",
+          "Flag": "[{\"name\":\"New Customer\",\"colorcode\":5,\"tagid\":\"A11B\"}]",
+          "PromisePay": "No",
+          "AgingDays": "0"
+        },
+        {
+          "id": 3,
+          "InvocieNumber": "INV_003",
+          "CustomerName": "Alice Brown",
+          "InvoiceDate": "05/01/2025",
+          "DueDate": "06/10/2025",
+          "Amount": "$310.00",
+          "DueDays": "15",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "PaymentStatus": "Overdue",
+          "BalanceDue": "$310.00",
+          "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"C32F\"}]",
+          "PromisePay": "Yes",
+          "AgingDays": "18"
+        },
+        {
+          "id": 4,
+          "InvocieNumber": "INV_004",
+          "CustomerName": "Daniel Lee",
+          "InvoiceDate": "04/10/2025",
+          "DueDate": "05/05/2025",
+          "Amount": "$1200.99",
+          "DueDays": "8",
+          "PaidAmount": "$600.00",
+          "PaidDate": "05/02/2025",
+          "PaymentStatus": "Partially Paid",
+          "BalanceDue": "$600.99",
+          "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"F21A\"}]",
+          "PromisePay": "No",
+          "AgingDays": "7"
+        },
+        {
+          "id": 5,
+          "InvocieNumber": "INV_005",
+          "CustomerName": "John Doe",
+          "InvoiceDate": "02/28/2025",
+          "DueDate": "03/30/2025",
+          "Amount": "$250.50",
+          "DueDays": "5",
+          "PaidAmount": "$250.50",
+          "PaidDate": "03/28/2025",
+          "PaymentStatus": "Paid",
+          "BalanceDue": "$0.00",
+          "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D55C\"}]",
+          "PromisePay": "No",
+          "AgingDays": "0"
+        },
+        {
+          "id": 6,
+          "InvocieNumber": "INV_006",
+          "CustomerName": "Michael Smith",
+          "InvoiceDate": "05/05/2025",
+          "DueDate": "06/15/2025",
+          "Amount": "$800.00",
+          "DueDays": "20",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "PaymentStatus": "Unpaid",
+          "BalanceDue": "$800.00",
+          "Flag": "[{\"name\":\"New Customer\",\"colorcode\":5,\"tagid\":\"EE21\"}]",
+          "PromisePay": "Yes",
+          "AgingDays": "12"
+        },
+        {
+          "id": 7,
+          "InvocieNumber": "INV_007",
+          "CustomerName": "Alice Brown",
+          "InvoiceDate": "01/15/2025",
+          "DueDate": "02/20/2025",
+          "Amount": "$1500.45",
+          "DueDays": "40",
+          "PaidAmount": "$1500.45",
+          "PaidDate": "02/10/2025",
+          "PaymentStatus": "Paid",
+          "BalanceDue": "$0.00",
+          "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"BC22\"}]",
+          "PromisePay": "No",
+          "AgingDays": "0"
+        },
+        {
+          "id": 8,
+          "InvocieNumber": "INV_008",
+          "CustomerName": "Daniel Lee",
+          "InvoiceDate": "06/01/2025",
+          "DueDate": "07/05/2025",
+          "Amount": "$780.20",
+          "DueDays": "25",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "PaymentStatus": "Unpaid",
+          "BalanceDue": "$780.20",
+          "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"AB32\"}]",
+          "PromisePay": "Yes",
+          "AgingDays": "5"
+        },
+        {
+          "id": 9,
+          "InvocieNumber": "INV_009",
+          "CustomerName": "John Doe",
+          "InvoiceDate": "03/03/2025",
+          "DueDate": "04/05/2025",
+          "Amount": "$610.00",
+          "DueDays": "12",
+          "PaidAmount": "$610.00",
+          "PaidDate": "04/01/2025",
+          "PaymentStatus": "Paid",
+          "BalanceDue": "$0.00",
+          "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D11C\"}]",
+          "PromisePay": "No",
+          "AgingDays": "0"
+        },
+        {
+          "id": 10,
+          "InvocieNumber": "INV_010",
+          "CustomerName": "Michael Smith",
+          "InvoiceDate": "04/12/2025",
+          "DueDate": "05/18/2025",
+          "Amount": "$940.75",
+          "DueDays": "10",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "PaymentStatus": "Overdue",
+          "BalanceDue": "$940.75",
+          "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"C12F\"}]",
+          "PromisePay": "Yes",
+          "AgingDays": "15"
+        },
+
+        {
+          "id": 11,
+          "InvocieNumber": "INV_011",
+          "CustomerName": "Alice Brown",
+          "InvoiceDate": "05/15/2025",
+          "DueDate": "06/20/2025",
+          "Amount": "$230.90",
+          "DueDays": "8",
+          "PaidAmount": "$230.90",
+          "PaidDate": "06/19/2025",
+          "PaymentStatus": "Paid",
+          "BalanceDue": "$0.00",
+          "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D55C\"}]",
+          "PromisePay": "No",
+          "AgingDays": "0"
+        },
+        {
+          "id": 12,
+          "InvocieNumber": "INV_012",
+          "CustomerName": "Daniel Lee",
+          "InvoiceDate": "03/10/2025",
+          "DueDate": "04/12/2025",
+          "Amount": "$1450.40",
+          "DueDays": "20",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "PaymentStatus": "Unpaid",
+          "BalanceDue": "$1450.40",
+          "Flag": "[{\"name\":\"New Customer\",\"colorcode\":5,\"tagid\":\"A17E\"}]",
+          "PromisePay": "Yes",
+          "AgingDays": "28"
+        },
+        {
+          "id": 13,
+          "InvocieNumber": "INV_013",
+          "CustomerName": "John Doe",
+          "InvoiceDate": "02/20/2025",
+          "DueDate": "03/25/2025",
+          "Amount": "$890.00",
+          "DueDays": "12",
+          "PaidAmount": "$400.00",
+          "PaidDate": "03/20/2025",
+          "PaymentStatus": "Partially Paid",
+          "BalanceDue": "$490.00",
+          "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"AC91\"}]",
+          "PromisePay": "No",
+          "AgingDays": "10"
+        },
+        {
+          "id": 14,
+          "InvocieNumber": "INV_014",
+          "CustomerName": "Michael Smith",
+          "InvoiceDate": "06/05/2025",
+          "DueDate": "07/08/2025",
+          "Amount": "$510.60",
+          "DueDays": "7",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "PaymentStatus": "Unpaid",
+          "BalanceDue": "$510.60",
+          "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"C92A\"}]",
+          "PromisePay": "Yes",
+          "AgingDays": "3"
+        },
+        {
+          "id": 15,
+          "InvocieNumber": "INV_015",
+          "CustomerName": "Alice Brown",
+          "InvoiceDate": "01/30/2025",
+          "DueDate": "02/28/2025",
+          "Amount": "$760.00",
+          "DueDays": "15",
+          "PaidAmount": "$760.00",
+          "PaidDate": "02/26/2025",
+          "PaymentStatus": "Paid",
+          "BalanceDue": "$0.00",
+          "Flag": "[{\"name\":\"New Customer\",\"colorcode\":5,\"tagid\":\"A55D\"}]",
+          "PromisePay": "No",
+          "AgingDays": "0"
+        },
+        {
+          "id": 16,
+          "InvocieNumber": "INV_016",
+          "CustomerName": "Daniel Lee",
+          "InvoiceDate": "05/19/2025",
+          "DueDate": "06/22/2025",
+          "Amount": "$320.55",
+          "DueDays": "6",
+          "PaidAmount": "$120.00",
+          "PaidDate": "06/15/2025",
+          "PaymentStatus": "Partially Paid",
+          "BalanceDue": "$200.55",
+          "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"CC31\"}]",
+          "PromisePay": "Yes",
+          "AgingDays": "5"
+        },
+        {
+          "id": 17,
+          "InvocieNumber": "INV_017",
+          "CustomerName": "John Doe",
+          "InvoiceDate": "04/02/2025",
+          "DueDate": "05/07/2025",
+          "Amount": "$995.99",
+          "DueDays": "16",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "PaymentStatus": "Overdue",
+          "BalanceDue": "$995.99",
+          "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"C77A\"}]",
+          "PromisePay": "Yes",
+          "AgingDays": "22"
+        },
+        {
+          "id": 18,
+          "InvocieNumber": "INV_018",
+          "CustomerName": "Michael Smith",
+          "InvoiceDate": "03/08/2025",
+          "DueDate": "04/10/2025",
+          "Amount": "$470.80",
+          "DueDays": "10",
+          "PaidAmount": "$470.80",
+          "PaidDate": "04/08/2025",
+          "PaymentStatus": "Paid",
+          "BalanceDue": "$0.00",
+          "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"BB33\"}]",
+          "PromisePay": "No",
+          "AgingDays": "0"
+        }
+      ],
+      "totalRecords": 15,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Unpaid"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Overdue"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "Partially Paid"
+        },
+        {
+          "groupbyid": "4",
+          "groupbytext": "Paid"
+        },
+        {
+          "groupbyid": "5",
+          "groupbytext": "Void"
         }
       ]
     },
