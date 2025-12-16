@@ -8779,722 +8779,6 @@
                   "islookup": false
                 },
                 {
-                  "id": "Inv03",
-                  "name": "Invoice Date",
-                  "lablekey": "lbl-users-language",
-                  "columnwidth": 150,
-                  "seqno": 3,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "language",
-                  "visible": true,
-                  "displayapiname": "InvoiceDate",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": true,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv04",
-                  "name": "Due Date",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 5,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "job_title",
-                  "visible": true,
-                  "displayapiname": "DueDate",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv05",
-                  "name": "Invoice Status",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 15,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "job_title",
-                  "visible": true,
-                  "displayapiname": "InvoiceStatus",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv06",
-                  "name": "Amount Due",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 16,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "job_title",
-                  "visible": true,
-                  "displayapiname": "AmountDue",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv07",
-                  "name": "Payment Status",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 17,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "PaymentStatus",
-                  "visible": true,
-                  "displayapiname": "PaymentStatus",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv08",
-                  "name": "Due Days",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 18,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "job_title",
-                  "visible": true,
-                  "displayapiname": "DueDays",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv09",
-                  "name": "Pending Amount",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 20,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "job_title",
-                  "visible": true,
-                  "displayapiname": "PendingAmount",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                }
-              ],
-
-              "filterfields": [
-                {
-                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
-                  "name": "Invoice Number",
-                  "lablekey": "lbl-user-username",
-                  "seqno": 10,
-                  "filtercontroltype": "textbox",
-                  "isquickfilter": true,
-                  "api_name": "invoice_number",
-                  "islookup": false,
-                  "masterid": "",
-                  "apioutputskey": null,
-                  "isvisible": false,
-                  "apioutputvalue": null
-                },
-                {
-                  "id": "66666666-6666-6666-6666-666666666603",
-                  "name": "Customer Name",
-                  "lablekey": "lbl-user-status",
-                  "seqno": 20,
-                  "filtercontroltype": "multiselect",
-                  "isquickfilter": true,
-                  "api_name": "is_active",
-                  "islookup": false,
-                  "masterid": "1010",
-                  "apioutputskey": null,
-                  "isvisible": false,
-                  "apioutputvalue": null
-                },
-                {
-                  "id": "66666666-6666-6666-6666-666666666604",
-                  "name": "Invoice Status",
-                  "lablekey": "lbl-user-status",
-                  "seqno": 20,
-                  "filtercontroltype": "multiselect",
-                  "isquickfilter": true,
-                  "api_name": "is_active",
-                  "islookup": false,
-                  "masterid": "1011",
-                  "apioutputskey": null,
-                  "isvisible": false,
-                  "apioutputvalue": null
-                },
-                {
-                  "id": "66666666-6666-6666-6666-666666666605",
-                  "name": "Payment Status",
-                  "lablekey": "lbl-user-status",
-                  "seqno": 20,
-                  "filtercontroltype": "multiselect",
-                  "isquickfilter": true,
-                  "api_name": "is_active",
-                  "islookup": false,
-                  "masterid": "1011",
-                  "apioutputskey": null,
-                  "isvisible": false,
-                  "apioutputvalue": null
-                }
-              ],
-              "groupbyfields": [
-                {
-                  "id": "Inv02",
-                  "name": "Customer Name",
-                  "labelkey": "lbl-Workitem-chunk",
-                  "seqno": 1,
-                  "api_name": "CustomerName",
-                  "type": "vertical",
-                  "direction": "asc",
-                  "masterid": "351000000",
-                  "displayapiname": "CustomerName"
-                },
-
-                {
-                  "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-                  "name": "Invoice Status",
-                  "labelkey": "lbl-Workitem-priority",
-                  "seqno": 4,
-                  "api_name": "InvoiceStatus",
-                  "type": "Horizontal",
-                  "direction": "-",
-                  "masterid": "7041",
-                  "displayapiname": null
-                }
-              ]
-            }
-          }
-        }
-      },
-      "correlationId": ""
-    }
-  },
-  "billinvoice_getdatasetfieldinfobyid": {
-    "result": {
-      "statusCode": 1000,
-      "message": "Fetched successfully",
-      "data": {
-        "id": "66666666-6666-6666-6666-666666666601",
-        "name": "All Invoices",
-        "owner": "Ashok C",
-        "listsortfield": "created_on",
-        "viewtype": null,
-        "celldataviewtype": null,
-        "listsortdir": "desc",
-        "isdefault": null,
-        "last_accessed_time": "2025-07-18T11:12:14",
-        "filters": [],
-        "groupby": [
-          {
-            "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-            "type": "Horizontal",
-            "direction": "asc",
-            "defaultvalue": "All",
-            "api_name": "InvoiceStatus",
-            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
-            "seq": null
-          },
-          {
-            "id": "Inv02",
-            "type": "vertical",
-            "direction": "asc",
-            "defaultvalue": "All",
-            "api_name": "CustomerName",
-            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
-            "seq": null
-          }
-        ],
-        "columns": [
-          {
-            "id": "Inv01",
-            "seqno": 10,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "InvocieNumber",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv02",
-            "seqno": 20,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "CustomerName",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv03",
-            "seqno": 30,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "InvoiceDate",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv04",
-            "seqno": 40,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "DueDate",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv05",
-            "seqno": 50,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "InvoiceStatus",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv06",
-            "seqno": 60,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "AmountDue",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv07",
-            "seqno": 70,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "PaymentStatus",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv08",
-            "seqno": 80,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "DueDays",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv09",
-            "seqno": 90,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "PendingAmount",
-            "columnwidth": 150
-          }
-        ]
-      },
-      "correlationId": ""
-    }
-  },
-  "billinvoice_listdata": {
-    "statusCode": 1000,
-    "message": "Fetched successfully",
-    "data": {
-      "datas": [
-        {
-          "id": 1,
-          "InvocieNumber": "Inv_011",
-          "CustomerName": "John Miller",
-          "InvoiceDate": "04/14/2025",
-          "DueDate": "05/20/2025",
-          "InvoiceStatus": "New",
-          "AmountDue": "$500.90",
-          "PaymentStatus": "Unpaid",
-          "DueDays": "10",
-          "PendingAmount": "$500.90"
-        },
-        {
-          "id": 2,
-          "InvocieNumber": "Inv_010",
-          "CustomerName": "Sarah Johnson",
-          "InvoiceDate": "04/17/2025",
-          "DueDate": "05/21/2025",
-          "InvoiceStatus": "New",
-          "AmountDue": "$123.36",
-          "PaymentStatus": "Unpaid",
-          "DueDays": "-12",
-          "PendingAmount": "$123.36"
-        },
-        {
-          "id": 3,
-          "InvocieNumber": "Inv_009",
-          "CustomerName": "David Smith",
-          "InvoiceDate": "04/20/2025",
-          "DueDate": "05/30/2025",
-          "InvoiceStatus": "Paid",
-          "AmountDue": "$123.36",
-          "PaymentStatus": "Unpaid",
-          "DueDays": "18",
-          "PendingAmount": "$123.36"
-        },
-        {
-          "id": 4,
-          "InvocieNumber": "Inv_008",
-          "CustomerName": "John Miller",
-          "InvoiceDate": "04/22/2025",
-          "DueDate": "05/30/2025",
-          "InvoiceStatus": "Unpaid",
-          "AmountDue": "$100.25",
-          "PaymentStatus": "Unpaid",
-          "DueDays": "18",
-          "PendingAmount": "$100.25"
-        },
-        {
-          "id": 5,
-          "InvocieNumber": "Inv_007",
-          "CustomerName": "Sarah Johnson",
-          "InvoiceDate": "05/04/2025",
-          "DueDate": "05/21/2025",
-          "InvoiceStatus": "Unpaid",
-          "AmountDue": "$456.87",
-          "PaymentStatus": "Partially Paid",
-          "DueDays": "-18",
-          "PendingAmount": "$54.01"
-        },
-        {
-          "id": 6,
-          "InvocieNumber": "Inv_012",
-          "CustomerName": "David Smith",
-          "InvoiceDate": "05/01/2025",
-          "DueDate": "06/05/2025",
-          "InvoiceStatus": "Unpaid",
-          "AmountDue": "$789.50",
-          "PaymentStatus": "Paid",
-          "DueDays": "5",
-          "PendingAmount": "$0.00"
-        },
-        {
-          "id": 7,
-          "InvocieNumber": "Inv_013",
-          "CustomerName": "John Miller",
-          "InvoiceDate": "05/03/2025",
-          "DueDate": "06/04/2025",
-          "InvoiceStatus": "Paid",
-          "AmountDue": "$210.40",
-          "PaymentStatus": "Unpaid",
-          "DueDays": "3",
-          "PendingAmount": "$210.40"
-        },
-        {
-          "id": 8,
-          "InvocieNumber": "Inv_014",
-          "CustomerName": "Sarah Johnson",
-          "InvoiceDate": "05/06/2025",
-          "DueDate": "06/01/2025",
-          "InvoiceStatus": "Paid",
-          "AmountDue": "$350.00",
-          "PaymentStatus": "Partially Paid",
-          "DueDays": "-8",
-          "PendingAmount": "$120.00"
-        },
-        {
-          "id": 9,
-          "InvocieNumber": "Inv_015",
-          "CustomerName": "David Smith",
-          "InvoiceDate": "05/08/2025",
-          "DueDate": "06/10/2025",
-          "InvoiceStatus": "Paid",
-          "AmountDue": "$999.99",
-          "PaymentStatus": "Paid",
-          "DueDays": "12",
-          "PendingAmount": "$999.99"
-        },
-        {
-          "id": 10,
-          "InvocieNumber": "Inv_016",
-          "CustomerName": "John Miller",
-          "InvoiceDate": "05/10/2025",
-          "DueDate": "06/02/2025",
-          "InvoiceStatus": "New",
-          "AmountDue": "$640.20",
-          "PaymentStatus": "Unpaid",
-          "DueDays": "1",
-          "PendingAmount": "$640.20"
-        },
-        {
-          "id": 11,
-          "InvocieNumber": "Inv_017",
-          "CustomerName": "Sarah Johnson",
-          "InvoiceDate": "05/12/2025",
-          "DueDate": "06/18/2025",
-          "InvoiceStatus": "Paid",
-          "AmountDue": "$80.75",
-          "PaymentStatus": "Paid",
-          "DueDays": "20",
-          "PendingAmount": "$0.00"
-        },
-        {
-          "id": 12,
-          "InvocieNumber": "Inv_018",
-          "CustomerName": "David Smith",
-          "InvoiceDate": "05/15/2025",
-          "DueDate": "06/05/2025",
-          "InvoiceStatus": "New",
-          "AmountDue": "$275.80",
-          "PaymentStatus": "Unpaid",
-          "DueDays": "5",
-          "PendingAmount": "$275.80"
-        },
-        {
-          "id": 13,
-          "InvocieNumber": "Inv_019",
-          "CustomerName": "John Miller",
-          "InvoiceDate": "05/16/2025",
-          "DueDate": "06/20/2025",
-          "InvoiceStatus": "Paid",
-          "AmountDue": "$150.10",
-          "PaymentStatus": "Partially Paid",
-          "DueDays": "-15",
-          "PendingAmount": "$50.00"
-        },
-        {
-          "id": 14,
-          "InvocieNumber": "Inv_020",
-          "CustomerName": "Sarah Johnson",
-          "InvoiceDate": "05/18/2025",
-          "DueDate": "06/08/2025",
-          "InvoiceStatus": "New",
-          "AmountDue": "$725.60",
-          "PaymentStatus": "Paid",
-          "DueDays": "8",
-          "PendingAmount": "$0.00"
-        },
-        {
-          "id": 15,
-          "InvocieNumber": "Inv_021",
-          "CustomerName": "David Smith",
-          "InvoiceDate": "05/19/2025",
-          "DueDate": "06/12/2025",
-          "InvoiceStatus": "Unpaid",
-          "AmountDue": "$540.00",
-          "PaymentStatus": "Partially Paid",
-          "DueDays": "6",
-          "PendingAmount": "$540.00"
-        },
-        {
-          "id": 16,
-          "InvocieNumber": "Inv_022",
-          "CustomerName": "John Miller",
-          "InvoiceDate": "05/21/2025",
-          "DueDate": "06/15/2025",
-          "InvoiceStatus": "New",
-          "AmountDue": "$420.00",
-          "PaymentStatus": "Unpaid",
-          "DueDays": "10",
-          "PendingAmount": "$420.00"
-        },
-        {
-          "id": 17,
-          "InvocieNumber": "Inv_023",
-          "CustomerName": "Sarah Johnson",
-          "InvoiceDate": "05/22/2025",
-          "DueDate": "06/18/2025",
-          "InvoiceStatus": "Paid",
-          "AmountDue": "$310.50",
-          "PaymentStatus": "Paid",
-          "DueDays": "14",
-          "PendingAmount": "$0.00"
-        },
-        {
-          "id": 18,
-          "InvocieNumber": "Inv_024",
-          "CustomerName": "David Smith",
-          "InvoiceDate": "05/23/2025",
-          "DueDate": "06/19/2025",
-          "InvoiceStatus": "Unpaid",
-          "AmountDue": "$870.75",
-          "PaymentStatus": "Paid",
-          "DueDays": "13",
-          "PendingAmount": "$870.75"
-        },
-        {
-          "id": 19,
-          "InvocieNumber": "Inv_025",
-          "CustomerName": "John Miller",
-          "InvoiceDate": "05/24/2025",
-          "DueDate": "06/14/2025",
-          "InvoiceStatus": "Partially Paid",
-          "AmountDue": "$605.40",
-          "PaymentStatus": "Partially Paid",
-          "DueDays": "-2",
-          "PendingAmount": "$120.40"
-        },
-        {
-          "id": 20,
-          "InvocieNumber": "Inv_026",
-          "CustomerName": "Sarah Johnson",
-          "InvoiceDate": "05/25/2025",
-          "DueDate": "06/22/2025",
-          "InvoiceStatus": "New",
-          "AmountDue": "$980.20",
-          "PaymentStatus": "Unpaid",
-          "DueDays": "16",
-          "PendingAmount": "$980.20"
-        }
-      ],
-      "totalRecords": 15,
-      "groupbydetails": [
-        {
-          "groupbyid": "1",
-          "groupbytext": "New"
-        },
-        {
-          "groupbyid": "2",
-          "groupbytext": "Unpaid"
-        }
-      ]
-    },
-    "correlationId": ""
-  },
-  "billpayment_getlookupdatabyid": {
-    "data": {
-      "statusCode": 1000,
-      "message": "List of Masters for Tenant",
-      "data": [
-        {
-          "id": 1010,
-          "valuekey": "userstatus",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 101101,
-              "valueKey": "Customer A"
-            },
-            {
-              "id": 101102,
-              "valueKey": "Customer B"
-            },
-            {
-              "id": 101103,
-              "valueKey": "Customer C"
-            },
-            {
-              "id": 101104,
-              "valueKey": "Customer D"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-          "id": 1011,
-          "valuekey": "userstatus",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 101101,
-              "valueKey": "New"
-            },
-            {
-              "id": 101102,
-              "valueKey": "Paid"
-            },
-            {
-              "id": 101103,
-              "valueKey": "Unpaid"
-            },
-            {
-              "id": 101104,
-              "valueKey": "Partially Paid"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        }
-      ],
-      "correlationId": null
-    }
-  },
-  "billpayment_getlistconfigbyid": {
-    "result": {
-      "statusCode": 1000,
-      "message": "Fetched successfully",
-      "data": {
-        "list": {
-          "id": "44444444-4444-4444-4444-444444444401",
-          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
-          "entityname": "arc_roles",
-          "name": "All Lead details",
-          "header": {
-            "name": "arc_roles"
-          },
-          "type": "List",
-          "data": {
-            "dataset": [
-              {
-                "datasetid": "66666666-6666-6666-6666-666666666601",
-                "title": "All Payments",
-                "isdefault": true,
-                "isselected": true,
-                "owner": "Ashok C",
-                "viewtype": "",
-                "seqno": 1
-              }
-            ],
-            "config": {
-              "listfields": [
-                {
-                  "id": "Inv01",
-                  "name": "Invocie Number",
-                  "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
-                  "seqno": 1,
-                  "masterid": "1009",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "InvocieNumber",
-                  "visible": true,
-                  "displayapiname": "InvocieNumber",
-                  "inlineeditable": null,
-                  "istitle": true,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv02",
-                  "name": "Customer Name",
-                  "lablekey": "lbl-users-country",
-                  "columnwidth": 150,
-                  "seqno": 2,
-                  "masterid": "1008",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "CustomerName",
-                  "visible": true,
-                  "displayapiname": "CustomerName",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
                   "id": "Inv022",
                   "name": "Invoice Date",
                   "lablekey": "lbl-users-country",
@@ -9762,7 +9046,7 @@
       "correlationId": ""
     }
   },
-  "billpayment_getdatasetfieldinfobyid": {
+  "billinvoice_getdatasetfieldinfobyid": {
     "result": {
       "statusCode": 1000,
       "message": "Fetched successfully",
@@ -9779,23 +9063,23 @@
         "filters": [],
         "groupby": [
           {
-            "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-            "type": "Horizontal",
-            "direction": "asc",
-            "defaultvalue": "All",
-            "api_name": "PaymentStatus",
-            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
-            "seq": null
-          },
-          {
-            "id": "Inv02",
-            "type": "vertical",
-            "direction": "asc",
-            "defaultvalue": "All",
-            "api_name": "CustomerName",
-            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
-            "seq": null
-          }
+          "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+          "type": "Horizontal",
+          "direction": "asc",
+          "defaultvalue": "All",
+          "api_name": "InvoiceStatus",
+          "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+          "seq": null
+        },
+        {
+          "id": "Inv02",
+          "type": "vertical",
+          "direction": "asc",
+          "defaultvalue": "All",
+          "api_name": "CustomerName",
+          "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+          "seq": null
+        }
         ],
         "columns": [
           {
@@ -9911,7 +9195,7 @@
       "correlationId": ""
     }
   },
-  "billpayment_listdata": {
+  "billinvoice_listdata": {
     "statusCode": 1000,
     "message": "Fetched successfully",
     "data": {
@@ -10232,12 +9516,661 @@
     },
     "correlationId": ""
   },
+  "billpayment_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Customer A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Customer B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Customer C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Customer D"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Partially Applied"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Fully Applied"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Received"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Failed"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "billpayment_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Payments",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Pay01",
+                  "name": "Payment ID",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaymentID",
+                  "visible": true,
+                  "displayapiname": "PaymentID",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay02",
+                  "name": "Customer",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "Customer",
+                  "visible": true,
+                  "displayapiname": "Customer",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay03",
+                  "name": "Payment Date",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaymentDate",
+                  "visible": true,
+                  "displayapiname": "PaymentDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "Pay04",
+                  "name": "Payment Method",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaymentMethod",
+                  "visible": true,
+                  "displayapiname": "PaymentMethod",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay05",
+                  "name": "Total Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "TotalAmount",
+                  "visible": true,
+                  "displayapiname": "TotalAmount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay06",
+                  "name": "Applied Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "AppliedAmount",
+                  "visible": true,
+                  "displayapiname": "AppliedAmount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay07",
+                  "name": "Unapplied Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "UnappliedAmount",
+                  "visible": true,
+                  "displayapiname": "UnappliedAmount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay08",
+                  "name": "Status",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "Status",
+                  "visible": true,
+                  "displayapiname": "Status",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay09",
+                  "name": "Invoice No(s)",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 17,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "InvoiceNo(s)",
+                  "visible": true,
+                  "displayapiname": "InvoiceNo(s)",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "Pay010",
+                  "name": "Reference / Transaction ID",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "Reference/TransactionID",
+                  "visible": true,
+                  "displayapiname": "Reference/TransactionID",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "Pay011",
+                  "name": "Actions",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 200,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "Actions",
+                  "visible": true,
+                  "displayapiname": "Actions",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Payment ID",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "Payment_ID",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Customer",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "Customer",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "Status",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": [
+                {
+                  "id": "Inv02",
+                  "name": "Customer",
+                  "labelkey": "lbl-Workitem-chunk",
+                  "seqno": 1,
+                  "api_name": "CustomerName",
+                  "type": "vertical",
+                  "direction": "asc",
+                  "masterid": "351000000",
+                  "displayapiname": "CustomerName"
+                },
+
+                {
+                  "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+                  "name": "Status",
+                  "labelkey": "lbl-Workitem-priority",
+                  "seqno": 4,
+                  "api_name": "Status",
+                  "type": "Horizontal",
+                  "direction": "-",
+                  "masterid": "7041",
+                  "displayapiname": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "billpayment_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Payments",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "Pay01",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaymentID",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay02",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Customer",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay03",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaymentDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay04",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaymentMethod",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay05",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "TotalAmount",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay06",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "AppliedAmount",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay07",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "UnappliedAmount",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay08",
+            "seqno": 70,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Status",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay09",
+            "seqno": 80,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "InvoiceNo(s)",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay010",
+            "seqno": 90,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Reference/TransactionID",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay011",
+            "seqno": 100,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Actions",
+            "columnwidth": 200
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "billpayment_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "PaymentID": "PAY_001",
+          "Customer": "ABC co",
+          "PaymentDate": "12-Dec-2025",
+          "PaymentMethod": "ACH",
+          "TotalAmount": "5000",
+          "AppliedAmount": "3000",
+          "UnappliedAmount": "2000",
+          "Status": "Partially Applied",
+          "InvoiceNo(s)": "INV-1001, INV-1002",
+          "Reference/TransactionID": "TRX-00123",
+          "Actions": "Apply / View"
+        },
+        {
+          "id": 2,
+          "PaymentID": "PAY-1002",
+          "Customer": "XYZ Ltd",
+          "PaymentDate": "11-Dec-2025",
+          "PaymentMethod": "Credit Card",
+          "TotalAmount": "2000",
+          "AppliedAmount": "2000",
+          "UnappliedAmount": "0",
+          "Status": "Fully Applied",
+          "InvoiceNo(s)": "INV-1003",
+          "Reference/TransactionID": "TRX-00456",
+          "Actions": "View"
+        },
+        {
+          "id": 3,
+          "PaymentID": "PAY-1003",
+          "Customer": "DEF Inc",
+          "PaymentDate": "12-Dec-2025",
+          "PaymentMethod": "Check",
+          "TotalAmount": "1500",
+          "AppliedAmount": "0",
+          "UnappliedAmount": "1500",
+          "Status": "Received",
+          "InvoiceNo(s)": "",
+          "Reference/TransactionID": "CHK-07890",
+          "Actions": "Apply / View"
+        },
+        {
+          "id": 4,
+          "PaymentID": "PAY-1004",
+          "Customer": "GHI Co",
+          "PaymentDate": "10-Dec-2025",
+          "PaymentMethod": "Wire",
+          "TotalAmount": "3000",
+          "AppliedAmount": "0",
+          "UnappliedAmount": "3000",
+          "Status": "Failed",
+          "InvoiceNo(s)": "",
+          "Reference/TransactionID": "TRX-00987",
+          "Actions": "Retry / View"
+        },
+        {
+          "id": 5,
+          "PaymentID": "PAY-1005",
+          "Customer": "JKL Ltd",
+          "PaymentDate": "12-Dec-2025",
+          "PaymentMethod": "ACH",
+          "TotalAmount": "2500",
+          "AppliedAmount": "2500",
+          "UnappliedAmount": "0",
+          "Status": "Fully Applied",
+          "InvoiceNo(s)": "INV-1004",
+          "Reference/TransactionID": "TRX-01234",
+          "Actions": "View"
+        },
+        {
+          "id": 6,
+          "PaymentID": "PAY-1006",
+          "Customer": "MNO Corp",
+          "PaymentDate": "09-Dec-2025",
+          "PaymentMethod": "Credit Card",
+          "TotalAmount": "4000",
+          "AppliedAmount": "3500",
+          "UnappliedAmount": "500",
+          "Status": "Partially Applied",
+          "InvoiceNo(s)": "INV-1005, INV-1006",
+          "Reference/TransactionID": "TRX-06789",
+          "Actions": "Apply / View"
+        },
+        {
+          "id": 7,
+          "PaymentID": "PAY-1007",
+          "Customer": "PQR Ltd",
+          "PaymentDate": "13-Dec-2025",
+          "PaymentMethod": "Wire",
+          "TotalAmount": "3200",
+          "AppliedAmount": "3200",
+          "UnappliedAmount": "0",
+          "Status": "Fully Applied",
+          "InvoiceNo(s)": "INV-1007",
+          "Reference/TransactionID": "TRX-09876",
+          "Actions": "View"
+        },
+        {
+          "id": 8,
+          "PaymentID": "PAY-1008",
+          "Customer": "STU Industries",
+          "PaymentDate": "12-Dec-2025",
+          "PaymentMethod": "Check",
+          "TotalAmount": "1800",
+          "AppliedAmount": "600",
+          "UnappliedAmount": "1200",
+          "Status": "Partially Applied",
+          "InvoiceNo(s)": "INV-1008",
+          "Reference/TransactionID": "CHK-04567",
+          "Actions": "Apply / View"
+        },
+        {
+          "id": 9,
+          "PaymentID": "PAY-1009",
+          "Customer": "VWX Enterprises",
+          "PaymentDate": "10-Dec-2025",
+          "PaymentMethod": "ACH",
+          "TotalAmount": "2750",
+          "AppliedAmount": "0",
+          "UnappliedAmount": "2750",
+          "Status": "Pending",
+          "InvoiceNo(s)": "",
+          "Reference/TransactionID": "TRX-02233",
+          "Actions": "Apply / View"
+        },
+        {
+          "id": 10,
+          "PaymentID": "PAY-1010",
+          "Customer": "YZA Co",
+          "PaymentDate": "14-Dec-2025",
+          "PaymentMethod": "Wire",
+          "TotalAmount": "6000",
+          "AppliedAmount": "6000",
+          "UnappliedAmount": "0",
+          "Status": "Fully Applied",
+          "InvoiceNo(s)": "INV-1009, INV-1010",
+          "Reference/TransactionID": "TRX-04789",
+          "Actions": "View"
+        }
+      ],
+      "totalRecords": 15,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Unpaid"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Overdue"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "Partially Paid"
+        },
+        {
+          "groupbyid": "4",
+          "groupbytext": "Paid"
+        },
+        {
+          "groupbyid": "5",
+          "groupbytext": "Void"
+        }
+      ]
+    },
+    "correlationId": ""
+  },
   "campaign_getlookupdatabyid": {
     "data": {
       "statusCode": 1000,
       "message": "List of Masters for Tenant",
       "data": [
-        
         {
           "id": 1011,
           "valuekey": "userstatus",
