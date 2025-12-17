@@ -8883,16 +8883,16 @@
                 },
                 {
                   "id": "Inv08",
-                  "name": "Payment Status",
+                  "name": "Status",
                   "lablekey": "lbl-users-jobtitle",
                   "columnwidth": 150,
                   "seqno": 17,
                   "masterid": "",
                   "controltype": null,
                   "attrtype": "nvarchar",
-                  "api_name": "PaymentStatus",
+                  "api_name": "Status",
                   "visible": true,
-                  "displayapiname": "PaymentStatus",
+                  "displayapiname": "Status",
                   "inlineeditable": null,
                   "istitle": false,
                   "isdate": false,
@@ -8967,6 +8967,23 @@
                   "istitle": false,
                   "isdate": false,
                   "islookup": false
+                },
+                {
+                  "id": "Inv13",
+                  "name": "Email",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "Email",
+                  "visible": true,
+                  "displayapiname": "Email",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
                 }
               ],
               "filterfields": [
@@ -9001,7 +9018,7 @@
 
                 {
                   "id": "66666666-6666-6666-6666-666666666605",
-                  "name": "Payment Status",
+                  "name": "Status",
                   "lablekey": "lbl-user-status",
                   "seqno": 20,
                   "filtercontroltype": "multiselect",
@@ -9029,10 +9046,10 @@
 
                 {
                   "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-                  "name": "Payment Status",
+                  "name": "Status",
                   "labelkey": "lbl-Workitem-priority",
                   "seqno": 4,
-                  "api_name": "PaymentStatus",
+                  "api_name": "Status",
                   "type": "Horizontal",
                   "direction": "-",
                   "masterid": "7041",
@@ -9067,7 +9084,7 @@
           "type": "Horizontal",
           "direction": "asc",
           "defaultvalue": "All",
-          "api_name": "InvoiceStatus",
+          "api_name": "Status",
           "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
           "seq": null
         },
@@ -9160,7 +9177,7 @@
             "masterid": "0",
             "controltype": null,
             "attrtype": "nvarchar",
-            "api_name": "PaymentStatus",
+            "api_name": "Status",
             "columnwidth": 150
           },
           {
@@ -9189,6 +9206,24 @@
             "attrtype": "nvarchar",
             "api_name": "PromisePay",
             "columnwidth": 150
+          },
+          {
+            "id": "Inv12",
+            "seqno": 110,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "AgingDays",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv13",
+            "seqno": 110,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Email",
+            "columnwidth": 150
           }
         ]
       },
@@ -9210,11 +9245,12 @@
           "DueDays": "10",
           "PaidAmount": "$0.00",
           "PaidDate": "",
-          "PaymentStatus": "Unpaid",
+          "Status": "Unpaid",
           "BalanceDue": "$500.90",
           "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D21E\"}]",
           "PromisePay": "Yes",
-          "AgingDays": "10"
+          "AgingDays": "10",
+          "Email" : "Yes"
         },
         {
           "id": 2,
@@ -9226,11 +9262,12 @@
           "DueDays": "20",
           "PaidAmount": "$920.40",
           "PaidDate": "04/20/2025",
-          "PaymentStatus": "Paid",
+          "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[{\"name\":\"New Customer\",\"colorcode\":5,\"tagid\":\"A11B\"}]",
           "PromisePay": "No",
-          "AgingDays": "0"
+          "AgingDays": "0",
+          "Email" : "No"
         },
         {
           "id": 3,
@@ -9242,11 +9279,12 @@
           "DueDays": "15",
           "PaidAmount": "$0.00",
           "PaidDate": "",
-          "PaymentStatus": "Overdue",
+          "Status": "Overdue",
           "BalanceDue": "$310.00",
           "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"C32F\"}]",
           "PromisePay": "Yes",
-          "AgingDays": "18"
+          "AgingDays": "18",
+          "Email" : "Yes"
         },
         {
           "id": 4,
@@ -9258,11 +9296,12 @@
           "DueDays": "8",
           "PaidAmount": "$600.00",
           "PaidDate": "05/02/2025",
-          "PaymentStatus": "Partially Paid",
+          "Status": "Partially Paid",
           "BalanceDue": "$600.99",
           "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"F21A\"}]",
           "PromisePay": "No",
-          "AgingDays": "7"
+          "AgingDays": "7",
+          "Email" : "No"
         },
         {
           "id": 5,
@@ -9274,11 +9313,12 @@
           "DueDays": "5",
           "PaidAmount": "$250.50",
           "PaidDate": "03/28/2025",
-          "PaymentStatus": "Paid",
+          "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D55C\"}]",
           "PromisePay": "No",
-          "AgingDays": "0"
+          "AgingDays": "0",
+          "Email" : "No"
         },
         {
           "id": 6,
@@ -9290,11 +9330,12 @@
           "DueDays": "20",
           "PaidAmount": "$0.00",
           "PaidDate": "",
-          "PaymentStatus": "Unpaid",
+          "Status": "Unpaid",
           "BalanceDue": "$800.00",
           "Flag": "[{\"name\":\"New Customer\",\"colorcode\":5,\"tagid\":\"EE21\"}]",
           "PromisePay": "Yes",
-          "AgingDays": "12"
+          "AgingDays": "12",
+          "Email" : "Yes"
         },
         {
           "id": 7,
@@ -9306,11 +9347,12 @@
           "DueDays": "40",
           "PaidAmount": "$1500.45",
           "PaidDate": "02/10/2025",
-          "PaymentStatus": "Paid",
+          "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"BC22\"}]",
           "PromisePay": "No",
-          "AgingDays": "0"
+          "AgingDays": "0",
+          "Email" : "Yes"
         },
         {
           "id": 8,
@@ -9322,11 +9364,12 @@
           "DueDays": "25",
           "PaidAmount": "$0.00",
           "PaidDate": "",
-          "PaymentStatus": "Unpaid",
+          "Status": "Unpaid",
           "BalanceDue": "$780.20",
           "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"AB32\"}]",
           "PromisePay": "Yes",
-          "AgingDays": "5"
+          "AgingDays": "5",
+          "Email" : "Yes"
         },
         {
           "id": 9,
@@ -9338,11 +9381,12 @@
           "DueDays": "12",
           "PaidAmount": "$610.00",
           "PaidDate": "04/01/2025",
-          "PaymentStatus": "Paid",
+          "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D11C\"}]",
           "PromisePay": "No",
-          "AgingDays": "0"
+          "AgingDays": "0",
+          "Email" : "No"
         },
         {
           "id": 10,
@@ -9354,11 +9398,12 @@
           "DueDays": "10",
           "PaidAmount": "$0.00",
           "PaidDate": "",
-          "PaymentStatus": "Overdue",
+          "Status": "Overdue",
           "BalanceDue": "$940.75",
           "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"C12F\"}]",
           "PromisePay": "Yes",
-          "AgingDays": "15"
+          "AgingDays": "15",
+          "Email" : "No"
         },
 
         {
@@ -9371,11 +9416,12 @@
           "DueDays": "8",
           "PaidAmount": "$230.90",
           "PaidDate": "06/19/2025",
-          "PaymentStatus": "Paid",
+          "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D55C\"}]",
           "PromisePay": "No",
-          "AgingDays": "0"
+          "AgingDays": "0",
+          "Email" : "Yes"
         },
         {
           "id": 12,
@@ -9387,11 +9433,12 @@
           "DueDays": "20",
           "PaidAmount": "$0.00",
           "PaidDate": "",
-          "PaymentStatus": "Unpaid",
+          "Status": "Unpaid",
           "BalanceDue": "$1450.40",
           "Flag": "[{\"name\":\"New Customer\",\"colorcode\":5,\"tagid\":\"A17E\"}]",
           "PromisePay": "Yes",
-          "AgingDays": "28"
+          "AgingDays": "28",
+          "Email" : "No"
         },
         {
           "id": 13,
@@ -9403,11 +9450,12 @@
           "DueDays": "12",
           "PaidAmount": "$400.00",
           "PaidDate": "03/20/2025",
-          "PaymentStatus": "Partially Paid",
+          "Status": "Partially Paid",
           "BalanceDue": "$490.00",
           "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"AC91\"}]",
           "PromisePay": "No",
-          "AgingDays": "10"
+          "AgingDays": "10",
+          "Email" : "No"
         },
         {
           "id": 14,
@@ -9419,11 +9467,12 @@
           "DueDays": "7",
           "PaidAmount": "$0.00",
           "PaidDate": "",
-          "PaymentStatus": "Unpaid",
+          "Status": "Unpaid",
           "BalanceDue": "$510.60",
           "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"C92A\"}]",
           "PromisePay": "Yes",
-          "AgingDays": "3"
+          "AgingDays": "3",
+          "Email" : "No"
         },
         {
           "id": 15,
@@ -9435,11 +9484,12 @@
           "DueDays": "15",
           "PaidAmount": "$760.00",
           "PaidDate": "02/26/2025",
-          "PaymentStatus": "Paid",
+          "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[{\"name\":\"New Customer\",\"colorcode\":5,\"tagid\":\"A55D\"}]",
           "PromisePay": "No",
-          "AgingDays": "0"
+          "AgingDays": "0",
+          "Email" : "Yes"
         },
         {
           "id": 16,
@@ -9451,11 +9501,12 @@
           "DueDays": "6",
           "PaidAmount": "$120.00",
           "PaidDate": "06/15/2025",
-          "PaymentStatus": "Partially Paid",
+          "Status": "Partially Paid",
           "BalanceDue": "$200.55",
           "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"CC31\"}]",
           "PromisePay": "Yes",
-          "AgingDays": "5"
+          "AgingDays": "5",
+          "Email" : "Yes"
         },
         {
           "id": 17,
@@ -9467,11 +9518,12 @@
           "DueDays": "16",
           "PaidAmount": "$0.00",
           "PaidDate": "",
-          "PaymentStatus": "Overdue",
+          "Status": "Overdue",
           "BalanceDue": "$995.99",
           "Flag": "[{\"name\":\"Old Customer\",\"colorcode\":2,\"tagid\":\"C77A\"}]",
           "PromisePay": "Yes",
-          "AgingDays": "22"
+          "AgingDays": "22",
+          "Email" : "Yes"
         },
         {
           "id": 18,
@@ -9483,11 +9535,12 @@
           "DueDays": "10",
           "PaidAmount": "$470.80",
           "PaidDate": "04/08/2025",
-          "PaymentStatus": "Paid",
+          "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"BB33\"}]",
           "PromisePay": "No",
-          "AgingDays": "0"
+          "AgingDays": "0",
+          "Email" : "no"
         }
       ],
       "totalRecords": 15,
@@ -9661,7 +9714,7 @@
                   "id": "Pay04",
                   "name": "Payment Method",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 5,
                   "masterid": "",
                   "controltype": null,
@@ -9764,7 +9817,7 @@
                   "id": "Pay010",
                   "name": "Reference / Transaction ID",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
+                  "columnwidth": 230,
                   "seqno": 20,
                   "masterid": "",
                   "controltype": null,
@@ -9772,24 +9825,6 @@
                   "api_name": "Reference/TransactionID",
                   "visible": true,
                   "displayapiname": "Reference/TransactionID",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-
-                {
-                  "id": "Pay011",
-                  "name": "Actions",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 200,
-                  "seqno": 20,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "Actions",
-                  "visible": true,
-                  "displayapiname": "Actions",
                   "inlineeditable": null,
                   "istitle": false,
                   "isdate": false,
@@ -9843,18 +9878,6 @@
               ],
               "groupbyfields": [
                 {
-                  "id": "Inv02",
-                  "name": "Customer",
-                  "labelkey": "lbl-Workitem-chunk",
-                  "seqno": 1,
-                  "api_name": "CustomerName",
-                  "type": "vertical",
-                  "direction": "asc",
-                  "masterid": "351000000",
-                  "displayapiname": "CustomerName"
-                },
-
-                {
                   "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
                   "name": "Status",
                   "labelkey": "lbl-Workitem-priority",
@@ -9888,7 +9911,17 @@
         "isdefault": null,
         "last_accessed_time": "2025-07-18T11:12:14",
         "filters": [],
-        "groupby": [],
+        "groupby": [
+          {
+          "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+          "type": "Horizontal",
+          "direction": "asc",
+          "defaultvalue": "All",
+          "api_name": "Status",
+          "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+          "seq": null
+        }
+        ],
         "columns": [
           {
             "id": "Pay01",
@@ -9924,7 +9957,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "PaymentMethod",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "Pay05",
@@ -9978,16 +10011,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "Reference/TransactionID",
-            "columnwidth": 150
-          },
-          {
-            "id": "Pay011",
-            "seqno": 100,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "Actions",
-            "columnwidth": 200
+            "columnwidth": 230
           }
         ]
       },
@@ -10010,8 +10034,7 @@
           "UnappliedAmount": "2000",
           "Status": "Partially Applied",
           "InvoiceNo(s)": "INV-1001, INV-1002",
-          "Reference/TransactionID": "TRX-00123",
-          "Actions": "Apply / View"
+          "Reference/TransactionID": "TRX-00123"
         },
         {
           "id": 2,
@@ -10024,8 +10047,7 @@
           "UnappliedAmount": "0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "INV-1003",
-          "Reference/TransactionID": "TRX-00456",
-          "Actions": "View"
+          "Reference/TransactionID": "TRX-00456"
         },
         {
           "id": 3,
@@ -10038,8 +10060,7 @@
           "UnappliedAmount": "1500",
           "Status": "Received",
           "InvoiceNo(s)": "",
-          "Reference/TransactionID": "CHK-07890",
-          "Actions": "Apply / View"
+          "Reference/TransactionID": "CHK-07890"
         },
         {
           "id": 4,
@@ -10052,8 +10073,7 @@
           "UnappliedAmount": "3000",
           "Status": "Failed",
           "InvoiceNo(s)": "",
-          "Reference/TransactionID": "TRX-00987",
-          "Actions": "Retry / View"
+          "Reference/TransactionID": "TRX-00987"
         },
         {
           "id": 5,
@@ -10066,8 +10086,7 @@
           "UnappliedAmount": "0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "INV-1004",
-          "Reference/TransactionID": "TRX-01234",
-          "Actions": "View"
+          "Reference/TransactionID": "TRX-01234"
         },
         {
           "id": 6,
@@ -10080,8 +10099,7 @@
           "UnappliedAmount": "500",
           "Status": "Partially Applied",
           "InvoiceNo(s)": "INV-1005, INV-1006",
-          "Reference/TransactionID": "TRX-06789",
-          "Actions": "Apply / View"
+          "Reference/TransactionID": "TRX-06789"
         },
         {
           "id": 7,
@@ -10094,8 +10112,7 @@
           "UnappliedAmount": "0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "INV-1007",
-          "Reference/TransactionID": "TRX-09876",
-          "Actions": "View"
+          "Reference/TransactionID": "TRX-09876"
         },
         {
           "id": 8,
@@ -10108,8 +10125,7 @@
           "UnappliedAmount": "1200",
           "Status": "Partially Applied",
           "InvoiceNo(s)": "INV-1008",
-          "Reference/TransactionID": "CHK-04567",
-          "Actions": "Apply / View"
+          "Reference/TransactionID": "CHK-04567"
         },
         {
           "id": 9,
@@ -10122,8 +10138,7 @@
           "UnappliedAmount": "2750",
           "Status": "Pending",
           "InvoiceNo(s)": "",
-          "Reference/TransactionID": "TRX-02233",
-          "Actions": "Apply / View"
+          "Reference/TransactionID": "TRX-02233"
         },
         {
           "id": 10,
@@ -10136,31 +10151,26 @@
           "UnappliedAmount": "0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "INV-1009, INV-1010",
-          "Reference/TransactionID": "TRX-04789",
-          "Actions": "View"
+          "Reference/TransactionID": "TRX-04789"
         }
       ],
       "totalRecords": 15,
       "groupbydetails": [
         {
           "groupbyid": "1",
-          "groupbytext": "Unpaid"
+          "groupbytext": "Partially Applied"
         },
         {
           "groupbyid": "2",
-          "groupbytext": "Overdue"
+          "groupbytext": "Fully Applied"
         },
         {
           "groupbyid": "3",
-          "groupbytext": "Partially Paid"
+          "groupbytext": "Received"
         },
         {
           "groupbyid": "4",
-          "groupbytext": "Paid"
-        },
-        {
-          "groupbyid": "5",
-          "groupbytext": "Void"
+          "groupbytext": "Failed"
         }
       ]
     },
