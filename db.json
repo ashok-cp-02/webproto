@@ -9799,7 +9799,7 @@
                   "id": "Pay09",
                   "name": "Invoice No(s)",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
+                  "columnwidth": 230,
                   "seqno": 17,
                   "masterid": "",
                   "controltype": "groupdropdown",
@@ -10002,7 +10002,7 @@
             "controltype": "groupdropdown",
             "attrtype": "nvarchar",
             "api_name": "InvoiceNo(s)",
-            "columnwidth": 150
+            "columnwidth": 230
           },
           {
             "id": "Pay010",
@@ -10033,7 +10033,7 @@
           "AppliedAmount": "3000",
           "UnappliedAmount": "2000",
           "Status": "Partially Applied",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1001, INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-00123"
         },
         {
@@ -10046,7 +10046,7 @@
           "AppliedAmount": "2000",
           "UnappliedAmount": "0",
           "Status": "Fully Applied",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-00456"
         },
         {
@@ -10059,7 +10059,7 @@
           "AppliedAmount": "0",
           "UnappliedAmount": "1500",
           "Status": "Received",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "CHK-07890"
         },
         {
@@ -10072,7 +10072,7 @@
           "AppliedAmount": "0",
           "UnappliedAmount": "3000",
           "Status": "Failed",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-00987"
         },
         {
@@ -10085,7 +10085,7 @@
           "AppliedAmount": "2500",
           "UnappliedAmount": "0",
           "Status": "Fully Applied",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-01234"
         },
         {
@@ -10098,7 +10098,7 @@
           "AppliedAmount": "3500",
           "UnappliedAmount": "500",
           "Status": "Partially Applied",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1005, INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1016\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1017\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-06789"
         },
         {
@@ -10111,7 +10111,7 @@
           "AppliedAmount": "3200",
           "UnappliedAmount": "0",
           "Status": "Fully Applied",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-09876"
         },
         {
@@ -10124,7 +10124,7 @@
           "AppliedAmount": "600",
           "UnappliedAmount": "1200",
           "Status": "Partially Applied",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "CHK-04567"
         },
         {
@@ -10137,7 +10137,7 @@
           "AppliedAmount": "0",
           "UnappliedAmount": "2750",
           "Status": "Pending",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-02233"
         },
         {
@@ -10150,7 +10150,7 @@
           "AppliedAmount": "6000",
           "UnappliedAmount": "0",
           "Status": "Fully Applied",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1009, INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1014\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-04789"
         }
       ],
