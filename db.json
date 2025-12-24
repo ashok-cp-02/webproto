@@ -1840,7 +1840,6 @@
     ],
     "correlationId": null
   },
-
   "Ticket_listpage_getlistconfigbyid": {
     "result": {
       "statusCode": 1000,
@@ -2188,7 +2187,6 @@
       "correlationId": ""
     }
   },
-
   "Ticket_listpage_getdatasetfieldinfobyid": {
     "result": {
       "statusCode": 1000,
@@ -2301,7 +2299,6 @@
       "correlationId": ""
     }
   },
-
   "lead_FormFields": {
     "statusCode": 200,
     "message": "FormConfiguration Data",
@@ -3479,7 +3476,6 @@
     },
     "correlationId": ""
   },
-
   "account_getlookupdatabyid": {
     "data": {
       "statusCode": 1000,
@@ -5264,7 +5260,6 @@
     },
     "correlationId": ""
   },
-
   "contact_getlookupdatabyid": {
     "data": {
       "statusCode": 1000,
@@ -7152,7 +7147,6 @@
     },
     "correlationId": ""
   },
-
   "opportunities_getlookupdatabyid": {
     "data": {
       "statusCode": 1000,
@@ -8765,7 +8759,7 @@
                   "id": "Inv02",
                   "name": "Customer Name",
                   "lablekey": "lbl-users-country",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 2,
                   "masterid": "1008",
                   "controltype": null,
@@ -9032,29 +9026,7 @@
                 }
               ],
               "groupbyfields": [
-                {
-                  "id": "Inv02",
-                  "name": "Customer Name",
-                  "labelkey": "lbl-Workitem-chunk",
-                  "seqno": 1,
-                  "api_name": "CustomerName",
-                  "type": "vertical",
-                  "direction": "asc",
-                  "masterid": "351000000",
-                  "displayapiname": "CustomerName"
-                },
-
-                {
-                  "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-                  "name": "Status",
-                  "labelkey": "lbl-Workitem-priority",
-                  "seqno": 4,
-                  "api_name": "Status",
-                  "type": "Horizontal",
-                  "direction": "-",
-                  "masterid": "7041",
-                  "displayapiname": null
-                }
+                
               ]
             }
           }
@@ -9078,26 +9050,7 @@
         "isdefault": null,
         "last_accessed_time": "2025-07-18T11:12:14",
         "filters": [],
-        "groupby": [
-          {
-          "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-          "type": "Horizontal",
-          "direction": "asc",
-          "defaultvalue": "All",
-          "api_name": "Status",
-          "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
-          "seq": null
-        },
-        {
-          "id": "Inv02",
-          "type": "vertical",
-          "direction": "asc",
-          "defaultvalue": "All",
-          "api_name": "CustomerName",
-          "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
-          "seq": null
-        }
-        ],
+        "groupby": [],
         "columns": [
           {
             "id": "Inv01",
@@ -9115,7 +9068,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "CustomerName",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "Inv022",
@@ -10029,9 +9982,9 @@
           "Customer": "ABC co",
           "PaymentDate": "12-Dec-2025",
           "PaymentMethod": "ACH",
-          "TotalAmount": "5000",
-          "AppliedAmount": "3000",
-          "UnappliedAmount": "2000",
+          "TotalAmount": "$5000",
+          "AppliedAmount": "$3000",
+          "UnappliedAmount": "$2000",
           "Status": "Partially Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-00123"
@@ -10042,9 +9995,9 @@
           "Customer": "XYZ Ltd",
           "PaymentDate": "11-Dec-2025",
           "PaymentMethod": "Credit Card",
-          "TotalAmount": "2000",
-          "AppliedAmount": "2000",
-          "UnappliedAmount": "0",
+          "TotalAmount": "$2000",
+          "AppliedAmount": "$2000",
+          "UnappliedAmount": "$0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-00456"
@@ -10055,9 +10008,9 @@
           "Customer": "DEF Inc",
           "PaymentDate": "12-Dec-2025",
           "PaymentMethod": "Check",
-          "TotalAmount": "1500",
-          "AppliedAmount": "0",
-          "UnappliedAmount": "1500",
+          "TotalAmount": "$1500",
+          "AppliedAmount": "$0",
+          "UnappliedAmount": "$1500",
           "Status": "Received",
           "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "CHK-07890"
@@ -10068,9 +10021,9 @@
           "Customer": "GHI Co",
           "PaymentDate": "10-Dec-2025",
           "PaymentMethod": "Wire",
-          "TotalAmount": "3000",
-          "AppliedAmount": "0",
-          "UnappliedAmount": "3000",
+          "TotalAmount": "$3000",
+          "AppliedAmount": "$0",
+          "UnappliedAmount": "$3000",
           "Status": "Failed",
           "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-00987"
@@ -10081,9 +10034,9 @@
           "Customer": "JKL Ltd",
           "PaymentDate": "12-Dec-2025",
           "PaymentMethod": "ACH",
-          "TotalAmount": "2500",
-          "AppliedAmount": "2500",
-          "UnappliedAmount": "0",
+          "TotalAmount": "$2500",
+          "AppliedAmount": "$2500",
+          "UnappliedAmount": "$0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-01234"
@@ -10094,9 +10047,9 @@
           "Customer": "MNO Corp",
           "PaymentDate": "09-Dec-2025",
           "PaymentMethod": "Credit Card",
-          "TotalAmount": "4000",
-          "AppliedAmount": "3500",
-          "UnappliedAmount": "500",
+          "TotalAmount": "$4000",
+          "AppliedAmount": "$3500",
+          "UnappliedAmount": "$500",
           "Status": "Partially Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1016\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1017\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-06789"
@@ -10107,9 +10060,9 @@
           "Customer": "PQR Ltd",
           "PaymentDate": "13-Dec-2025",
           "PaymentMethod": "Wire",
-          "TotalAmount": "3200",
-          "AppliedAmount": "3200",
-          "UnappliedAmount": "0",
+          "TotalAmount": "$3200",
+          "AppliedAmount": "$3200",
+          "UnappliedAmount": "$0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-09876"
@@ -10120,9 +10073,9 @@
           "Customer": "STU Industries",
           "PaymentDate": "12-Dec-2025",
           "PaymentMethod": "Check",
-          "TotalAmount": "1800",
-          "AppliedAmount": "600",
-          "UnappliedAmount": "1200",
+          "TotalAmount": "$1800",
+          "AppliedAmount": "$600",
+          "UnappliedAmount": "$1200",
           "Status": "Partially Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "CHK-04567"
@@ -10133,9 +10086,9 @@
           "Customer": "VWX Enterprises",
           "PaymentDate": "10-Dec-2025",
           "PaymentMethod": "ACH",
-          "TotalAmount": "2750",
-          "AppliedAmount": "0",
-          "UnappliedAmount": "2750",
+          "TotalAmount": "$2750",
+          "AppliedAmount": "$0",
+          "UnappliedAmount": "$2750",
           "Status": "Pending",
           "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-02233"
@@ -10146,9 +10099,9 @@
           "Customer": "YZA Co",
           "PaymentDate": "14-Dec-2025",
           "PaymentMethod": "Wire",
-          "TotalAmount": "6000",
-          "AppliedAmount": "6000",
-          "UnappliedAmount": "0",
+          "TotalAmount": "$6000",
+          "AppliedAmount": "$6000",
+          "UnappliedAmount": "$0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1014\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
           "Reference/TransactionID": "TRX-04789"
