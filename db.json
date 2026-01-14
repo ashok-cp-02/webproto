@@ -10641,6 +10641,28 @@
       "message": "List of Masters for Tenant",
       "data": [
         {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Customer A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Customer B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Customer C"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
           "id": 1011,
           "valuekey": "userstatus",
           "labels": {},
@@ -10732,7 +10754,7 @@
                   "id": "CUS03",
                   "name": "Type",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 3,
                   "masterid": "1009",
                   "controltype": null,
@@ -10749,7 +10771,7 @@
                   "id": "CUS04",
                   "name": "City",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 4,
                   "masterid": "1009",
                   "controltype": null,
@@ -10766,7 +10788,7 @@
                   "id": "CUS05",
                   "name": "Mobile",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 5,
                   "masterid": "1009",
                   "controltype": null,
@@ -10783,7 +10805,7 @@
                   "id": "CUS06",
                   "name": "Amount Due",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 6,
                   "masterid": "1009",
                   "controltype": null,
@@ -10800,7 +10822,7 @@
                   "id": "CUS07",
                   "name": "Status",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 7,
                   "masterid": "1009",
                   "controltype": null,
@@ -10834,11 +10856,11 @@
                   "name": "Customer Name",
                   "lablekey": "lbl-user-username",
                   "seqno": 10,
-                  "filtercontroltype": "textbox",
+                  "filtercontroltype": "multiselect",
                   "isquickfilter": true,
                   "api_name": "invoice_number",
                   "islookup": false,
-                  "masterid": "",
+                  "masterid": "1010",
                   "apioutputskey": null,
                   "isvisible": false,
                   "apioutputvalue": null
@@ -10932,7 +10954,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "Type",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "CUS04",
@@ -10941,7 +10963,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "City",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "CUS05",
@@ -10950,7 +10972,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "Mobile",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "CUS06",
@@ -10959,7 +10981,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "AmountDue",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "CUS07",
@@ -10968,7 +10990,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "Status",
-            "columnwidth": 150
+            "columnwidth": 180
           }
         ]
       },
@@ -11155,6 +11177,32 @@
       "message": "List of Masters for Tenant",
       "data": [
         {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Vendor A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Vendor B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Vendor C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Vendor D"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
           "id": 1011,
           "valuekey": "userstatus",
           "labels": {},
@@ -11162,15 +11210,11 @@
           "masterdata": [
             {
               "id": 101101,
-              "valueKey": "Retail"
+              "valueKey": "Active"
             },
             {
               "id": 101102,
-              "valueKey": "General"
-            },
-            {
-              "id": 101103,
-              "valueKey": "Wholesale"
+              "valueKey": "Inactive"
             }
           ],
           "isactive": true,
@@ -11198,7 +11242,7 @@
             "dataset": [
               {
                 "datasetid": "66666666-6666-6666-6666-666666666601",
-                "title": "All Campaign",
+                "title": "All Vendors",
                 "isdefault": true,
                 "isselected": true,
                 "owner": "Ashok C",
@@ -11243,27 +11287,10 @@
                   "islookup": false
                 },
                 {
-                  "id": "VEN03",
-                  "name": "Type",
-                  "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
-                  "seqno": 3,
-                  "masterid": "1009",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "Type",
-                  "visible": true,
-                  "displayapiname": "Type",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
                   "id": "VEN04",
                   "name": "City",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 4,
                   "masterid": "1009",
                   "controltype": null,
@@ -11280,7 +11307,7 @@
                   "id": "VEN05",
                   "name": "Mobile",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 5,
                   "masterid": "1009",
                   "controltype": null,
@@ -11297,7 +11324,7 @@
                   "id": "VEN06",
                   "name": "Amount Due",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 6,
                   "masterid": "1009",
                   "controltype": null,
@@ -11314,7 +11341,7 @@
                   "id": "VEN07",
                   "name": "Status",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 7,
                   "masterid": "1009",
                   "controltype": null,
@@ -11348,18 +11375,18 @@
                   "name": "Vendor Name",
                   "lablekey": "lbl-user-username",
                   "seqno": 10,
-                  "filtercontroltype": "textbox",
+                  "filtercontroltype": "multiselect",
                   "isquickfilter": true,
-                  "api_name": "invoice_number",
+                  "api_name": "VendorName",
                   "islookup": false,
-                  "masterid": "",
+                  "masterid": "1010",
                   "apioutputskey": null,
                   "isvisible": false,
                   "apioutputvalue": null
                 },
                 {
                   "id": "66666666-6666-6666-6666-666666666605",
-                  "name": "Type",
+                  "name": "Status",
                   "lablekey": "lbl-user-status",
                   "seqno": 20,
                   "filtercontroltype": "multiselect",
@@ -11375,19 +11402,18 @@
               "groupbyfields": [
                 {
                   "id": "Inv02",
-                  "name": "Vendor ID",
+                  "name": "Vendor Name",
                   "labelkey": "lbl-Workitem-chunk",
                   "seqno": 1,
-                  "api_name": "VendorID",
+                  "api_name": "VendorName",
                   "type": "vertical",
                   "direction": "asc",
                   "masterid": "351000000",
-                  "displayapiname": "VendorID"
+                  "displayapiname": "VendorName"
                 },
-
                 {
                   "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-                  "name": "Type",
+                  "name": "Status",
                   "labelkey": "lbl-Workitem-priority",
                   "seqno": 4,
                   "api_name": "Type",
@@ -11440,22 +11466,13 @@
             "columnwidth": 250
           },
           {
-            "id": "VEN03",
-            "seqno": 12,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "Type",
-            "columnwidth": 150
-          },
-          {
             "id": "VEN04",
             "seqno": 13,
             "masterid": "0",
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "City",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "VEN05",
@@ -11464,7 +11481,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "Mobile",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "VEN06",
@@ -11473,7 +11490,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "AmountDue",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "VEN07",
@@ -11482,7 +11499,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "Status",
-            "columnwidth": 150
+            "columnwidth": 180
           }
         ]
       },
@@ -11498,7 +11515,6 @@
           "id": 1,
           "VendorID": "ven_011",
           "VendorName": "Vendor A",
-          "Type": "Retail",
           "City": "New York",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$500.90",
@@ -11508,7 +11524,6 @@
           "id": 2,
           "VendorID": "ven_010",
           "VendorName": "Vendor B",
-          "Type": "Wholesale",
           "City": "Los Angeles",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$12336",
@@ -11518,7 +11533,6 @@
           "id": 3,
           "VendorID": "ven_009",
           "VendorName": "Vendor D",
-          "Type": "Retail",
           "City": "Houston",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$100.25",
@@ -11528,7 +11542,6 @@
           "id": 4,
           "VendorID": "ven_00a",
           "VendorName": "Vendor A",
-          "Type": "Wholesale",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$54.01",
@@ -11538,7 +11551,6 @@
           "id": 5,
           "VendorID": "ven_007",
           "VendorName": "Vendor A",
-          "Type": "Retail",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$54.01",
@@ -11548,7 +11560,6 @@
           "id": 6,
           "VendorID": "ven_006",
           "VendorName": "Vendor A",
-          "Type": "Wholesale",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$54.01",
@@ -11558,7 +11569,6 @@
           "id": 7,
           "VendorID": "ven_005",
           "VendorName": "Vendor A",
-          "Type": "Retail",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$54.01",
@@ -11568,7 +11578,6 @@
           "id": 8,
           "VendorID": "ven_004",
           "VendorName": "Vendor A",
-          "Type": "Retail",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$54.01",
@@ -11578,7 +11587,6 @@
           "id": 9,
           "VendorID": "ven_003",
           "VendorName": "Vendor B",
-          "Type": "Wholesale",
           "City": "Houston",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$750.00",
@@ -11588,7 +11596,6 @@
           "id": 10,
           "VendorID": "ven_002",
           "VendorName": "Vendor D",
-          "Type": "Retail",
           "City": "New York",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$120.40",
@@ -11598,7 +11605,6 @@
           "id": 11,
           "VendorID": "ven_012",
           "VendorName": "Vendor A",
-          "Type": "Wholesale",
           "City": "Los Angeles",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$300.25",
@@ -11608,7 +11614,6 @@
           "id": 12,
           "VendorID": "ven_013",
           "VendorName": "Vendor B",
-          "Type": "Retail",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$44.99",
@@ -11618,7 +11623,6 @@
           "id": 13,
           "VendorID": "ven_014",
           "VendorName": "Vendor D",
-          "Type": "Wholesale",
           "City": "Houston",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$910.15",
@@ -11628,7 +11632,6 @@
           "id": 14,
           "VendorID": "ven_015",
           "VendorName": "Vendor A",
-          "Type": "Retail",
           "City": "New York",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$0.00",
@@ -11638,7 +11641,6 @@
           "id": 15,
           "VendorID": "ven_016",
           "VendorName": "Vendor B",
-          "Type": "Wholesale",
           "City": "Los Angeles",
           "Mobile": "(214) 555-1001",
           "AmountDue": "$1500.00",
@@ -11649,17 +11651,5022 @@
       "groupbydetails": [
         {
           "groupbyid": "1",
-          "groupbytext": "Retail"
+          "groupbytext": "Active"
         },
         {
           "groupbyid": "2",
-          "groupbytext": "General"
+          "groupbytext": "Inactive"
+        }
+      ]
+    },
+    "correlationId": ""
+  },
+  "payment_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Vendor A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Vendor B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Vendor C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Vendor D"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Success"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Failed"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Processing"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "payment_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Payments",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Pay01",
+                  "name": "Payment ID",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 100,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaymentID",
+                  "visible": true,
+                  "displayapiname": "PaymentID",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay02",
+                  "name": "Payment Date",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaymentDate",
+                  "visible": true,
+                  "displayapiname": "PaymentDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay03",
+                  "name": "Vendor Name",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "VendorName",
+                  "visible": true,
+                  "displayapiname": "VendorName",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "Pay04",
+                  "name": "Payment Method",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaymentMethod",
+                  "visible": true,
+                  "displayapiname": "PaymentMethod",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay05",
+                  "name": "Paid Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 180,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaidAmount",
+                  "visible": true,
+                  "displayapiname": "PaidAmount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay06",
+                  "name": "Payment Type",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "PaymentType",
+                  "visible": true,
+                  "displayapiname": "PaymentType",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay07",
+                  "name": "Invoice No(s)",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 200,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": "groupdropdown",
+                  "attrtype": "nvarchar",
+                  "api_name": "InvoiceNo(s)",
+                  "visible": true,
+                  "displayapiname": "InvoiceNo(s)",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay08",
+                  "name": "Status",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 17,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "Status",
+                  "visible": true,
+                  "displayapiname": "Status",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay09",
+                  "name": "Transaction ID",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "TransactionID",
+                  "visible": true,
+                  "displayapiname": "TransactionID",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Payment ID",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "PaymentID",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Vendor Name",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": [
+                {
+                  "id": "Pay03",
+                  "name": "Vendor Name",
+                  "labelkey": "lbl-Workitem-chunk",
+                  "seqno": 1,
+                  "api_name": "VendorName",
+                  "type": "vertical",
+                  "direction": "asc",
+                  "masterid": "351000000",
+                  "displayapiname": "CustomerName"
+                },
+                {
+                  "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+                  "name": "Status",
+                  "labelkey": "lbl-Workitem-priority",
+                  "seqno": 4,
+                  "api_name": "Status",
+                  "type": "Horizontal",
+                  "direction": "-",
+                  "masterid": "7041",
+                  "displayapiname": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "payment_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Payments",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "Pay01",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaymentID",
+            "columnwidth": 100
+          },
+          {
+            "id": "Pay02",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaymentDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay03",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "VendorName",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay04",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaymentMethod",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay05",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaidAmount",
+            "columnwidth": 180
+          },
+          {
+            "id": "Pay06",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaymentType",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay07",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": "groupdropdown",
+            "attrtype": "nvarchar",
+            "api_name": "InvoiceNo(s)",
+            "columnwidth": 200
+          },
+          {
+            "id": "Pay08",
+            "seqno": 70,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Status",
+            "columnwidth": 150
+          },
+          {
+            "id": "Pay09",
+            "seqno": 80,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "TransactionID",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "payment_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "PaymentID": "PAY_001",
+          "PaymentDate": "04-Jan-2025",
+          "VendorName": "Vendor A",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$1,200.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789451"
+        },
+        {
+          "id": 2,
+          "PaymentID": "PAY_002",
+          "PaymentDate": "05-Jan-2025",
+          "VendorName": "Vendor B",
+          "PaymentMethod": "Bank Transfer",
+          "PaidAmount": "$2,000.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Processing",
+          "TransactionID": "TXN-789452"
+        },
+        {
+          "id": 3,
+          "PaymentID": "PAY_003",
+          "PaymentDate": "06-Jan-2025",
+          "VendorName": "Vendor C",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$3,500.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789453"
+        },
+        {
+          "id": 4,
+          "PaymentID": "PAY_004",
+          "PaymentDate": "07-Jan-2025",
+          "VendorName": "Vendor A",
+          "PaymentMethod": "Bank Transfer",
+          "PaidAmount": "$500.00",
+          "PaymentType": "Custom Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789454"
+        },
+        {
+          "id": 5,
+          "PaymentID": "PAY_005",
+          "PaymentDate": "08-Jan-2025",
+          "VendorName": "Vendor D",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$900.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Failed",
+          "TransactionID": "TXN-789455"
+        },
+        {
+          "id": 6,
+          "PaymentID": "PAY_006",
+          "PaymentDate": "09-Jan-2025",
+          "VendorName": "Vendor E",
+          "PaymentMethod": "PayPal",
+          "PaidAmount": "$1,050.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1016\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1017\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789456"
+        },
+        {
+          "id": 7,
+          "PaymentID": "PAY_007",
+          "PaymentDate": "10-Jan-2025",
+          "VendorName": "Vendor B",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$2,750.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Processing",
+          "TransactionID": "TXN-789457"
+        },
+        {
+          "id": 8,
+          "PaymentID": "PAY_008",
+          "PaymentDate": "11-Jan-2025",
+          "VendorName": "Vendor C",
+          "PaymentMethod": "Bank Transfer",
+          "PaidAmount": "$620.00",
+          "PaymentType": "Custom Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789458"
+        },
+        {
+          "id": 9,
+          "PaymentID": "PAY_009",
+          "PaymentDate": "12-Jan-2025",
+          "VendorName": "Vendor A",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$4,200.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789459"
+        },
+        {
+          "id": 10,
+          "PaymentID": "PAY_010",
+          "PaymentDate": "13-Jan-2025",
+          "VendorName": "Vendor F",
+          "PaymentMethod": "Bank Transfer",
+          "PaidAmount": "$1,800.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1014\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Failed",
+          "TransactionID": "TXN-789460"
+        },
+        {
+          "id": 11,
+          "PaymentID": "PAY_011",
+          "PaymentDate": "14-Jan-2025",
+          "VendorName": "Vendor D",
+          "PaymentMethod": "PayPal",
+          "PaidAmount": "$300.00",
+          "PaymentType": "Custom Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789461"
+        },
+        {
+          "id": 12,
+          "PaymentID": "PAY_012",
+          "PaymentDate": "15-Jan-2025",
+          "VendorName": "Vendor E",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$2,150.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+
+          "Status": "Processing",
+          "TransactionID": "TXN-789462"
+        },
+        {
+          "id": 13,
+          "PaymentID": "PAY_013",
+          "PaymentDate": "16-Jan-2025",
+          "VendorName": "Vendor B",
+          "PaymentMethod": "Bank Transfer",
+          "PaidAmount": "$750.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789463"
+        },
+        {
+          "id": 14,
+          "PaymentID": "PAY_014",
+          "PaymentDate": "17-Jan-2025",
+          "VendorName": "Vendor C",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$5,000.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1016\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1017\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789464"
+        },
+        {
+          "id": 15,
+          "PaymentID": "PAY_015",
+          "PaymentDate": "18-Jan-2025",
+          "VendorName": "Vendor A",
+          "PaymentMethod": "Bank Transfer",
+          "PaidAmount": "$1,100.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1014\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+
+          "Status": "Failed",
+          "TransactionID": "TXN-789465"
+        },
+        {
+          "id": 16,
+          "PaymentID": "PAY_016",
+          "PaymentDate": "19-Jan-2025",
+          "VendorName": "Vendor F",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$2,600.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789466"
+        },
+        {
+          "id": 17,
+          "PaymentID": "PAY_017",
+          "PaymentDate": "20-Jan-2025",
+          "VendorName": "Vendor D",
+          "PaymentMethod": "Bank Transfer",
+          "PaidAmount": "$980.00",
+          "PaymentType": "Custom Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Processing",
+          "TransactionID": "TXN-789467"
+        },
+        {
+          "id": 18,
+          "PaymentID": "PAY_018",
+          "PaymentDate": "21-Jan-2025",
+          "VendorName": "Vendor E",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$3,300.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789468"
+        },
+        {
+          "id": 19,
+          "PaymentID": "PAY_019",
+          "PaymentDate": "22-Jan-2025",
+          "VendorName": "Vendor B",
+          "PaymentMethod": "PayPal",
+          "PaidAmount": "$1,450.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Success",
+          "TransactionID": "TXN-789469"
+        },
+        {
+          "id": 20,
+          "PaymentID": "PAY_020",
+          "PaymentDate": "23-Jan-2025",
+          "VendorName": "Vendor C",
+          "PaymentMethod": "Credit Card",
+          "PaidAmount": "$2,900.00",
+          "PaymentType": "Invoice Payment",
+          "InvoiceNo(s)": "[{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
+          "Status": "Processing",
+          "TransactionID": "TXN-789470"
+        }
+      ],
+      "totalRecords": 20,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Success"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Failed"
         },
         {
           "groupbyid": "3",
-          "groupbytext": "Wholesale"
+          "groupbytext": "Processing"
         }
       ]
+    },
+    "correlationId": ""
+  },
+  "invoices_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Vendor A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Vendor B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Vendor C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Vendor D"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "New"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Paid"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Unpaid"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Partially Paid"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "invoices_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Invoices",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Inv01",
+                  "name": "Invocie Number",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "InvocieNumber",
+                  "visible": true,
+                  "displayapiname": "InvocieNumber",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv02",
+                  "name": "Vendor Name",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 180,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "VendorName",
+                  "visible": true,
+                  "displayapiname": "VendorName",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv022",
+                  "name": "Invoice Date",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "InvoiceDate",
+                  "visible": true,
+                  "displayapiname": "InvoiceDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "Inv03",
+                  "name": "Due Date",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "DueDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv04",
+                  "name": "Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 180,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "Amount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv05",
+                  "name": "Net Terms",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "NetTerms",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv06",
+                  "name": "Paid Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "PaidAmount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv07",
+                  "name": "Paid date",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "PaidDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv08",
+                  "name": "Status",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 17,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "Status",
+                  "visible": true,
+                  "displayapiname": "Status",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "Inv09",
+                  "name": "Balance Due",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "BalanceDue",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv10",
+                  "name": "Aging Days",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "AgingDays",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Invoice Number",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "invoice_number",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Vendor Name",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": [
+                {
+                  "id": "Inv02",
+                  "name": "Vendor Name",
+                  "labelkey": "lbl-Workitem-chunk",
+                  "seqno": 1,
+                  "api_name": "VendorName",
+                  "type": "vertical",
+                  "direction": "asc",
+                  "masterid": "351000000",
+                  "displayapiname": "VendorName"
+                },
+
+                {
+                  "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+                  "name": "Status",
+                  "labelkey": "lbl-Workitem-priority",
+                  "seqno": 4,
+                  "api_name": "Type",
+                  "type": "Horizontal",
+                  "direction": "-",
+                  "masterid": "7041",
+                  "displayapiname": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "invoices_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Invoices",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "Inv01",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "InvocieNumber",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv02",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "VendorName",
+            "columnwidth": 180
+          },
+          {
+            "id": "Inv022",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "InvoiceDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv03",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "DueDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv04",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Amount(InclTax)",
+            "columnwidth": 180
+          },
+          {
+            "id": "Inv05",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "NetTerms",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv06",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaidAmount",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv07",
+            "seqno": 70,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "PaidDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv08",
+            "seqno": 80,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Status",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv09",
+            "seqno": 90,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "BalanceDue",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv10",
+            "seqno": 110,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "AgingDays",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "invoices_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "InvocieNumber": "INV_001",
+          "VendorName": "John Doe",
+          "InvoiceDate": "04/14/2025",
+          "DueDate": "05/20/2025",
+          "Amount": "$500.90",
+          "NetTerms": "10",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "Status": "Unpaid",
+          "BalanceDue": "$500.90",
+          "AgingDays": "10"
+        },
+        {
+          "id": 2,
+          "InvocieNumber": "INV_002",
+          "VendorName": "Michael Smith",
+          "InvoiceDate": "03/18/2025",
+          "DueDate": "04/25/2025",
+          "Amount": "$920.40",
+          "NetTerms": "20",
+          "PaidAmount": "$920.40",
+          "PaidDate": "04/20/2025",
+          "Status": "Paid",
+          "BalanceDue": "$0.00",
+          "AgingDays": "0"
+        },
+        {
+          "id": 3,
+          "InvocieNumber": "INV_003",
+          "VendorName": "Alice Brown",
+          "InvoiceDate": "05/01/2025",
+          "DueDate": "06/10/2025",
+          "Amount": "$310.00",
+          "NetTerms": "15",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "Status": "Overdue",
+          "BalanceDue": "$310.00",
+          "AgingDays": "18"
+        },
+        {
+          "id": 4,
+          "InvocieNumber": "INV_004",
+          "VendorName": "Daniel Lee",
+          "InvoiceDate": "04/10/2025",
+          "DueDate": "05/05/2025",
+          "Amount": "$1200.99",
+          "NetTerms": "8",
+          "PaidAmount": "$600.00",
+          "PaidDate": "05/02/2025",
+          "Status": "Partially Paid",
+          "BalanceDue": "$600.99",
+          "AgingDays": "7"
+        },
+        {
+          "id": 5,
+          "InvocieNumber": "INV_005",
+          "VendorName": "John Doe",
+          "InvoiceDate": "02/28/2025",
+          "DueDate": "03/30/2025",
+          "Amount": "$250.50",
+          "NetTerms": "5",
+          "PaidAmount": "$250.50",
+          "PaidDate": "03/28/2025",
+          "Status": "Paid",
+          "BalanceDue": "$0.00",
+          "AgingDays": "0"
+        },
+        {
+          "id": 6,
+          "InvocieNumber": "INV_006",
+          "VendorName": "Michael Smith",
+          "InvoiceDate": "05/05/2025",
+          "DueDate": "06/15/2025",
+          "Amount": "$800.00",
+          "NetTerms": "20",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "Status": "Unpaid",
+          "BalanceDue": "$800.00",
+          "AgingDays": "12"
+        },
+        {
+          "id": 7,
+          "InvocieNumber": "INV_007",
+          "VendorName": "Alice Brown",
+          "InvoiceDate": "01/15/2025",
+          "DueDate": "02/20/2025",
+          "Amount": "$1500.45",
+          "NetTerms": "40",
+          "PaidAmount": "$1500.45",
+          "PaidDate": "02/10/2025",
+          "Status": "Paid",
+          "BalanceDue": "$0.00",
+          "AgingDays": "0"
+        },
+        {
+          "id": 8,
+          "InvocieNumber": "INV_008",
+          "VendorName": "Daniel Lee",
+          "InvoiceDate": "06/01/2025",
+          "DueDate": "07/05/2025",
+          "Amount": "$780.20",
+          "NetTerms": "25",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "Status": "Unpaid",
+          "BalanceDue": "$780.20",
+          "AgingDays": "5"
+        },
+        {
+          "id": 9,
+          "InvocieNumber": "INV_009",
+          "VendorName": "John Doe",
+          "InvoiceDate": "03/03/2025",
+          "DueDate": "04/05/2025",
+          "Amount": "$610.00",
+          "NetTerms": "12",
+          "PaidAmount": "$610.00",
+          "PaidDate": "04/01/2025",
+          "Status": "Paid",
+          "BalanceDue": "$0.00",
+          "AgingDays": "0"
+        },
+        {
+          "id": 10,
+          "InvocieNumber": "INV_010",
+          "VendorName": "Michael Smith",
+          "InvoiceDate": "04/12/2025",
+          "DueDate": "05/18/2025",
+          "Amount": "$940.75",
+          "NetTerms": "10",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "Status": "Overdue",
+          "BalanceDue": "$940.75",
+          "AgingDays": "15"
+        },
+        {
+          "id": 11,
+          "InvocieNumber": "INV_011",
+          "VendorName": "Alice Brown",
+          "InvoiceDate": "05/15/2025",
+          "DueDate": "06/20/2025",
+          "Amount": "$230.90",
+          "NetTerms": "8",
+          "PaidAmount": "$230.90",
+          "PaidDate": "06/19/2025",
+          "Status": "Paid",
+          "BalanceDue": "$0.00",
+          "AgingDays": "0"
+        },
+        {
+          "id": 12,
+          "InvocieNumber": "INV_012",
+          "VendorName": "Daniel Lee",
+          "InvoiceDate": "03/10/2025",
+          "DueDate": "04/12/2025",
+          "Amount": "$1450.40",
+          "NetTerms": "20",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "Status": "Unpaid",
+          "BalanceDue": "$1450.40",
+          "AgingDays": "28"
+        },
+        {
+          "id": 13,
+          "InvocieNumber": "INV_013",
+          "VendorName": "John Doe",
+          "InvoiceDate": "02/20/2025",
+          "DueDate": "03/25/2025",
+          "Amount": "$890.00",
+          "NetTerms": "12",
+          "PaidAmount": "$400.00",
+          "PaidDate": "03/20/2025",
+          "Status": "Partially Paid",
+          "BalanceDue": "$490.00",
+          "AgingDays": "10"
+        },
+        {
+          "id": 14,
+          "InvocieNumber": "INV_014",
+          "VendorName": "Michael Smith",
+          "InvoiceDate": "06/05/2025",
+          "DueDate": "07/08/2025",
+          "Amount": "$510.60",
+          "NetTerms": "7",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "Status": "Unpaid",
+          "BalanceDue": "$510.60",
+          "AgingDays": "3"
+        },
+        {
+          "id": 15,
+          "InvocieNumber": "INV_015",
+          "VendorName": "Alice Brown",
+          "InvoiceDate": "01/30/2025",
+          "DueDate": "02/28/2025",
+          "Amount": "$760.00",
+          "NetTerms": "15",
+          "PaidAmount": "$760.00",
+          "PaidDate": "02/26/2025",
+          "Status": "Paid",
+          "BalanceDue": "$0.00",
+          "AgingDays": "0"
+        },
+        {
+          "id": 16,
+          "InvocieNumber": "INV_016",
+          "VendorName": "Daniel Lee",
+          "InvoiceDate": "05/19/2025",
+          "DueDate": "06/22/2025",
+          "Amount": "$320.55",
+          "NetTerms": "6",
+          "PaidAmount": "$120.00",
+          "PaidDate": "06/15/2025",
+          "Status": "Partially Paid",
+          "BalanceDue": "$200.55",
+          "AgingDays": "5"
+        },
+        {
+          "id": 17,
+          "InvocieNumber": "INV_017",
+          "VendorName": "John Doe",
+          "InvoiceDate": "04/02/2025",
+          "DueDate": "05/07/2025",
+          "Amount": "$995.99",
+          "NetTerms": "16",
+          "PaidAmount": "$0.00",
+          "PaidDate": "",
+          "Status": "Overdue",
+          "BalanceDue": "$995.99",
+          "AgingDays": "22"
+        },
+        {
+          "id": 18,
+          "InvocieNumber": "INV_018",
+          "VendorName": "Michael Smith",
+          "InvoiceDate": "03/08/2025",
+          "DueDate": "04/10/2025",
+          "Amount": "$470.80",
+          "NetTerms": "10",
+          "PaidAmount": "$470.80",
+          "PaidDate": "04/08/2025",
+          "Status": "Paid",
+          "BalanceDue": "$0.00",
+          "AgingDays": "0"
+        }
+      ],
+      "totalRecords": 18,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Unpaid"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Overdue"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "Partially Paid"
+        },
+        {
+          "groupbyid": "4",
+          "groupbytext": "Paid"
+        }
+      ]
+    },
+    "correlationId": ""
+  },
+  "core_customer_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Stage 1"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Stage 2"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "core_customer_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Customer details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Customers",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "ab196a8f-b628-413f-8414-fa9d731cca72",
+                  "name": "Primary Number",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "time_zone",
+                  "visible": true,
+                  "displayapiname": "primary_number",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "7b0bb530-0d49-4c6a-a860-fc02d233c2b4",
+                  "name": "Primary Contact",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "country",
+                  "visible": false,
+                  "displayapiname": "country",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "8f64d27c-712f-49d6-ae74-8ddaafac3dfd",
+                  "name": "Website",
+                  "lablekey": "lbl-users-language",
+                  "columnwidth": 150,
+                  "seqno": 3,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "language",
+                  "visible": false,
+                  "displayapiname": "language",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-aeee-3a17094a6c9a",
+                  "name": "Industry Category",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "industry_category",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-11ee-3a17094a6c9a",
+                  "name": "Lifecycle Stage",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 15,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "lifecycle_stage",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-12ee-3a17094a6c9a",
+                  "name": "Lifecycle Status",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "lifecycle_status",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-13ee-3a17094a6c9a",
+                  "name": "Primary Contact",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 17,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "primary_contact",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-14ee-3a17094a6c9a",
+                  "name": "Website",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "website",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-16ee-3a17094a6c9a",
+                  "name": "Annual Revenue",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": false,
+                  "displayapiname": "job_title",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "55555555-5555-5555-5555-555555555501",
+                  "name": "Customer Name",
+                  "lablekey": "lbl-user-displayname",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "display_name",
+                  "visible": true,
+                  "displayapiname": "account_name",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "63bac56b-5470-47bd-abe9-6ea45926cdc9",
+                  "name": "Health",
+                  "lablekey": "lbl-users-employeeid",
+                  "columnwidth": 150,
+                  "seqno": 6,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "employee_id",
+                  "visible": true,
+                  "displayapiname": "health",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "1f2701f2-de1b-4c72-b41f-32e3c586bb1d",
+                  "name": "Annual Revenue",
+                  "lablekey": "lbl-users-Mobile",
+                  "columnwidth": 150,
+                  "seqno": 7,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "mobile",
+                  "visible": false,
+                  "displayapiname": "mobile",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "21956e74-d8cd-42ce-80f4-145e52f84407",
+                  "name": "Lifecycle Stage",
+                  "lablekey": "lbl-users-Phone",
+                  "columnwidth": 150,
+                  "seqno": 8,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "phone",
+                  "visible": false,
+                  "displayapiname": "phone",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "c1023eec-824e-43b8-8825-3c1287efe329",
+                  "name": "Lifecycle Status",
+                  "lablekey": "lbl-users-dob",
+                  "columnwidth": 150,
+                  "seqno": 9,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "date_of_birth",
+                  "visible": false,
+                  "displayapiname": "date_of_birth",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "15555555-5555-5555-5555-555555555501",
+                  "name": "Business Type",
+                  "lablekey": "lbl-user-displayname",
+                  "columnwidth": 150,
+                  "seqno": 15,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "business_type",
+                  "visible": true,
+                  "displayapiname": "business_type",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "12555555-5555-5555-5555-555555555501",
+                  "name": "Annual Revenue",
+                  "lablekey": "lbl-user-displayname",
+                  "columnwidth": 150,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "annual_revenue",
+                  "visible": true,
+                  "displayapiname": "annual_revenue",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Customer Name",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "display_name",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Lifecycle Stage",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": []
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "core_customer_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Accounts",
+        "owner": "Annamalai V",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "55555555-5555-5555-5555-555555555501",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "display_name",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555502",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "email",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555503",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "uniqueidentifier",
+            "api_name": "role",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555504",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "numeric",
+            "api_name": "reporting_to",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555505",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "datetime",
+            "api_name": "created_on",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555506",
+            "seqno": 60,
+            "masterid": "1011",
+            "controltype": null,
+            "attrtype": "bit",
+            "api_name": "is_active",
+            "columnwidth": 150
+          },
+          {
+            "id": "ab196a8f-b628-413f-8414-fa9d731cca72",
+            "seqno": 90,
+            "masterid": "1009",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "time_zone",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-aeee-3a17094a6c9a",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "job_title",
+            "columnwidth": 150
+          },
+          {
+            "id": "63bac56b-5470-47bd-abe9-6ea45926cdc9",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "employee_id",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-15ee-3a17094a6c9a",
+            "seqno": 500,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "business_unit",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-14ee-3a17094a6c9a",
+            "seqno": 500,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "job_title",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-11ee-3a17094a6c9a",
+            "seqno": 500,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "job_title",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-12ee-3a17094a6c9a",
+            "seqno": 500,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "date_of_birth",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "core_customer_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "primary_number": "7129 32 2331",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 2",
+          "lifecycle_status": "Active",
+          "primary_contact": "John Doe",
+          "website": "www.techcorp.com",
+          "business_unit": "Finance",
+          "account_name": "TechCorp Services",
+          "health": "Warm",
+          "annual_revenue": "$ 3000",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 2,
+          "primary_number": "7129 32 2332",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 1",
+          "lifecycle_status": "OnBoarding",
+          "primary_contact": "Anna Malai",
+          "website": "www.arctech.com",
+          "business_unit": "Accounting",
+          "account_name": "Trail Axxcount",
+          "health": "Hot",
+          "annual_revenue": "$ 6000",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 3,
+          "primary_number": "7129 32 2333",
+          "industry_category": "Medium Business",
+          "lifecycle_stage": "Stage 3",
+          "lifecycle_status": "Active",
+          "primary_contact": "Michael Lee",
+          "website": "www.medinnovate.com",
+          "business_unit": "Marketing",
+          "account_name": "MedInnovate LLC",
+          "health": "Cold",
+          "annual_revenue": "$ 1000",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 4,
+          "primary_number": "7129 32 2334",
+          "industry_category": "Enterprise",
+          "lifecycle_stage": "Stage 4",
+          "lifecycle_status": "Renewal",
+          "primary_contact": "Susan Park",
+          "website": "www.enterpriseltd.com",
+          "business_unit": "Operations",
+          "account_name": "Enterprise Ltd",
+          "health": "Warm",
+          "annual_revenue": "$ 12000",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 5,
+          "primary_number": "7129 32 2335",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 2",
+          "lifecycle_status": "Active",
+          "primary_contact": "David Kim",
+          "website": "www.fastsolutions.com",
+          "business_unit": "Sales",
+          "account_name": "Fast Solutions",
+          "health": "Hot",
+          "annual_revenue": "$ 2500",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 6,
+          "primary_number": "7129 32 2336",
+          "industry_category": "Medium Business",
+          "lifecycle_stage": "Stage 1",
+          "lifecycle_status": "OnBoarding",
+          "primary_contact": "Linda Green",
+          "website": "www.greengarden.com",
+          "business_unit": "HR",
+          "account_name": "Green Garden Inc",
+          "health": "Cold",
+          "annual_revenue": "$ 1500",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 7,
+          "primary_number": "7129 32 2337",
+          "industry_category": "Enterprise",
+          "lifecycle_stage": "Stage 3",
+          "lifecycle_status": "Active",
+          "primary_contact": "James Brown",
+          "website": "www.globex.com",
+          "business_unit": "IT",
+          "account_name": "Globex Corporation",
+          "health": "Warm",
+          "annual_revenue": "$ 9000",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 8,
+          "primary_number": "7129 32 2338",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 1",
+          "lifecycle_status": "OnBoarding",
+          "primary_contact": "Emily White",
+          "website": "www.novatech.com",
+          "business_unit": "Support",
+          "account_name": "Novatech Co",
+          "health": "Hot",
+          "annual_revenue": "$ 2900",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 9,
+          "primary_number": "7129 32 2339",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 2",
+          "lifecycle_status": "Active",
+          "primary_contact": "Chris Wong",
+          "website": "www.quickserve.com",
+          "business_unit": "Customer Service",
+          "account_name": "QuickServe LLC",
+          "health": "Warm",
+          "annual_revenue": "$ 8000",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 10,
+          "primary_number": "7129 32 2340",
+          "industry_category": "Medium Business",
+          "lifecycle_stage": "Stage 4",
+          "lifecycle_status": "Renewal",
+          "primary_contact": "Sara Connors",
+          "website": "www.advanceinc.com",
+          "business_unit": "Finance",
+          "account_name": "Advance Inc",
+          "health": "Hot",
+          "annual_revenue": "$ 3000",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 11,
+          "primary_number": "7129 32 2341",
+          "industry_category": "Enterprise",
+          "lifecycle_stage": "Stage 3",
+          "lifecycle_status": "Active",
+          "primary_contact": "Robert Hale",
+          "website": "www.techsolutions.com",
+          "business_unit": "Engineering",
+          "account_name": "Tech Solutions",
+          "health": "Cold",
+          "annual_revenue": "$ 3900",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 12,
+          "primary_number": "7129 32 2342",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 1",
+          "lifecycle_status": "OnBoarding",
+          "primary_contact": "Nina Patel",
+          "website": "www.createsoft.com",
+          "business_unit": "Development",
+          "account_name": "CreateSoft Ltd",
+          "health": "Hot",
+          "annual_revenue": "$ 9800",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 13,
+          "primary_number": "7129 32 2343",
+          "industry_category": "Medium Business",
+          "lifecycle_stage": "Stage 2",
+          "lifecycle_status": "Active",
+          "primary_contact": "Mark Stevens",
+          "website": "www.solutionsplus.com",
+          "business_unit": "Sales",
+          "account_name": "Solutions Plus",
+          "health": "Warm",
+          "annual_revenue": "$ 500",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 14,
+          "primary_number": "7129 32 2344",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 3",
+          "lifecycle_status": "Active",
+          "primary_contact": "Olivia Barnes",
+          "website": "www.creativehub.com",
+          "business_unit": "Marketing",
+          "account_name": "Creative Hub",
+          "health": "Hot",
+          "annual_revenue": "$ 100",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 15,
+          "primary_number": "7129 32 2345",
+          "industry_category": "Enterprise",
+          "lifecycle_stage": "Stage 4",
+          "lifecycle_status": "Renewal",
+          "primary_contact": "William Cox",
+          "website": "www.globalenterprises.com",
+          "business_unit": "Management",
+          "account_name": "Global Enterprises",
+          "health": "Warm",
+          "annual_revenue": "$ 3000",
+          "business_type": "Accounting"
+        }
+      ],
+      "totalRecords": 15
+    },
+    "correlationId": ""
+  },
+  "core_customer_FormFields": {
+    "statusCode": 200,
+    "message": "FormConfiguration Data",
+    "data": {
+      "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaa0001",
+      "name": "Create User",
+      "groups": [
+        {
+          "id": "6d411934-5217-4552-8912-795b473681c3",
+          "name": "Lifecycle Stage",
+          "seqno": 40,
+          "fields": [
+            {
+              "id": "49f3ff1c-3d94-47b3-8d9c-9bee7fd6dc4f",
+              "name": "Lifecycle Name",
+              "lablekey": "lbl-lifecycle-name",
+              "seqno": 22,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "lifecycle_name",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Lifecycle Name",
+              "islookup": false,
+              "masterid": "101",
+              "visible": true
+            },
+            {
+              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
+              "name": "Lifecycle Stage",
+              "lablekey": "lbl-lifecycle-stage",
+              "seqno": 23,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "lifecycle_stage",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Lifecycle Stage",
+              "islookup": false,
+              "masterid": "102",
+              "visible": true
+            },
+            {
+              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
+              "name": "Lifecycle Status",
+              "lablekey": "lbl-lifecycle-status",
+              "seqno": 24,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "lifecycle_status",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Lifecycle Status",
+              "islookup": false,
+              "masterid": "103",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "id": "9757b165-146d-4109-ba14-ab447cf62c58",
+          "name": "Contact Information ",
+          "seqno": 30,
+          "fields": [
+            {
+              "id": "c81a9217-7880-4abb-bbb4-9e53f246cbee",
+              "name": "Street 1",
+              "lablekey": "lbl-street-1",
+              "seqno": 1,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "street_1",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "150",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Street 1",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "f046ac90-356f-4d4e-92fa-6ef992dd1bdb",
+              "name": "Street 2",
+              "lablekey": "lbl-street-2",
+              "seqno": 2,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "street_2",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "150",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Street 2",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "6f0feaab-0569-4243-a126-5a2a4e023c4e",
+              "name": "City",
+              "lablekey": "lbl-city",
+              "seqno": 3,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "city",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "City",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "4f8b2a3b-8dac-4a3d-8156-eac98e3884dc",
+              "name": "State",
+              "lablekey": "lbl-state",
+              "seqno": 4,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "state",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "State",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "98d63164-f097-4ec8-a87f-8eaa36bac863",
+              "name": "Country",
+              "lablekey": "lbl-country",
+              "seqno": 5,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "country",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Country",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "d75aeea8-46ef-4ca7-9f77-4039a28a3614",
+              "name": "Zip Code",
+              "lablekey": "lbl-zip-code",
+              "seqno": 6,
+              "controltype": "number",
+              "attributedatatype": "nvarchar",
+              "api_name": "zip_code",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "20",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Zip Code",
+              "islookup": false,
+              "masterid": "",
+              "visible": true,
+              "allowDecimals": false,
+              "maxDigits": 10,
+              "maxDecimals": 0
+            }
+          ]
+        },
+        {
+          "id": "a6961b3e-9907-4707-a271-ded11646a47a",
+          "name": "Business Information",
+          "seqno": 20,
+          "fields": [
+            {
+              "id": "5f09a1f2-c317-4440-9c4c-99d294de8d8e",
+              "name": "Annual Revenue",
+              "lablekey": "lbl-annual-revenue",
+              "seqno": 1,
+              "controltype": "number",
+              "attributedatatype": "nvarchar",
+              "api_name": "annual_revenue",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Annual Revenue",
+              "islookup": false,
+              "masterid": "",
+              "visible": true,
+              "allowDecimals": true,
+              "maxDigits": 10,
+              "maxDecimals": 2
+            },
+            {
+              "id": "d2d1e7cb-5c9a-47c3-9a89-134d0b72aaff",
+              "name": "Number of Employees",
+              "lablekey": "lbl-number-of-employees",
+              "seqno": 2,
+              "controltype": "number",
+              "attributedatatype": "nvarchar",
+              "api_name": "number_of_employees",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Number of Employees",
+              "islookup": false,
+              "masterid": "",
+              "visible": true,
+              "allowDecimals": false,
+              "maxDigits": 10,
+              "maxDecimals": 0
+            },
+            {
+              "id": "9e90243f-3943-4c24-b428-5e2ff6a277c7",
+              "name": "Revenue Slab",
+              "lablekey": "lbl-revenue-slab",
+              "seqno": 3,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "revenue_slab",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Revenue Slab",
+              "islookup": false,
+              "masterid": "1002",
+              "visible": true
+            },
+            {
+              "id": "b62d4eee-3c36-46db-8319-0462e9c0cd46",
+              "name": "Employee Range",
+              "lablekey": "lbl-employee-range",
+              "seqno": 4,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "employee_range",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Employee Range",
+              "islookup": false,
+              "masterid": "1002",
+              "visible": true
+            },
+            {
+              "id": "f1330268-9d63-4ba0-a172-1f47b9ef6e5e",
+              "name": "Website",
+              "lablekey": "lbl-website",
+              "seqno": 6,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "website1",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Website",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "a76f32f2-472e-4d27-92f7-3ac56e9e0f06",
+              "name": "Business Type",
+              "lablekey": "lbl-business-type",
+              "seqno": 7,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "business_type",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Business Type",
+              "islookup": false,
+              "masterid": "1003",
+              "visible": true
+            },
+            {
+              "id": "53d94739-faa6-46c8-b014-5dd5b991dc08",
+              "name": "Industry Category",
+              "lablekey": "lbl-industry-category",
+              "seqno": 8,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "industry_category",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Industry Category",
+              "islookup": false,
+              "masterid": "1003",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "id": "1b18e49b-55c6-42b7-b8e5-e595c3af1668",
+          "name": "Basic Information",
+          "seqno": 10,
+          "fields": [
+            {
+              "id": "b230a8de-8611-47ff-8047-e0a7b5e7896f",
+              "name": "Primary Phone Number",
+              "lablekey": "lbl-primary-phone-number",
+              "seqno": 6,
+              "controltype": "number",
+              "attributedatatype": "nvarchar",
+              "api_name": "primary_phone_number",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "50",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Primary Phone Number",
+              "islookup": false,
+              "masterid": "",
+              "visible": true,
+              "allowDecimals": false,
+              "maxDigits": 15,
+              "maxDecimals": 0
+            },
+            {
+              "id": "808ef970-a080-4bfd-9b9f-404c8547693a",
+              "name": "Tags",
+              "lablekey": "lbl-tags",
+              "seqno": 7,
+              "controltype": "groupdropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "tags",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Tags",
+              "islookup": false,
+              "masterid": "1001",
+              "visible": true
+            },
+            {
+              "id": "f28d3d02-f334-488f-85b4-02b9877aa164",
+              "name": "Health",
+              "lablekey": "lbl-health",
+              "seqno": 8,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "health",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Health",
+              "islookup": false,
+              "masterid": "1010",
+              "visible": true
+            },
+            {
+              "id": "ef75375f-f325-4cce-86f6-ebd587ab25bd",
+              "name": "Description",
+              "lablekey": "lbl-details",
+              "seqno": 9,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "details",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "255",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Details",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "91fcc951-7b5a-4197-8dbd-c1b1d90c865f",
+              "name": "Primary Contact",
+              "lablekey": "lbl-primary-contact",
+              "seqno": 3,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "primary_contact",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Primary Contact",
+              "islookup": false,
+              "masterid": "1008",
+              "visible": true
+            },
+            {
+              "id": "7ffc3f8c-82d1-42d5-a42a-d6d3df9684bf",
+              "name": "Account Owner",
+              "lablekey": "lbl-account-owner",
+              "seqno": 2,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "account_owner",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Account Owner",
+              "islookup": false,
+              "masterid": "1008",
+              "visible": true
+            },
+            {
+              "id": "af8d4c1d-6cd7-4d43-a31f-1cfc2d0eb388",
+              "name": "Customer Name",
+              "lablekey": "lbl-customer-name",
+              "seqno": 1,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "account_name",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Customer Name",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            }
+          ]
+        }
+      ],
+      "subform": []
+    },
+    "correlationId": null
+  },
+  "core_customer_GetMastersAndMasterDatasbyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 101,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100812,
+              "valueKey": "Account Life Cycle"
+            },
+            {
+              "id": 100813,
+              "valueKey": "Lead Life Cycle"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 102,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100812,
+              "valueKey": "Stage 1"
+            },
+            {
+              "id": 100813,
+              "valueKey": "Stage 2"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 103,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100812,
+              "valueKey": "OnBoarding"
+            },
+            {
+              "id": 100813,
+              "valueKey": "New"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1008,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100812,
+              "valueKey": "Anna Malai"
+            },
+            {
+              "id": 100813,
+              "valueKey": "Gopi"
+            },
+            {
+              "id": 100814,
+              "valueKey": "DRS"
+            },
+            {
+              "id": 100815,
+              "valueKey": "SKS"
+            },
+            {
+              "id": 100816,
+              "valueKey": "Ravi"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1009,
+          "valuekey": "TimeZone",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100901,
+              "valueKey": "Baker Island (UTC-12:00)"
+            },
+            {
+              "id": 100902,
+              "valueKey": "American Samoa (UTC-11:00)"
+            },
+            {
+              "id": 100903,
+              "valueKey": "Hawaii (UTC-10:00)"
+            },
+            {
+              "id": 100904,
+              "valueKey": "Marquesas Islands (UTC-09:30)"
+            },
+            {
+              "id": 100905,
+              "valueKey": "Alaska (UTC-09:00)"
+            },
+            {
+              "id": 100906,
+              "valueKey": "Pacific Time (UTC-08:00)"
+            },
+            {
+              "id": 100907,
+              "valueKey": "Mountain Time (UTC-07:00)"
+            },
+            {
+              "id": 100908,
+              "valueKey": "Central Time (UTC-06:00)"
+            },
+            {
+              "id": 100909,
+              "valueKey": "Eastern Time (UTC-05:00)"
+            },
+            {
+              "id": 100910,
+              "valueKey": "Atlantic Time (UTC-04:00)"
+            },
+            {
+              "id": 100911,
+              "valueKey": "Newfoundland Time (UTC-03:30)"
+            },
+            {
+              "id": 100912,
+              "valueKey": "Brazil, Argentina (UTC-03:00)"
+            },
+            {
+              "id": 100913,
+              "valueKey": "South Georgia (UTC-02:00)"
+            },
+            {
+              "id": 100914,
+              "valueKey": "Azores (UTC-01:00)"
+            },
+            {
+              "id": 100915,
+              "valueKey": "GMT, London (UTC+00:00)"
+            },
+            {
+              "id": 100916,
+              "valueKey": "Central Europe (UTC+01:00)"
+            },
+            {
+              "id": 100917,
+              "valueKey": "Eastern Europe (UTC+02:00)"
+            },
+            {
+              "id": 100918,
+              "valueKey": "Moscow, East Africa (UTC+03:00)"
+            },
+            {
+              "id": 100919,
+              "valueKey": "Iran (UTC+03:30)"
+            },
+            {
+              "id": 100920,
+              "valueKey": "Gulf, Caucasus (UTC+04:00)"
+            },
+            {
+              "id": 100921,
+              "valueKey": "Afghanistan (UTC+04:30)"
+            },
+            {
+              "id": 100922,
+              "valueKey": "Pakistan, Kazakhstan (UTC+05:00)"
+            },
+            {
+              "id": 100923,
+              "valueKey": "India, Sri Lanka (UTC+05:30)"
+            },
+            {
+              "id": 100924,
+              "valueKey": "Nepal (UTC+05:45)"
+            },
+            {
+              "id": 100925,
+              "valueKey": "Bangladesh, Central Asia (UTC+06:00)"
+            },
+            {
+              "id": 100926,
+              "valueKey": "Myanmar, Cocos Islands (UTC+06:30)"
+            },
+            {
+              "id": 100927,
+              "valueKey": "Thailand, Vietnam (UTC+07:00)"
+            },
+            {
+              "id": 100928,
+              "valueKey": "China, Singapore (UTC+08:00)"
+            },
+            {
+              "id": 100929,
+              "valueKey": "Eucla, Australia (UTC+08:45)"
+            },
+            {
+              "id": 100930,
+              "valueKey": "Japan, Korea (UTC+09:00)"
+            },
+            {
+              "id": 100931,
+              "valueKey": "Adelaide, Darwin (UTC+09:30)"
+            },
+            {
+              "id": 100932,
+              "valueKey": "Sydney, Melbourne (UTC+10:00)"
+            },
+            {
+              "id": 100933,
+              "valueKey": "Lord Howe Island (UTC+10:30)"
+            },
+            {
+              "id": 100934,
+              "valueKey": "Solomon Islands (UTC+11:00)"
+            },
+            {
+              "id": 100935,
+              "valueKey": "New Zealand, Fiji (UTC+12:00)"
+            },
+            {
+              "id": 100936,
+              "valueKey": "Chatham Islands (UTC+12:45)"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1001,
+          "valuekey": "Gender",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101001,
+              "valueKey": "Acount"
+            },
+            {
+              "id": 101002,
+              "valueKey": "Contact"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1002,
+          "valuekey": "Gender",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101001,
+              "valueKey": "0 - 5"
+            },
+            {
+              "id": 101002,
+              "valueKey": "5 - 10"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1003,
+          "valuekey": "Gender",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101001,
+              "valueKey": "Accounting"
+            },
+            {
+              "id": 101002,
+              "valueKey": "Wholesale"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1010,
+          "valuekey": "Gender",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101001,
+              "valueKey": "Hot"
+            },
+            {
+              "id": 101002,
+              "valueKey": "Cold"
+            },
+            {
+              "id": 101003,
+              "valueKey": "Medium"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1012,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100801,
+              "valueKey": "India"
+            },
+            {
+              "id": 100802,
+              "valueKey": "United States"
+            },
+            {
+              "id": 100803,
+              "valueKey": "China"
+            },
+            {
+              "id": 100804,
+              "valueKey": "United Kingdom"
+            },
+            {
+              "id": 100805,
+              "valueKey": "Germany"
+            },
+            {
+              "id": 100806,
+              "valueKey": "France"
+            },
+            {
+              "id": 100807,
+              "valueKey": "Japan"
+            },
+            {
+              "id": 100808,
+              "valueKey": "Canada"
+            },
+            {
+              "id": 100809,
+              "valueKey": "Australia"
+            },
+            {
+              "id": 100810,
+              "valueKey": "Brazil"
+            },
+            {
+              "id": 100811,
+              "valueKey": "Russia"
+            },
+            {
+              "id": 100812,
+              "valueKey": "Italy"
+            },
+            {
+              "id": 100813,
+              "valueKey": "Spain"
+            },
+            {
+              "id": 100814,
+              "valueKey": "South Korea"
+            },
+            {
+              "id": 100815,
+              "valueKey": "Netherlands"
+            },
+            {
+              "id": 100816,
+              "valueKey": "Mexico"
+            },
+            {
+              "id": 100817,
+              "valueKey": "Indonesia"
+            },
+            {
+              "id": 100818,
+              "valueKey": "Turkey"
+            },
+            {
+              "id": 100819,
+              "valueKey": "Saudi Arabia"
+            },
+            {
+              "id": 100820,
+              "valueKey": "Argentina"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "core_customer_GetUserForUpdate": {
+    "statusCode": 200,
+    "message": "Fetched successfully",
+    "data": {
+      "reporting_to_text": null,
+      "role_text": null,
+      "id": "4f28cd07-c108-4f9a-9a70-52acde4079b7",
+      "sid": 6,
+      "tenant_id": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1",
+      "reporting_to": null,
+      "global_id": 2,
+      "first_name": "lk",
+      "last_name": "string",
+      "display_name": "lk string",
+      "user_name": "lk string",
+      "normalized_user_name": null,
+      "phone_number": null,
+      "phone_number_confirmed": false,
+      "email": "lakshmansl@iino.com",
+      "normalized_email": null,
+      "email_confirmed": false,
+      "image_url": null,
+      "is_active": true,
+      "refresh_token": null,
+      "refresh_token_expiry_time": "0001-01-01T00:00:00",
+      "password_hash": "$2a$11$hCzpV06G3m3F7BwrGhE7q.kvlnP9S2gnL7tTDauOPqPTbM6F.24Sq",
+      "security_stamp": null,
+      "concurrency_stamp": null,
+      "access_failed_count": 0,
+      "is_disabled": null,
+      "disabled_by": null,
+      "disabled_behalfof": null,
+      "is_deleted": null,
+      "deleted_by": null,
+      "deleted_behalfof": null,
+      "deleted_on": null,
+      "created_by": null,
+      "created_behalfof": null,
+      "created_on": "2025-08-09T10:20:37.8561505",
+      "modified_by": null,
+      "modified_behalfof": null,
+      "modified_on": null,
+      "time_zone": null,
+      "country": null,
+      "language": null,
+      "date_of_joining": null,
+      "job_title": null,
+      "employee_id": null,
+      "mobile": null,
+      "phone": null,
+      "date_of_birth": null,
+      "gender": null,
+      "account_name": "Global Enterprises",
+      "primary_phone_number": "7129322345",
+      "website1": "www.globalenterprises.com",
+      "industry_category": 101001,
+      "lifecycle_name": 100812,
+      "lifecycle_stage": 100812,
+      "lifecycle_status": 100812,
+      "tags": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D21E4834-19EC-41E5-8301-390B7FE2CEE8\"},{\"name\":\"Host\",\"colorcode\":2,\"tagid\":\"121E4834-19EC-41E5-8301-390B7FE2CEE8\"}]"
+    },
+    "correlationId": ""
+  },
+  "core_product_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Stage 1"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Stage 2"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "core_product_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Customer details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Customers",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "ab196a8f-b628-413f-8414-fa9d731cca72",
+                  "name": "Primary Number",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "time_zone",
+                  "visible": true,
+                  "displayapiname": "primary_number",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "7b0bb530-0d49-4c6a-a860-fc02d233c2b4",
+                  "name": "Primary Contact",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "country",
+                  "visible": false,
+                  "displayapiname": "country",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "8f64d27c-712f-49d6-ae74-8ddaafac3dfd",
+                  "name": "Website",
+                  "lablekey": "lbl-users-language",
+                  "columnwidth": 150,
+                  "seqno": 3,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "language",
+                  "visible": false,
+                  "displayapiname": "language",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-aeee-3a17094a6c9a",
+                  "name": "Industry Category",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "industry_category",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-11ee-3a17094a6c9a",
+                  "name": "Lifecycle Stage",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 15,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "lifecycle_stage",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-12ee-3a17094a6c9a",
+                  "name": "Lifecycle Status",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "lifecycle_status",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-13ee-3a17094a6c9a",
+                  "name": "Primary Contact",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 17,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "primary_contact",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-14ee-3a17094a6c9a",
+                  "name": "Website",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "website",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "79776676-a17d-448d-16ee-3a17094a6c9a",
+                  "name": "Annual Revenue",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 20,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": false,
+                  "displayapiname": "job_title",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "55555555-5555-5555-5555-555555555501",
+                  "name": "Product Name",
+                  "lablekey": "lbl-user-displayname",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "display_name",
+                  "visible": true,
+                  "displayapiname": "account_name",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "63bac56b-5470-47bd-abe9-6ea45926cdc9",
+                  "name": "Health",
+                  "lablekey": "lbl-users-employeeid",
+                  "columnwidth": 150,
+                  "seqno": 6,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "employee_id",
+                  "visible": true,
+                  "displayapiname": "health",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "1f2701f2-de1b-4c72-b41f-32e3c586bb1d",
+                  "name": "Annual Revenue",
+                  "lablekey": "lbl-users-Mobile",
+                  "columnwidth": 150,
+                  "seqno": 7,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "mobile",
+                  "visible": false,
+                  "displayapiname": "mobile",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "21956e74-d8cd-42ce-80f4-145e52f84407",
+                  "name": "Lifecycle Stage",
+                  "lablekey": "lbl-users-Phone",
+                  "columnwidth": 150,
+                  "seqno": 8,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "phone",
+                  "visible": false,
+                  "displayapiname": "phone",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "c1023eec-824e-43b8-8825-3c1287efe329",
+                  "name": "Lifecycle Status",
+                  "lablekey": "lbl-users-dob",
+                  "columnwidth": 150,
+                  "seqno": 9,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "date_of_birth",
+                  "visible": false,
+                  "displayapiname": "date_of_birth",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+
+                {
+                  "id": "15555555-5555-5555-5555-555555555501",
+                  "name": "Business Type",
+                  "lablekey": "lbl-user-displayname",
+                  "columnwidth": 150,
+                  "seqno": 15,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "business_type",
+                  "visible": true,
+                  "displayapiname": "business_type",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "12555555-5555-5555-5555-555555555501",
+                  "name": "Annual Revenue",
+                  "lablekey": "lbl-user-displayname",
+                  "columnwidth": 150,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "annual_revenue",
+                  "visible": true,
+                  "displayapiname": "annual_revenue",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Product Name",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "display_name",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Lifecycle Stage",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": []
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "core_product_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Accounts",
+        "owner": "Annamalai V",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "55555555-5555-5555-5555-555555555501",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "display_name",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555502",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "email",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555503",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "uniqueidentifier",
+            "api_name": "role",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555504",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "numeric",
+            "api_name": "reporting_to",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555505",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "datetime",
+            "api_name": "created_on",
+            "columnwidth": 150
+          },
+          {
+            "id": "55555555-5555-5555-5555-555555555506",
+            "seqno": 60,
+            "masterid": "1011",
+            "controltype": null,
+            "attrtype": "bit",
+            "api_name": "is_active",
+            "columnwidth": 150
+          },
+          {
+            "id": "ab196a8f-b628-413f-8414-fa9d731cca72",
+            "seqno": 90,
+            "masterid": "1009",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "time_zone",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-aeee-3a17094a6c9a",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "job_title",
+            "columnwidth": 150
+          },
+          {
+            "id": "63bac56b-5470-47bd-abe9-6ea45926cdc9",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "employee_id",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-15ee-3a17094a6c9a",
+            "seqno": 500,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "business_unit",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-14ee-3a17094a6c9a",
+            "seqno": 500,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "job_title",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-11ee-3a17094a6c9a",
+            "seqno": 500,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "job_title",
+            "columnwidth": 150
+          },
+          {
+            "id": "79776676-a17d-448d-12ee-3a17094a6c9a",
+            "seqno": 500,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "date_of_birth",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "core_product_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "primary_number": "7129 32 2331",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 2",
+          "lifecycle_status": "Active",
+          "primary_contact": "John Doe",
+          "website": "www.techcorp.com",
+          "business_unit": "Finance",
+          "account_name": "TechCorp Services",
+          "health": "Warm",
+          "annual_revenue": "$ 3000",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 2,
+          "primary_number": "7129 32 2332",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 1",
+          "lifecycle_status": "OnBoarding",
+          "primary_contact": "Anna Malai",
+          "website": "www.arctech.com",
+          "business_unit": "Accounting",
+          "account_name": "Trail Axxcount",
+          "health": "Hot",
+          "annual_revenue": "$ 6000",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 3,
+          "primary_number": "7129 32 2333",
+          "industry_category": "Medium Business",
+          "lifecycle_stage": "Stage 3",
+          "lifecycle_status": "Active",
+          "primary_contact": "Michael Lee",
+          "website": "www.medinnovate.com",
+          "business_unit": "Marketing",
+          "account_name": "MedInnovate LLC",
+          "health": "Cold",
+          "annual_revenue": "$ 1000",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 4,
+          "primary_number": "7129 32 2334",
+          "industry_category": "Enterprise",
+          "lifecycle_stage": "Stage 4",
+          "lifecycle_status": "Renewal",
+          "primary_contact": "Susan Park",
+          "website": "www.enterpriseltd.com",
+          "business_unit": "Operations",
+          "account_name": "Enterprise Ltd",
+          "health": "Warm",
+          "annual_revenue": "$ 12000",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 5,
+          "primary_number": "7129 32 2335",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 2",
+          "lifecycle_status": "Active",
+          "primary_contact": "David Kim",
+          "website": "www.fastsolutions.com",
+          "business_unit": "Sales",
+          "account_name": "Fast Solutions",
+          "health": "Hot",
+          "annual_revenue": "$ 2500",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 6,
+          "primary_number": "7129 32 2336",
+          "industry_category": "Medium Business",
+          "lifecycle_stage": "Stage 1",
+          "lifecycle_status": "OnBoarding",
+          "primary_contact": "Linda Green",
+          "website": "www.greengarden.com",
+          "business_unit": "HR",
+          "account_name": "Green Garden Inc",
+          "health": "Cold",
+          "annual_revenue": "$ 1500",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 7,
+          "primary_number": "7129 32 2337",
+          "industry_category": "Enterprise",
+          "lifecycle_stage": "Stage 3",
+          "lifecycle_status": "Active",
+          "primary_contact": "James Brown",
+          "website": "www.globex.com",
+          "business_unit": "IT",
+          "account_name": "Globex Corporation",
+          "health": "Warm",
+          "annual_revenue": "$ 9000",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 8,
+          "primary_number": "7129 32 2338",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 1",
+          "lifecycle_status": "OnBoarding",
+          "primary_contact": "Emily White",
+          "website": "www.novatech.com",
+          "business_unit": "Support",
+          "account_name": "Novatech Co",
+          "health": "Hot",
+          "annual_revenue": "$ 2900",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 9,
+          "primary_number": "7129 32 2339",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 2",
+          "lifecycle_status": "Active",
+          "primary_contact": "Chris Wong",
+          "website": "www.quickserve.com",
+          "business_unit": "Customer Service",
+          "account_name": "QuickServe LLC",
+          "health": "Warm",
+          "annual_revenue": "$ 8000",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 10,
+          "primary_number": "7129 32 2340",
+          "industry_category": "Medium Business",
+          "lifecycle_stage": "Stage 4",
+          "lifecycle_status": "Renewal",
+          "primary_contact": "Sara Connors",
+          "website": "www.advanceinc.com",
+          "business_unit": "Finance",
+          "account_name": "Advance Inc",
+          "health": "Hot",
+          "annual_revenue": "$ 3000",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 11,
+          "primary_number": "7129 32 2341",
+          "industry_category": "Enterprise",
+          "lifecycle_stage": "Stage 3",
+          "lifecycle_status": "Active",
+          "primary_contact": "Robert Hale",
+          "website": "www.techsolutions.com",
+          "business_unit": "Engineering",
+          "account_name": "Tech Solutions",
+          "health": "Cold",
+          "annual_revenue": "$ 3900",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 12,
+          "primary_number": "7129 32 2342",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 1",
+          "lifecycle_status": "OnBoarding",
+          "primary_contact": "Nina Patel",
+          "website": "www.createsoft.com",
+          "business_unit": "Development",
+          "account_name": "CreateSoft Ltd",
+          "health": "Hot",
+          "annual_revenue": "$ 9800",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 13,
+          "primary_number": "7129 32 2343",
+          "industry_category": "Medium Business",
+          "lifecycle_stage": "Stage 2",
+          "lifecycle_status": "Active",
+          "primary_contact": "Mark Stevens",
+          "website": "www.solutionsplus.com",
+          "business_unit": "Sales",
+          "account_name": "Solutions Plus",
+          "health": "Warm",
+          "annual_revenue": "$ 500",
+          "business_type": "Wholesale"
+        },
+        {
+          "id": 14,
+          "primary_number": "7129 32 2344",
+          "industry_category": "Small Business",
+          "lifecycle_stage": "Stage 3",
+          "lifecycle_status": "Active",
+          "primary_contact": "Olivia Barnes",
+          "website": "www.creativehub.com",
+          "business_unit": "Marketing",
+          "account_name": "Creative Hub",
+          "health": "Hot",
+          "annual_revenue": "$ 100",
+          "business_type": "Accounting"
+        },
+        {
+          "id": 15,
+          "primary_number": "7129 32 2345",
+          "industry_category": "Enterprise",
+          "lifecycle_stage": "Stage 4",
+          "lifecycle_status": "Renewal",
+          "primary_contact": "William Cox",
+          "website": "www.globalenterprises.com",
+          "business_unit": "Management",
+          "account_name": "Global Enterprises",
+          "health": "Warm",
+          "annual_revenue": "$ 3000",
+          "business_type": "Accounting"
+        }
+      ],
+      "totalRecords": 15
+    },
+    "correlationId": ""
+  },
+  "core_product_FormFields": {
+    "statusCode": 200,
+    "message": "FormConfiguration Data",
+    "data": {
+      "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaa0001",
+      "name": "Create User",
+      "groups": [
+        {
+          "id": "6d411934-5217-4552-8912-795b473681c3",
+          "name": "Lifecycle Stage",
+          "seqno": 40,
+          "fields": [
+            {
+              "id": "49f3ff1c-3d94-47b3-8d9c-9bee7fd6dc4f",
+              "name": "Lifecycle Name",
+              "lablekey": "lbl-lifecycle-name",
+              "seqno": 22,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "lifecycle_name",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Lifecycle Name",
+              "islookup": false,
+              "masterid": "101",
+              "visible": true
+            },
+            {
+              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
+              "name": "Lifecycle Stage",
+              "lablekey": "lbl-lifecycle-stage",
+              "seqno": 23,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "lifecycle_stage",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Lifecycle Stage",
+              "islookup": false,
+              "masterid": "102",
+              "visible": true
+            },
+            {
+              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
+              "name": "Lifecycle Status",
+              "lablekey": "lbl-lifecycle-status",
+              "seqno": 24,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "lifecycle_status",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Lifecycle Status",
+              "islookup": false,
+              "masterid": "103",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "id": "9757b165-146d-4109-ba14-ab447cf62c58",
+          "name": "Contact Information ",
+          "seqno": 30,
+          "fields": [
+            {
+              "id": "c81a9217-7880-4abb-bbb4-9e53f246cbee",
+              "name": "Street 1",
+              "lablekey": "lbl-street-1",
+              "seqno": 1,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "street_1",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "150",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Street 1",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "f046ac90-356f-4d4e-92fa-6ef992dd1bdb",
+              "name": "Street 2",
+              "lablekey": "lbl-street-2",
+              "seqno": 2,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "street_2",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "150",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Street 2",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "6f0feaab-0569-4243-a126-5a2a4e023c4e",
+              "name": "City",
+              "lablekey": "lbl-city",
+              "seqno": 3,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "city",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "City",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "4f8b2a3b-8dac-4a3d-8156-eac98e3884dc",
+              "name": "State",
+              "lablekey": "lbl-state",
+              "seqno": 4,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "state",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "State",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "98d63164-f097-4ec8-a87f-8eaa36bac863",
+              "name": "Country",
+              "lablekey": "lbl-country",
+              "seqno": 5,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "country",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Country",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "d75aeea8-46ef-4ca7-9f77-4039a28a3614",
+              "name": "Zip Code",
+              "lablekey": "lbl-zip-code",
+              "seqno": 6,
+              "controltype": "number",
+              "attributedatatype": "nvarchar",
+              "api_name": "zip_code",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "20",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Zip Code",
+              "islookup": false,
+              "masterid": "",
+              "visible": true,
+              "allowDecimals": false,
+              "maxDigits": 10,
+              "maxDecimals": 0
+            }
+          ]
+        },
+        {
+          "id": "a6961b3e-9907-4707-a271-ded11646a47a",
+          "name": "Business Information",
+          "seqno": 20,
+          "fields": [
+            {
+              "id": "5f09a1f2-c317-4440-9c4c-99d294de8d8e",
+              "name": "Annual Revenue",
+              "lablekey": "lbl-annual-revenue",
+              "seqno": 1,
+              "controltype": "number",
+              "attributedatatype": "nvarchar",
+              "api_name": "annual_revenue",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Annual Revenue",
+              "islookup": false,
+              "masterid": "",
+              "visible": true,
+              "allowDecimals": true,
+              "maxDigits": 10,
+              "maxDecimals": 2
+            },
+            {
+              "id": "d2d1e7cb-5c9a-47c3-9a89-134d0b72aaff",
+              "name": "Number of Employees",
+              "lablekey": "lbl-number-of-employees",
+              "seqno": 2,
+              "controltype": "number",
+              "attributedatatype": "nvarchar",
+              "api_name": "number_of_employees",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Number of Employees",
+              "islookup": false,
+              "masterid": "",
+              "visible": true,
+              "allowDecimals": false,
+              "maxDigits": 10,
+              "maxDecimals": 0
+            },
+            {
+              "id": "9e90243f-3943-4c24-b428-5e2ff6a277c7",
+              "name": "Revenue Slab",
+              "lablekey": "lbl-revenue-slab",
+              "seqno": 3,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "revenue_slab",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Revenue Slab",
+              "islookup": false,
+              "masterid": "1002",
+              "visible": true
+            },
+            {
+              "id": "b62d4eee-3c36-46db-8319-0462e9c0cd46",
+              "name": "Employee Range",
+              "lablekey": "lbl-employee-range",
+              "seqno": 4,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "employee_range",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Employee Range",
+              "islookup": false,
+              "masterid": "1002",
+              "visible": true
+            },
+            {
+              "id": "f1330268-9d63-4ba0-a172-1f47b9ef6e5e",
+              "name": "Website",
+              "lablekey": "lbl-website",
+              "seqno": 6,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "website1",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Website",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "a76f32f2-472e-4d27-92f7-3ac56e9e0f06",
+              "name": "Business Type",
+              "lablekey": "lbl-business-type",
+              "seqno": 7,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "business_type",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Business Type",
+              "islookup": false,
+              "masterid": "1003",
+              "visible": true
+            },
+            {
+              "id": "53d94739-faa6-46c8-b014-5dd5b991dc08",
+              "name": "Industry Category",
+              "lablekey": "lbl-industry-category",
+              "seqno": 8,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "industry_category",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Industry Category",
+              "islookup": false,
+              "masterid": "1003",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "id": "1b18e49b-55c6-42b7-b8e5-e595c3af1668",
+          "name": "Basic Information",
+          "seqno": 10,
+          "fields": [
+            {
+              "id": "b230a8de-8611-47ff-8047-e0a7b5e7896f",
+              "name": "Primary Phone Number",
+              "lablekey": "lbl-primary-phone-number",
+              "seqno": 6,
+              "controltype": "number",
+              "attributedatatype": "nvarchar",
+              "api_name": "primary_phone_number",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "50",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Primary Phone Number",
+              "islookup": false,
+              "masterid": "",
+              "visible": true,
+              "allowDecimals": false,
+              "maxDigits": 15,
+              "maxDecimals": 0
+            },
+            {
+              "id": "808ef970-a080-4bfd-9b9f-404c8547693a",
+              "name": "Tags",
+              "lablekey": "lbl-tags",
+              "seqno": 7,
+              "controltype": "groupdropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "tags",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Tags",
+              "islookup": false,
+              "masterid": "1001",
+              "visible": true
+            },
+            {
+              "id": "f28d3d02-f334-488f-85b4-02b9877aa164",
+              "name": "Health",
+              "lablekey": "lbl-health",
+              "seqno": 8,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "health",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Health",
+              "islookup": false,
+              "masterid": "1010",
+              "visible": true
+            },
+            {
+              "id": "ef75375f-f325-4cce-86f6-ebd587ab25bd",
+              "name": "Description",
+              "lablekey": "lbl-details",
+              "seqno": 9,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "details",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "255",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Details",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            },
+            {
+              "id": "91fcc951-7b5a-4197-8dbd-c1b1d90c865f",
+              "name": "Primary Contact",
+              "lablekey": "lbl-primary-contact",
+              "seqno": 3,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "primary_contact",
+              "table_name": "arc_users",
+              "required": false,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Primary Contact",
+              "islookup": false,
+              "masterid": "1008",
+              "visible": true
+            },
+            {
+              "id": "7ffc3f8c-82d1-42d5-a42a-d6d3df9684bf",
+              "name": "Account Owner",
+              "lablekey": "lbl-account-owner",
+              "seqno": 2,
+              "controltype": "dropdown",
+              "attributedatatype": "nvarchar",
+              "api_name": "account_owner",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Account Owner",
+              "islookup": false,
+              "masterid": "1008",
+              "visible": true
+            },
+            {
+              "id": "af8d4c1d-6cd7-4d43-a31f-1cfc2d0eb388",
+              "name": "Product Name",
+              "lablekey": "lbl-customer-name",
+              "seqno": 1,
+              "controltype": "textbox",
+              "attributedatatype": "nvarchar",
+              "api_name": "account_name",
+              "table_name": "arc_users",
+              "required": true,
+              "field_read_only": true,
+              "tooltip": "",
+              "validation_rule": "",
+              "decimal_place": "0",
+              "maxlength": "100",
+              "placeholder": "",
+              "default_value": "",
+              "default_value_text": "",
+              "label_text": "Product Name",
+              "islookup": false,
+              "masterid": "",
+              "visible": true
+            }
+          ]
+        }
+      ],
+      "subform": []
+    },
+    "correlationId": null
+  },
+  "core_product_GetMastersAndMasterDatasbyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 101,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100812,
+              "valueKey": "Account Life Cycle"
+            },
+            {
+              "id": 100813,
+              "valueKey": "Lead Life Cycle"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 102,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100812,
+              "valueKey": "Stage 1"
+            },
+            {
+              "id": 100813,
+              "valueKey": "Stage 2"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 103,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100812,
+              "valueKey": "OnBoarding"
+            },
+            {
+              "id": 100813,
+              "valueKey": "New"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1008,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100812,
+              "valueKey": "Anna Malai"
+            },
+            {
+              "id": 100813,
+              "valueKey": "Gopi"
+            },
+            {
+              "id": 100814,
+              "valueKey": "DRS"
+            },
+            {
+              "id": 100815,
+              "valueKey": "SKS"
+            },
+            {
+              "id": 100816,
+              "valueKey": "Ravi"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1009,
+          "valuekey": "TimeZone",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100901,
+              "valueKey": "Baker Island (UTC-12:00)"
+            },
+            {
+              "id": 100902,
+              "valueKey": "American Samoa (UTC-11:00)"
+            },
+            {
+              "id": 100903,
+              "valueKey": "Hawaii (UTC-10:00)"
+            },
+            {
+              "id": 100904,
+              "valueKey": "Marquesas Islands (UTC-09:30)"
+            },
+            {
+              "id": 100905,
+              "valueKey": "Alaska (UTC-09:00)"
+            },
+            {
+              "id": 100906,
+              "valueKey": "Pacific Time (UTC-08:00)"
+            },
+            {
+              "id": 100907,
+              "valueKey": "Mountain Time (UTC-07:00)"
+            },
+            {
+              "id": 100908,
+              "valueKey": "Central Time (UTC-06:00)"
+            },
+            {
+              "id": 100909,
+              "valueKey": "Eastern Time (UTC-05:00)"
+            },
+            {
+              "id": 100910,
+              "valueKey": "Atlantic Time (UTC-04:00)"
+            },
+            {
+              "id": 100911,
+              "valueKey": "Newfoundland Time (UTC-03:30)"
+            },
+            {
+              "id": 100912,
+              "valueKey": "Brazil, Argentina (UTC-03:00)"
+            },
+            {
+              "id": 100913,
+              "valueKey": "South Georgia (UTC-02:00)"
+            },
+            {
+              "id": 100914,
+              "valueKey": "Azores (UTC-01:00)"
+            },
+            {
+              "id": 100915,
+              "valueKey": "GMT, London (UTC+00:00)"
+            },
+            {
+              "id": 100916,
+              "valueKey": "Central Europe (UTC+01:00)"
+            },
+            {
+              "id": 100917,
+              "valueKey": "Eastern Europe (UTC+02:00)"
+            },
+            {
+              "id": 100918,
+              "valueKey": "Moscow, East Africa (UTC+03:00)"
+            },
+            {
+              "id": 100919,
+              "valueKey": "Iran (UTC+03:30)"
+            },
+            {
+              "id": 100920,
+              "valueKey": "Gulf, Caucasus (UTC+04:00)"
+            },
+            {
+              "id": 100921,
+              "valueKey": "Afghanistan (UTC+04:30)"
+            },
+            {
+              "id": 100922,
+              "valueKey": "Pakistan, Kazakhstan (UTC+05:00)"
+            },
+            {
+              "id": 100923,
+              "valueKey": "India, Sri Lanka (UTC+05:30)"
+            },
+            {
+              "id": 100924,
+              "valueKey": "Nepal (UTC+05:45)"
+            },
+            {
+              "id": 100925,
+              "valueKey": "Bangladesh, Central Asia (UTC+06:00)"
+            },
+            {
+              "id": 100926,
+              "valueKey": "Myanmar, Cocos Islands (UTC+06:30)"
+            },
+            {
+              "id": 100927,
+              "valueKey": "Thailand, Vietnam (UTC+07:00)"
+            },
+            {
+              "id": 100928,
+              "valueKey": "China, Singapore (UTC+08:00)"
+            },
+            {
+              "id": 100929,
+              "valueKey": "Eucla, Australia (UTC+08:45)"
+            },
+            {
+              "id": 100930,
+              "valueKey": "Japan, Korea (UTC+09:00)"
+            },
+            {
+              "id": 100931,
+              "valueKey": "Adelaide, Darwin (UTC+09:30)"
+            },
+            {
+              "id": 100932,
+              "valueKey": "Sydney, Melbourne (UTC+10:00)"
+            },
+            {
+              "id": 100933,
+              "valueKey": "Lord Howe Island (UTC+10:30)"
+            },
+            {
+              "id": 100934,
+              "valueKey": "Solomon Islands (UTC+11:00)"
+            },
+            {
+              "id": 100935,
+              "valueKey": "New Zealand, Fiji (UTC+12:00)"
+            },
+            {
+              "id": 100936,
+              "valueKey": "Chatham Islands (UTC+12:45)"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1001,
+          "valuekey": "Gender",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101001,
+              "valueKey": "Acount"
+            },
+            {
+              "id": 101002,
+              "valueKey": "Contact"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1002,
+          "valuekey": "Gender",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101001,
+              "valueKey": "0 - 5"
+            },
+            {
+              "id": 101002,
+              "valueKey": "5 - 10"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1003,
+          "valuekey": "Gender",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101001,
+              "valueKey": "Accounting"
+            },
+            {
+              "id": 101002,
+              "valueKey": "Wholesale"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1010,
+          "valuekey": "Gender",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101001,
+              "valueKey": "Hot"
+            },
+            {
+              "id": 101002,
+              "valueKey": "Cold"
+            },
+            {
+              "id": 101003,
+              "valueKey": "Medium"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1012,
+          "valuekey": "Country",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 100801,
+              "valueKey": "India"
+            },
+            {
+              "id": 100802,
+              "valueKey": "United States"
+            },
+            {
+              "id": 100803,
+              "valueKey": "China"
+            },
+            {
+              "id": 100804,
+              "valueKey": "United Kingdom"
+            },
+            {
+              "id": 100805,
+              "valueKey": "Germany"
+            },
+            {
+              "id": 100806,
+              "valueKey": "France"
+            },
+            {
+              "id": 100807,
+              "valueKey": "Japan"
+            },
+            {
+              "id": 100808,
+              "valueKey": "Canada"
+            },
+            {
+              "id": 100809,
+              "valueKey": "Australia"
+            },
+            {
+              "id": 100810,
+              "valueKey": "Brazil"
+            },
+            {
+              "id": 100811,
+              "valueKey": "Russia"
+            },
+            {
+              "id": 100812,
+              "valueKey": "Italy"
+            },
+            {
+              "id": 100813,
+              "valueKey": "Spain"
+            },
+            {
+              "id": 100814,
+              "valueKey": "South Korea"
+            },
+            {
+              "id": 100815,
+              "valueKey": "Netherlands"
+            },
+            {
+              "id": 100816,
+              "valueKey": "Mexico"
+            },
+            {
+              "id": 100817,
+              "valueKey": "Indonesia"
+            },
+            {
+              "id": 100818,
+              "valueKey": "Turkey"
+            },
+            {
+              "id": 100819,
+              "valueKey": "Saudi Arabia"
+            },
+            {
+              "id": 100820,
+              "valueKey": "Argentina"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "core_product_GetUserForUpdate": {
+    "statusCode": 200,
+    "message": "Fetched successfully",
+    "data": {
+      "reporting_to_text": null,
+      "role_text": null,
+      "id": "4f28cd07-c108-4f9a-9a70-52acde4079b7",
+      "sid": 6,
+      "tenant_id": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1",
+      "reporting_to": null,
+      "global_id": 2,
+      "first_name": "lk",
+      "last_name": "string",
+      "display_name": "lk string",
+      "user_name": "lk string",
+      "normalized_user_name": null,
+      "phone_number": null,
+      "phone_number_confirmed": false,
+      "email": "lakshmansl@iino.com",
+      "normalized_email": null,
+      "email_confirmed": false,
+      "image_url": null,
+      "is_active": true,
+      "refresh_token": null,
+      "refresh_token_expiry_time": "0001-01-01T00:00:00",
+      "password_hash": "$2a$11$hCzpV06G3m3F7BwrGhE7q.kvlnP9S2gnL7tTDauOPqPTbM6F.24Sq",
+      "security_stamp": null,
+      "concurrency_stamp": null,
+      "access_failed_count": 0,
+      "is_disabled": null,
+      "disabled_by": null,
+      "disabled_behalfof": null,
+      "is_deleted": null,
+      "deleted_by": null,
+      "deleted_behalfof": null,
+      "deleted_on": null,
+      "created_by": null,
+      "created_behalfof": null,
+      "created_on": "2025-08-09T10:20:37.8561505",
+      "modified_by": null,
+      "modified_behalfof": null,
+      "modified_on": null,
+      "time_zone": null,
+      "country": null,
+      "language": null,
+      "date_of_joining": null,
+      "job_title": null,
+      "employee_id": null,
+      "mobile": null,
+      "phone": null,
+      "date_of_birth": null,
+      "gender": null,
+      "account_name": "Global Enterprises",
+      "primary_phone_number": "7129322345",
+      "website1": "www.globalenterprises.com",
+      "industry_category": 101001,
+      "lifecycle_name": 100812,
+      "lifecycle_stage": 100812,
+      "lifecycle_status": 100812,
+      "tags": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D21E4834-19EC-41E5-8301-390B7FE2CEE8\"},{\"name\":\"Host\",\"colorcode\":2,\"tagid\":\"121E4834-19EC-41E5-8301-390B7FE2CEE8\"}]"
     },
     "correlationId": ""
   }
