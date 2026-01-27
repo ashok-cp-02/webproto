@@ -12828,7 +12828,6 @@
                   "masterid": "351000000",
                   "displayapiname": "VendorName"
                 },
-
                 {
                   "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
                   "name": "Status",
@@ -16814,6 +16813,496 @@
       "lifecycle_stage": 100812,
       "lifecycle_status": 100812,
       "tags": "[{\"name\":\"Client\",\"colorcode\":6,\"tagid\":\"D21E4834-19EC-41E5-8301-390B7FE2CEE8\"},{\"name\":\"Host\",\"colorcode\":2,\"tagid\":\"121E4834-19EC-41E5-8301-390B7FE2CEE8\"}]"
+    },
+    "correlationId": ""
+  },
+  "invoices_popup_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Vendor A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Vendor B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Vendor C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Vendor D"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "New"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Paid"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Unpaid"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Partially Paid"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "invoices_popup_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Invoices",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Inv01",
+                  "name": "Invocie Number",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 180,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "InvocieNumber",
+                  "visible": true,
+                  "displayapiname": "InvocieNumber",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv02",
+                  "name": "Vendor Name",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "VendorName",
+                  "visible": true,
+                  "displayapiname": "VendorName",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv03",
+                  "name": "Due Date",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 160,
+                  "seqno": 3,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "DueDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv04",
+                  "name": "Status",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 4,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "Status",
+                  "visible": true,
+                  "displayapiname": "Status",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv05",
+                  "name": "Vendor Account Number",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 240,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "VendorAccountNumber",
+                  "visible": true,
+                  "displayapiname": "VendorAccountNumber",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv06",
+                  "name": "Amount Due",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 6,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "nvarchar",
+                  "api_name": "job_title",
+                  "visible": true,
+                  "displayapiname": "AmountDue",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Invoice Number",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "invoice_number",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Vendor Name",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": [
+                {
+                  "id": "Inv02",
+                  "name": "Vendor Name",
+                  "labelkey": "lbl-Workitem-chunk",
+                  "seqno": 1,
+                  "api_name": "VendorName",
+                  "type": "vertical",
+                  "direction": "asc",
+                  "masterid": "351000000",
+                  "displayapiname": "VendorName"
+                },
+                {
+                  "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+                  "name": "Status",
+                  "labelkey": "lbl-Workitem-priority",
+                  "seqno": 4,
+                  "api_name": "Type",
+                  "type": "Horizontal",
+                  "direction": "-",
+                  "masterid": "7041",
+                  "displayapiname": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+ "invoices_popup_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Invoices",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [
+          {
+          "id": "Inv02",
+          "type": "vertical",
+          "direction": "asc",
+          "defaultvalue": "All",
+          "api_name": "VendorName",
+          "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+          "seq": null
+        }
+        ],
+        "columns": [
+          {
+            "id": "Inv01",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "InvocieNumber",
+            "columnwidth": 180
+          },
+          {
+            "id": "Inv02",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "VendorName",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv03",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "DueDate",
+            "columnwidth": 160
+          },
+          {
+            "id": "Inv04",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "Status",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv05",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "VendorAccountNumber",
+            "columnwidth": 240
+          },
+          {
+            "id": "Inv06",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "nvarchar",
+            "api_name": "AmountDue",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "invoices_popup_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas":[
+  {
+    "id": 1,
+    "InvocieNumber": "INV_001",
+    "VendorName": "Sarah Johnson",
+    "DueDate": "03/10/2025",
+    "Status": "Unpaid",
+    "VendorAccountNumber": "123456789012",
+    "AmountDue": "$450.00"
+  },
+  {
+    "id": 2,
+    "InvocieNumber": "INV_002",
+    "VendorName": "Michael Smith",
+    "DueDate": "04/25/2025",
+    "Status": "Paid",
+    "VendorAccountNumber": "984354083312",
+    "AmountDue": "$0.00"
+  },
+  {
+    "id": 3,
+    "InvocieNumber": "INV_003",
+    "VendorName": "David Lee",
+    "DueDate": "02/28/2025",
+    "Status": "Overdue",
+    "VendorAccountNumber": "567890123456",
+    "AmountDue": "$1,200.75"
+  },
+  {
+    "id": 4,
+    "InvocieNumber": "INV_004",
+    "VendorName": "Sarah Johnson",
+    "DueDate": "05/05/2025",
+    "Status": "Paid",
+    "VendorAccountNumber": "230145678901",
+    "AmountDue": "$0.00"
+  },
+  {
+    "id": 5,
+    "InvocieNumber": "INV_005",
+    "VendorName": "David Lee",
+    "DueDate": "03/22/2025",
+    "Status": "Unpaid",
+    "VendorAccountNumber": "349876540123",
+    "AmountDue": "$325.40"
+  },
+  {
+    "id": 6,
+    "InvocieNumber": "INV_006",
+    "VendorName": "David Lee",
+    "DueDate": "04/01/2025",
+    "Status": "Paid",
+    "VendorAccountNumber": "785412369854",
+    "AmountDue": "$0.00"
+  },
+  {
+    "id": 7,
+    "InvocieNumber": "INV_007",
+    "VendorName": "Sarah Johnson",
+    "DueDate": "02/15/2025",
+    "Status": "Overdue",
+    "VendorAccountNumber": "654320198765",
+    "AmountDue": "$980.00"
+  },
+  {
+    "id": 8,
+    "InvocieNumber": "INV_008",
+    "VendorName": "Sophia Martinez",
+    "DueDate": "03/30/2025",
+    "Status": "Unpaid",
+    "VendorAccountNumber": "908172635490",
+    "AmountDue": "$210.25"
+  },
+  {
+    "id": 9,
+    "InvocieNumber": "INV_009",
+    "VendorName": "Sophia Martinez",
+    "DueDate": "04/12/2025",
+    "Status": "Paid",
+    "VendorAccountNumber": "112233445566",
+    "AmountDue": "$0.00"
+  },
+  {
+    "id": 10,
+    "InvocieNumber": "INV_010",
+    "VendorName": "Michael Smith",
+    "DueDate": "02/05/2025",
+    "Status": "Overdue",
+    "VendorAccountNumber": "778899001122",
+    "AmountDue": "$640.90"
+  },
+  {
+    "id": 11,
+    "InvocieNumber": "INV_011",
+    "VendorName": "Sophia Martinez",
+    "DueDate": "05/18/2025",
+    "Status": "Unpaid",
+    "VendorAccountNumber": "334455667788",
+    "AmountDue": "$75.00"
+  },
+  {
+    "id": 12,
+    "InvocieNumber": "INV_012",
+    "VendorName": "Michael Smith",
+    "DueDate": "04/28/2025",
+    "Status": "Paid",
+    "VendorAccountNumber": "990011223344",
+    "AmountDue": "$0.00"
+  }
+],
+      "totalRecords": 12,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Unpaid"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Overdue"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "Partially Paid"
+        },
+        {
+          "groupbyid": "4",
+          "groupbytext": "Paid"
+        }
+      ]
     },
     "correlationId": ""
   }
