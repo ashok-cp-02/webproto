@@ -9663,7 +9663,7 @@
           "EmailSent": "Yes"
         }
       ],
-      "totalRecords":140
+      "totalRecords": 140
     },
     "correlationId": ""
   },
@@ -16932,7 +16932,7 @@
                   "controltype": null,
                   "attrtype": "nvarchar",
                   "api_name": "VendorName",
-                  "visible": true,
+                  "visible": false,
                   "displayapiname": "VendorName",
                   "inlineeditable": null,
                   "istitle": false,
@@ -16943,7 +16943,7 @@
                   "id": "Inv03",
                   "name": "Due Date",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 160,
+                  "columnwidth": 180,
                   "seqno": 3,
                   "masterid": "",
                   "controltype": null,
@@ -16960,7 +16960,7 @@
                   "id": "Inv04",
                   "name": "Status",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 4,
                   "masterid": "",
                   "controltype": null,
@@ -16977,7 +16977,7 @@
                   "id": "Inv05",
                   "name": "Vendor Account Number",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 240,
+                  "columnwidth": 250,
                   "seqno": 5,
                   "masterid": "",
                   "controltype": null,
@@ -16994,7 +16994,7 @@
                   "id": "Inv06",
                   "name": "Amount Due",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
+                  "columnwidth": 190,
                   "seqno": 6,
                   "masterid": "",
                   "controltype": null,
@@ -17084,7 +17084,7 @@
       "correlationId": ""
     }
   },
- "invoices_popup_getdatasetfieldinfobyid": {
+  "invoices_popup_getdatasetfieldinfobyid": {
     "result": {
       "statusCode": 1000,
       "message": "Fetched successfully",
@@ -17101,14 +17101,14 @@
         "filters": [],
         "groupby": [
           {
-          "id": "Inv02",
-          "type": "vertical",
-          "direction": "asc",
-          "defaultvalue": "All",
-          "api_name": "VendorName",
-          "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
-          "seq": null
-        }
+            "id": "Inv02",
+            "type": "vertical",
+            "direction": "asc",
+            "defaultvalue": "All",
+            "api_name": "VendorName",
+            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+            "seq": null
+          }
         ],
         "columns": [
           {
@@ -17136,7 +17136,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "DueDate",
-            "columnwidth": 160
+            "columnwidth": 180
           },
           {
             "id": "Inv04",
@@ -17145,7 +17145,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "Status",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "Inv05",
@@ -17154,7 +17154,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "VendorAccountNumber",
-            "columnwidth": 240
+            "columnwidth": 250
           },
           {
             "id": "Inv06",
@@ -17163,7 +17163,7 @@
             "controltype": null,
             "attrtype": "nvarchar",
             "api_name": "AmountDue",
-            "columnwidth": 150
+            "columnwidth": 190
           }
         ]
       },
@@ -17174,116 +17174,116 @@
     "statusCode": 1000,
     "message": "Fetched successfully",
     "data": {
-      "datas":[
-  {
-    "id": 1,
-    "InvocieNumber": "INV_001",
-    "VendorName": "Sarah Johnson",
-    "DueDate": "03/10/2025",
-    "Status": "Unpaid",
-    "VendorAccountNumber": "123456789012",
-    "AmountDue": "$450.00"
-  },
-  {
-    "id": 2,
-    "InvocieNumber": "INV_002",
-    "VendorName": "Michael Smith",
-    "DueDate": "04/25/2025",
-    "Status": "Paid",
-    "VendorAccountNumber": "984354083312",
-    "AmountDue": "$0.00"
-  },
-  {
-    "id": 3,
-    "InvocieNumber": "INV_003",
-    "VendorName": "David Lee",
-    "DueDate": "02/28/2025",
-    "Status": "Overdue",
-    "VendorAccountNumber": "567890123456",
-    "AmountDue": "$1,200.75"
-  },
-  {
-    "id": 4,
-    "InvocieNumber": "INV_004",
-    "VendorName": "Sarah Johnson",
-    "DueDate": "05/05/2025",
-    "Status": "Paid",
-    "VendorAccountNumber": "230145678901",
-    "AmountDue": "$0.00"
-  },
-  {
-    "id": 5,
-    "InvocieNumber": "INV_005",
-    "VendorName": "David Lee",
-    "DueDate": "03/22/2025",
-    "Status": "Unpaid",
-    "VendorAccountNumber": "349876540123",
-    "AmountDue": "$325.40"
-  },
-  {
-    "id": 6,
-    "InvocieNumber": "INV_006",
-    "VendorName": "David Lee",
-    "DueDate": "04/01/2025",
-    "Status": "Paid",
-    "VendorAccountNumber": "785412369854",
-    "AmountDue": "$0.00"
-  },
-  {
-    "id": 7,
-    "InvocieNumber": "INV_007",
-    "VendorName": "Sarah Johnson",
-    "DueDate": "02/15/2025",
-    "Status": "Overdue",
-    "VendorAccountNumber": "654320198765",
-    "AmountDue": "$980.00"
-  },
-  {
-    "id": 8,
-    "InvocieNumber": "INV_008",
-    "VendorName": "Sophia Martinez",
-    "DueDate": "03/30/2025",
-    "Status": "Unpaid",
-    "VendorAccountNumber": "908172635490",
-    "AmountDue": "$210.25"
-  },
-  {
-    "id": 9,
-    "InvocieNumber": "INV_009",
-    "VendorName": "Sophia Martinez",
-    "DueDate": "04/12/2025",
-    "Status": "Paid",
-    "VendorAccountNumber": "112233445566",
-    "AmountDue": "$0.00"
-  },
-  {
-    "id": 10,
-    "InvocieNumber": "INV_010",
-    "VendorName": "Michael Smith",
-    "DueDate": "02/05/2025",
-    "Status": "Overdue",
-    "VendorAccountNumber": "778899001122",
-    "AmountDue": "$640.90"
-  },
-  {
-    "id": 11,
-    "InvocieNumber": "INV_011",
-    "VendorName": "Sophia Martinez",
-    "DueDate": "05/18/2025",
-    "Status": "Unpaid",
-    "VendorAccountNumber": "334455667788",
-    "AmountDue": "$75.00"
-  },
-  {
-    "id": 12,
-    "InvocieNumber": "INV_012",
-    "VendorName": "Michael Smith",
-    "DueDate": "04/28/2025",
-    "Status": "Paid",
-    "VendorAccountNumber": "990011223344",
-    "AmountDue": "$0.00"
-  }
-],
+      "datas": [
+        {
+          "id": 1,
+          "InvocieNumber": "INV_001",
+          "VendorName": "Sarah Johnson",
+          "DueDate": "03/10/2025",
+          "Status": "Unpaid",
+          "VendorAccountNumber": "123456789012",
+          "AmountDue": "$450.00"
+        },
+        {
+          "id": 2,
+          "InvocieNumber": "INV_002",
+          "VendorName": "Michael Smith",
+          "DueDate": "04/25/2025",
+          "Status": "Paid",
+          "VendorAccountNumber": "984354083312",
+          "AmountDue": "$0.00"
+        },
+        {
+          "id": 3,
+          "InvocieNumber": "INV_003",
+          "VendorName": "David Lee",
+          "DueDate": "02/28/2025",
+          "Status": "Overdue",
+          "VendorAccountNumber": "567890123456",
+          "AmountDue": "$1,200.75"
+        },
+        {
+          "id": 4,
+          "InvocieNumber": "INV_004",
+          "VendorName": "Sarah Johnson",
+          "DueDate": "05/05/2025",
+          "Status": "Paid",
+          "VendorAccountNumber": "230145678901",
+          "AmountDue": "$0.00"
+        },
+        {
+          "id": 5,
+          "InvocieNumber": "INV_005",
+          "VendorName": "David Lee",
+          "DueDate": "03/22/2025",
+          "Status": "Unpaid",
+          "VendorAccountNumber": "349876540123",
+          "AmountDue": "$325.40"
+        },
+        {
+          "id": 6,
+          "InvocieNumber": "INV_006",
+          "VendorName": "David Lee",
+          "DueDate": "04/01/2025",
+          "Status": "Paid",
+          "VendorAccountNumber": "785412369854",
+          "AmountDue": "$0.00"
+        },
+        {
+          "id": 7,
+          "InvocieNumber": "INV_007",
+          "VendorName": "Sarah Johnson",
+          "DueDate": "02/15/2025",
+          "Status": "Overdue",
+          "VendorAccountNumber": "654320198765",
+          "AmountDue": "$980.00"
+        },
+        {
+          "id": 8,
+          "InvocieNumber": "INV_008",
+          "VendorName": "Sophia Martinez",
+          "DueDate": "03/30/2025",
+          "Status": "Unpaid",
+          "VendorAccountNumber": "908172635490",
+          "AmountDue": "$210.25"
+        },
+        {
+          "id": 9,
+          "InvocieNumber": "INV_009",
+          "VendorName": "Sophia Martinez",
+          "DueDate": "04/12/2025",
+          "Status": "Paid",
+          "VendorAccountNumber": "112233445566",
+          "AmountDue": "$0.00"
+        },
+        {
+          "id": 10,
+          "InvocieNumber": "INV_010",
+          "VendorName": "Michael Smith",
+          "DueDate": "02/05/2025",
+          "Status": "Overdue",
+          "VendorAccountNumber": "778899001122",
+          "AmountDue": "$640.90"
+        },
+        {
+          "id": 11,
+          "InvocieNumber": "INV_011",
+          "VendorName": "Sophia Martinez",
+          "DueDate": "05/18/2025",
+          "Status": "Unpaid",
+          "VendorAccountNumber": "334455667788",
+          "AmountDue": "$75.00"
+        },
+        {
+          "id": 12,
+          "InvocieNumber": "INV_012",
+          "VendorName": "Michael Smith",
+          "DueDate": "04/28/2025",
+          "Status": "Paid",
+          "VendorAccountNumber": "990011223344",
+          "AmountDue": "$0.00"
+        }
+      ],
       "totalRecords": 12,
       "groupbydetails": [
         {
