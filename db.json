@@ -11935,6 +11935,48 @@
       "message": "List of Masters for Tenant",
       "data": [
         {
+          "id": 1009,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "INV_001"
+            },
+            {
+              "id": 101102,
+              "valueKey": "INV_002"
+            },
+            {
+              "id": 101103,
+              "valueKey": "INV_003"
+            },
+            {
+              "id": 101104,
+              "valueKey": "INV_004"
+            },
+            {
+              "id": 101105,
+              "valueKey": "INV_005"
+            },
+            {
+              "id": 101106,
+              "valueKey": "INV_006"
+            },
+            {
+              "id": 101107,
+              "valueKey": "INV_007"
+            },
+            {
+              "id": 101108,
+              "valueKey": "INV_008"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
           "id": 1010,
           "valuekey": "userstatus",
           "labels": {},
@@ -12214,11 +12256,11 @@
                   "name": "Invoice Number",
                   "lablekey": "lbl-user-username",
                   "seqno": 10,
-                  "filtercontroltype": "textbox",
+                  "filtercontroltype": "multiselect",
                   "isquickfilter": true,
                   "api_name": "invoice_number",
                   "islookup": false,
-                  "masterid": "",
+                  "masterid": "1009",
                   "apioutputskey": null,
                   "isvisible": false,
                   "apioutputvalue": null
