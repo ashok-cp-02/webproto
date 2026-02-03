@@ -9910,16 +9910,16 @@
                 },
                 {
                   "id": "Inv11",
-                  "name": "Promise Pay",
+                  "name": "PTP Date",
                   "lablekey": "lbl-users-jobtitle",
                   "columnwidth": 150,
-                  "seqno": 4,
+                  "seqno": 5,
                   "masterid": "",
                   "controltype": null,
                   "attrtype": "date",
                   "api_name": "job_title",
                   "visible": true,
-                  "displayapiname": "PromisePay",
+                  "displayapiname": "PTPDate",
                   "inlineeditable": null,
                   "istitle": false,
                   "isdate": true,
@@ -9930,7 +9930,7 @@
                   "name": "Due Date",
                   "lablekey": "lbl-users-jobtitle",
                   "columnwidth": 150,
-                  "seqno": 5,
+                  "seqno": 4,
                   "masterid": "",
                   "controltype": null,
                   "attrtype": "date",
@@ -10196,16 +10196,16 @@
           },
           {
             "id": "Inv11",
-            "seqno": 4,
+            "seqno": 5,
             "masterid": "0",
             "controltype": null,
             "attrtype": "date",
-            "api_name": "PromisePay",
+            "api_name": "PTPDate",
             "columnwidth": 150
           },
           {
             "id": "Inv03",
-            "seqno": 5,
+            "seqno": 4,
             "masterid": "0",
             "controltype": null,
             "attrtype": "date",
@@ -10316,7 +10316,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$500.90",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "9",
           "EmailSent": "No"
         },
@@ -10333,7 +10333,7 @@
           "Status": "Partially Paid",
           "BalanceDue": "$1,090.43",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "20",
           "EmailSent": "Yes"
         },
@@ -10350,7 +10350,7 @@
           "Status": "Overdue",
           "BalanceDue": "$750.00",
           "Flag": "[{\"name\":\"Promise to Pay\",\"colorcode\":5,\"tagid\":\"P003\"}]",
-          "PromisePay": "4/22/2025",
+          "PTPDate": "4/22/2025",
           "AgingDays": "-6",
           "EmailSent": "Yes"
         },
@@ -10367,7 +10367,7 @@
           "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "",
           "EmailSent": "Yes"
         },
@@ -10384,7 +10384,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$980.50",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "-32",
           "EmailSent": "Yes"
         },
@@ -10401,7 +10401,7 @@
           "Status": "Write Off",
           "BalanceDue": "$230.75",
           "Flag": "[{\"name\":\"Promise to Pay\",\"colorcode\":5,\"tagid\":\"P006\"},{\"name\":\"Write Off\",\"colorcode\":7,\"tagid\":\"W006\"}]",
-          "PromisePay": "04/25/2025",
+          "PTPDate": "04/25/2025",
           "AgingDays": "",
           "EmailSent": "Yes"
         },
@@ -10418,7 +10418,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$2,050.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "0",
           "EmailSent": "No"
         },
@@ -10435,7 +10435,7 @@
           "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "",
           "EmailSent": "Yes"
         },
@@ -10452,7 +10452,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$845.60",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "3",
           "EmailSent": "No"
         },
@@ -10469,7 +10469,7 @@
           "Status": "Overdue",
           "BalanceDue": "$1,540.00",
           "Flag": "[{\"name\":\"Promise to Pay\",\"colorcode\":5,\"tagid\":\"P010\"}]",
-          "PromisePay": "04/24/2025",
+          "PTPDate": "04/24/2025",
           "AgingDays": "-9",
           "EmailSent": "Yes"
         },
@@ -10486,7 +10486,7 @@
           "Status": "Partially Paid",
           "BalanceDue": "$320.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "4",
           "EmailSent": "Yes"
         },
@@ -10503,7 +10503,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$0.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "40",
           "EmailSent": "No"
         },
@@ -10520,7 +10520,7 @@
           "Status": "Write Off",
           "BalanceDue": "$580.75",
           "Flag": "[{\"name\":\"Promise to Pay\",\"colorcode\":5,\"tagid\":\"P013\"},{\"name\":\"Write Off\",\"colorcode\":7,\"tagid\":\"W013\"}]",
-          "PromisePay": "04/26/2025",
+          "PTPDate": "04/26/2025",
           "AgingDays": "",
           "EmailSent": "Yes"
         },
@@ -10537,7 +10537,7 @@
           "Status": "Overdue",
           "BalanceDue": "$1,125.00",
           "Flag": "[{\"name\":\"Promise to Pay\",\"colorcode\":5,\"tagid\":\"P014\"}]",
-          "PromisePay": "04/21/2025",
+          "PTPDate": "04/21/2025",
           "AgingDays": "-3",
           "EmailSent": "Yes"
         },
@@ -10554,7 +10554,7 @@
           "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "",
           "EmailSent": "Yes"
         },
@@ -10571,7 +10571,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$770.40",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "20",
           "EmailSent": "No"
         },
@@ -10588,7 +10588,7 @@
           "Status": "Overdue",
           "BalanceDue": "$360.00",
           "Flag": "[{\"name\":\"Promise to Pay\",\"colorcode\":5,\"tagid\":\"P017\"}]",
-          "PromisePay": "04/28/2025",
+          "PTPDate": "04/28/2025",
           "AgingDays": "-3",
           "EmailSent": "Yes"
         },
@@ -10605,7 +10605,7 @@
           "Status": "Overdue",
           "BalanceDue": "$0.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "-28",
           "EmailSent": "Yes"
         },
@@ -10622,7 +10622,7 @@
           "Status": "Write Off",
           "BalanceDue": "$460.00",
           "Flag": "[{\"name\":\"Promise to Pay\",\"colorcode\":5,\"tagid\":\"P019\"},{\"name\":\"Write Off\",\"colorcode\":7,\"tagid\":\"W019\"}]",
-          "PromisePay": "04/30/2025",
+          "PTPDate": "04/30/2025",
           "AgingDays": "",
           "EmailSent": "Yes"
         },
@@ -10639,7 +10639,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$1,600.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "9",
           "EmailSent": "Yes"
         },
@@ -10656,7 +10656,7 @@
           "Status": "Overdue",
           "BalanceDue": "$520.00",
           "Flag": "[{\"name\":\"Promise to Pay\",\"colorcode\":5,\"tagid\":\"P021\"}]",
-          "PromisePay": "04/23/2025",
+          "PTPDate": "04/23/2025",
           "AgingDays": "-11",
           "EmailSent": "Yes"
         },
@@ -10673,7 +10673,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$480.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "0",
           "EmailSent": "Yes"
         },
@@ -10690,7 +10690,7 @@
           "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "",
           "EmailSent": "Yes"
         },
@@ -10707,7 +10707,7 @@
           "Status": "Partially Paid",
           "BalanceDue": "$1,750.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "1",
           "EmailSent": "Yes"
         },
@@ -10724,7 +10724,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$395.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "2",
           "EmailSent": "Yes"
         },
@@ -10741,7 +10741,7 @@
           "Status": "Overdue",
           "BalanceDue": "$880.00",
           "Flag": "[{\"name\":\"Promise to Pay\",\"colorcode\":5,\"tagid\":\"P026\"}]",
-          "PromisePay": "04/27/2025",
+          "PTPDate": "04/27/2025",
           "AgingDays": "-19",
           "EmailSent": "Yes"
         },
@@ -10758,7 +10758,7 @@
           "Status": "Paid",
           "BalanceDue": "$0.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "",
           "EmailSent": "Yes"
         },
@@ -10775,7 +10775,7 @@
           "Status": "Unpaid",
           "BalanceDue": "$610.00",
           "Flag": "[]",
-          "PromisePay": "",
+          "PTPDate": "",
           "AgingDays": "7",
           "EmailSent": "Yes"
         }
