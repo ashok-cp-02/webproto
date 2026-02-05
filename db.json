@@ -17544,7 +17544,7 @@
                   "visible": true,
                   "displayapiname": "TemplateName",
                   "inlineeditable": null,
-                  "istitle": false,
+                  "istitle": true,
                   "isdate": false,
                   "islookup": false
                 },
