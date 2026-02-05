@@ -17467,5 +17467,795 @@
       ]
     },
     "correlationId": ""
+  },
+    "email_template_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Overdue"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Paid"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Unpaid"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Partially Paid"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "email_template_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Emails",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Tem01",
+                  "name": "Template Name",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 250,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "TemplateName",
+                  "visible": true,
+                  "displayapiname": "TemplateName",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Tem02",
+                  "name": "Subject Preview",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 300,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "SubjectPreview",
+                  "visible": true,
+                  "displayapiname": "SubjectPreview",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Tem03",
+                  "name": "Format",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 3,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Format",
+                  "visible": true,
+                  "displayapiname": "Format",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Tem04",
+                  "name": "Create By",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "CreateBy",
+                  "visible": true,
+                  "displayapiname": "CreateBy",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Tem05",
+                  "name": "Create On",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "CreateOn",
+                  "visible": true,
+                  "displayapiname": "CreateOn",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Tem06",
+                  "name": "Last Modified",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "LastModified",
+                  "visible": true,
+                  "displayapiname": "LastModified",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Tem07",
+                  "name": "Is Active",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": "checkbox",
+                  "attrtype": "nvarchar",
+                  "api_name": "IsActive",
+                  "visible": true,
+                  "displayapiname": "IsActive",
+                  "is_inlineeditable": true,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Tem08",
+                  "name": "Category",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 17,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Category",
+                  "visible": false,
+                  "displayapiname": "Category",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Template Name",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "TemplateName",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Created On",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": [
+                {
+                  "id": "Inv03",
+                  "name": "Category",
+                  "labelkey": "lbl-Workitem-chunk",
+                  "seqno": 1,
+                  "api_name": "Category",
+                  "type": "vertical",
+                  "direction": "asc",
+                  "masterid": "351000000",
+                  "displayapiname": "Category"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "email_template_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Payments",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [
+          {
+            "id": "Inv03",
+            "type": "vertical",
+            "direction": "asc",
+            "defaultvalue": "All",
+            "api_name": "Category",
+            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+            "seq": null
+          }
+        ],
+        "columns": [
+          {
+            "id": "Tem01",
+            "seqno": 10,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "TemplateName",
+            "columnwidth": 250
+          },
+          {
+            "id": "Tem02",
+            "seqno": 20,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "SubjectPreview",
+            "columnwidth": 300
+          },
+          {
+            "id": "Tem03",
+            "seqno": 30,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Format",
+            "columnwidth": 150
+          },
+          {
+            "id": "Tem04",
+            "seqno": 40,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "CreateBy",
+            "columnwidth": 150
+          },
+          {
+            "id": "Tem05",
+            "seqno": 50,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "CreateOn",
+            "columnwidth": 150
+          },
+          {
+            "id": "Tem06",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "LastModified",
+            "columnwidth": 150
+          },
+          {
+            "id": "Tem07",
+            "seqno": 70,
+            "masterid": "0",
+            "controltype": "checkbox",
+            "attrtype": "nvarchar",
+            "api_name": "IsActive",
+            "columnwidth": 150
+          },
+          {
+            "id": "Tem08",
+            "seqno": 80,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Category",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "email_template_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "TemplateName": "Auto Send Email",
+          "SubjectPreview": "Invoice Reminder - {{InvoiceNumber}}",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-10-2026",
+          "LastModified": "01-14-2026",
+          "Category": "Invoice Created",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "Default template cannot be deactivated" }
+        },
+        {
+          "id": 2,
+          "TemplateName": "Auto Send Email for Group",
+          "SubjectPreview": "Invoice Summary Reminder - {{CustomerName}}",
+          "Format": "Group",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-14-2026",
+          "LastModified": "01-16-2026",
+          "Category": "Invoice Created",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 3,
+          "TemplateName": "New Invoice Send",
+          "SubjectPreview": "New Invoice Generated - {{InvoiceNumber}}",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-16-2026",
+          "LastModified": "01-20-2026",
+          "Category": "Invoice Created",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 4,
+          "TemplateName": "New Invoice Send for Group",
+          "SubjectPreview": "New Invoices Issued - {{CustomerName}}",
+          "Format": "Group",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-20-2026",
+          "LastModified": "01-22-2026",
+          "Category": "Invoice Created",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+
+        {
+          "id": 5,
+          "TemplateName": "Payment Reminder Upcoming Due",
+          "SubjectPreview": "Payment Reminder - Invoice {{InvoiceNumber}} due on {{DueDate}}",
+          "Format": "Single",
+          "CreateBy": "Michael Clara",
+          "CreateOn": "01-08-2026",
+          "LastModified": "01-14-2026",
+          "Category": "Before Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 6,
+          "TemplateName": "Payment Due - Group",
+          "SubjectPreview": "Upcoming Due Summary - {{CustomerName}} ({{DueDate}})",
+          "Format": "Group",
+          "CreateBy": "Michael Clara",
+          "CreateOn": "01-09-2026",
+          "LastModified": "01-14-2026",
+          "Category": "Before Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 7,
+          "TemplateName": "Invoice Due Soon",
+          "SubjectPreview": "Invoice Due Soon - {{InvoiceNumber}} (Due {{DueDate}})",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-09-2026",
+          "LastModified": "01-14-2026",
+          "Category": "Before Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 8,
+          "TemplateName": "Gentle Reminder Before Due",
+          "SubjectPreview": "Friendly Reminder: {{InvoiceNumber}} is due on {{DueDate}}",
+          "Format": "Single",
+          "CreateBy": "Sarah Lee",
+          "CreateOn": "01-11-2026",
+          "LastModified": "01-15-2026",
+          "Category": "Before Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+
+        {
+          "id": 9,
+          "TemplateName": "Invoice Due Today",
+          "SubjectPreview": "Due Today: Invoice {{InvoiceNumber}} - {{Amount}}",
+          "Format": "Single",
+          "CreateBy": "David Kim",
+          "CreateOn": "01-12-2026",
+          "LastModified": "01-16-2026",
+          "Category": "On Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 10,
+          "TemplateName": "Due Day Summary - Group",
+          "SubjectPreview": "Invoices Due Today Summary - {{CustomerName}}",
+          "Format": "Group",
+          "CreateBy": "David Kim",
+          "CreateOn": "01-12-2026",
+          "LastModified": "01-16-2026",
+          "Category": "On Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 11,
+          "TemplateName": "Final Reminder Due Today",
+          "SubjectPreview": "Final Reminder: {{InvoiceNumber}} due today ({{DueDate}})",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-13-2026",
+          "LastModified": "01-17-2026",
+          "Category": "On Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 12,
+          "TemplateName": "Due Today - Group Follow-up",
+          "SubjectPreview": "Due Today Follow-up - {{CustomerName}} ({{DueDate}})",
+          "Format": "Group",
+          "CreateBy": "Sarah Lee",
+          "CreateOn": "01-13-2026",
+          "LastModified": "01-18-2026",
+          "Category": "On Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+
+        {
+          "id": 13,
+          "TemplateName": "Overdue Notice 1",
+          "SubjectPreview": "Overdue: Invoice {{InvoiceNumber}} was due on {{DueDate}}",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-15-2026",
+          "LastModified": "01-19-2026",
+          "Category": "After Due",
+          "IsActive": { "status": "true", "disabled": true, "tooltip": "Default template cannot be deactivated" }
+        },
+        {
+          "id": 14,
+          "TemplateName": "Overdue Summary - Group",
+          "SubjectPreview": "Overdue Invoices Summary - {{CustomerName}}",
+          "Format": "Group",
+          "CreateBy": "Michael Clara",
+          "CreateOn": "01-15-2026",
+          "LastModified": "01-20-2026",
+          "Category": "After Due",
+          "IsActive": { "status": "true", "disabled": true, "tooltip": "Default template cannot be deactivated" }
+        },
+        {
+          "id": 15,
+          "TemplateName": "Overdue Notice 2",
+          "SubjectPreview": "Second Notice: {{InvoiceNumber}} is overdue - action required",
+          "Format": "Single",
+          "CreateBy": "Sarah Lee",
+          "CreateOn": "01-16-2026",
+          "LastModified": "01-21-2026",
+          "Category": "After Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 16,
+          "TemplateName": "Overdue Interest Warning",
+          "SubjectPreview": "Overdue Alert: {{InvoiceNumber}} may incur late fees",
+          "Format": "Single",
+          "CreateBy": "David Kim",
+          "CreateOn": "01-17-2026",
+          "LastModified": "01-22-2026",
+          "Category": "After Due",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+
+        {
+          "id": 17,
+          "TemplateName": "Escalation Level 1",
+          "SubjectPreview": "Escalation: Immediate attention needed for {{InvoiceNumber}}",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-18-2026",
+          "LastModified": "01-23-2026",
+          "Category": "Escalation",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 18,
+          "TemplateName": "Escalation Level 1 - Group",
+          "SubjectPreview": "Escalation Summary - {{CustomerName}} (Overdue invoices)",
+          "Format": "Group",
+          "CreateBy": "Sarah Lee",
+          "CreateOn": "01-18-2026",
+          "LastModified": "01-24-2026",
+          "Category": "Escalation",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 19,
+          "TemplateName": "Escalation Level 2",
+          "SubjectPreview": "Second Escalation: {{InvoiceNumber}} unresolved overdue",
+          "Format": "Single",
+          "CreateBy": "David Kim",
+          "CreateOn": "01-19-2026",
+          "LastModified": "01-25-2026",
+          "Category": "Escalation",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 20,
+          "TemplateName": "Manager Escalation",
+          "SubjectPreview": "Manager Review Required - Invoice {{InvoiceNumber}}",
+          "Format": "Single",
+          "CreateBy": "Michael Clara",
+          "CreateOn": "01-20-2026",
+          "LastModified": "01-26-2026",
+          "Category": "Escalation",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+
+        {
+          "id": 21,
+          "TemplateName": "Write Off Notification",
+          "SubjectPreview": "Write-off Initiated - Invoice {{InvoiceNumber}}",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-21-2026",
+          "LastModified": "01-27-2026",
+          "Category": "Write Off",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 22,
+          "TemplateName": "Write Off Approval Request - Group",
+          "SubjectPreview": "Write-off Approval Needed - {{CustomerName}} (Batch)",
+          "Format": "Group",
+          "CreateBy": "David Kim",
+          "CreateOn": "01-21-2026",
+          "LastModified": "01-28-2026",
+          "Category": "Write Off",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 23,
+          "TemplateName": "Write Off Confirmed",
+          "SubjectPreview": "Write-off Confirmed - {{InvoiceNumber}}",
+          "Format": "Single",
+          "CreateBy": "Sarah Lee",
+          "CreateOn": "01-22-2026",
+          "LastModified": "01-28-2026",
+          "Category": "Write Off",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 24,
+          "TemplateName": "Write Off Closure Summary",
+          "SubjectPreview": "Write-off Closure Summary - {{CustomerName}}",
+          "Format": "Group",
+          "CreateBy": "Michael Clara",
+          "CreateOn": "01-22-2026",
+          "LastModified": "01-29-2026",
+          "Category": "Write Off",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+
+        {
+          "id": 25,
+          "TemplateName": "Promise to Pay Confirmation",
+          "SubjectPreview": "Promise to Pay Recorded - {{InvoiceNumber}} ({{PromiseDate}})",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-23-2026",
+          "LastModified": "01-29-2026",
+          "Category": "Promise to Pay",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 26,
+          "TemplateName": "PTP Reminder 1 Day Before",
+          "SubjectPreview": "Reminder: Promise to pay for {{InvoiceNumber}} is due tomorrow",
+          "Format": "Single",
+          "CreateBy": "Sarah Lee",
+          "CreateOn": "01-23-2026",
+          "LastModified": "01-30-2026",
+          "Category": "Promise to Pay",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 27,
+          "TemplateName": "PTP Missed Follow-up",
+          "SubjectPreview": "Promise to Pay Missed - {{InvoiceNumber}} (Please contact us)",
+          "Format": "Single",
+          "CreateBy": "David Kim",
+          "CreateOn": "01-24-2026",
+          "LastModified": "01-31-2026",
+          "Category": "Promise to Pay",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 28,
+          "TemplateName": "PTP Summary - Group",
+          "SubjectPreview": "Promise to Pay Summary - {{CustomerName}}",
+          "Format": "Group",
+          "CreateBy": "Michael Clara",
+          "CreateOn": "01-24-2026",
+          "LastModified": "02-01-2026",
+          "Category": "Promise to Pay",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+
+        {
+          "id": 29,
+          "TemplateName": "Payment Receipt",
+          "SubjectPreview": "Payment Received - Receipt for {{InvoiceNumber}}",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-25-2026",
+          "LastModified": "02-02-2026",
+          "Category": "Payment Successful",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 30,
+          "TemplateName": "Payment Confirmation - Group",
+          "SubjectPreview": "Payments Received Summary - {{CustomerName}}",
+          "Format": "Group",
+          "CreateBy": "Sarah Lee",
+          "CreateOn": "01-25-2026",
+          "LastModified": "02-02-2026",
+          "Category": "Payment Successful",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 31,
+          "TemplateName": "Thank You Payment Received",
+          "SubjectPreview": "Thank you! Payment posted for {{InvoiceNumber}} on {{PaymentDate}}",
+          "Format": "Single",
+          "CreateBy": "David Kim",
+          "CreateOn": "01-26-2026",
+          "LastModified": "02-03-2026",
+          "Category": "Payment Successful",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 32,
+          "TemplateName": "Payment Posted Notification",
+          "SubjectPreview": "Payment Posted - {{InvoiceNumber}} ({{Amount}} via {{PaymentMethod}})",
+          "Format": "Single",
+          "CreateBy": "Michael Clara",
+          "CreateOn": "01-26-2026",
+          "LastModified": "02-03-2026",
+          "Category": "Payment Successful",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+
+        {
+          "id": 33,
+          "TemplateName": "Payment Failed Notice",
+          "SubjectPreview": "Payment Failed for {{InvoiceNumber}} - please update payment details",
+          "Format": "Single",
+          "CreateBy": "John Doe",
+          "CreateOn": "01-27-2026",
+          "LastModified": "02-04-2026",
+          "Category": "Payment Failed",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 34,
+          "TemplateName": "Payment Failed - Retry Link",
+          "SubjectPreview": "Action Required: Retry payment for {{InvoiceNumber}}",
+          "Format": "Single",
+          "CreateBy": "Sarah Lee",
+          "CreateOn": "01-27-2026",
+          "LastModified": "02-04-2026",
+          "Category": "Payment Failed",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 35,
+          "TemplateName": "Payment Declined - Group",
+          "SubjectPreview": "Payment Failures Summary - {{CustomerName}}",
+          "Format": "Group",
+          "CreateBy": "Michael Clara",
+          "CreateOn": "01-28-2026",
+          "LastModified": "02-05-2026",
+          "Category": "Payment Failed",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        },
+        {
+          "id": 36,
+          "TemplateName": "Payment Reversal Alert",
+          "SubjectPreview": "Payment Reversed - {{InvoiceNumber}} (Please contact support)",
+          "Format": "Single",
+          "CreateBy": "David Kim",
+          "CreateOn": "01-28-2026",
+          "LastModified": "02-06-2026",
+          "Category": "Payment Failed",
+          "IsActive": { "status": "false", "disabled": false, "tooltip": "" }
+        }
+      ],
+      "totalRecords": 15,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Unpaid"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Overdue"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "Partially Paid"
+        },
+        {
+          "groupbyid": "4",
+          "groupbytext": "Paid"
+        },
+        {
+          "groupbyid": "5",
+          "groupbytext": "Void"
+        }
+      ]
+    },
+    "correlationId": ""
   }
 }
