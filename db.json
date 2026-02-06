@@ -10847,19 +10847,19 @@
           "masterdata": [
             {
               "id": 101101,
-              "valueKey": "Customer A"
+              "valueKey": "STU Industries"
             },
             {
               "id": 101102,
-              "valueKey": "Customer B"
+              "valueKey": "ABZ co"
             },
             {
               "id": 101103,
-              "valueKey": "Customer C"
+              "valueKey": "Wang Industries"
             },
             {
               "id": 101104,
-              "valueKey": "Customer D"
+              "valueKey": "IKG Groups Pvt Ltd"
             }
           ],
           "isactive": true,
@@ -10942,16 +10942,16 @@
                 },
                 {
                   "id": "Pay02",
-                  "name": "Customer",
+                  "name": "Customer Name",
                   "lablekey": "lbl-users-country",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 2,
                   "masterid": "1008",
                   "controltype": null,
                   "attrtype": "text",
-                  "api_name": "Customer",
+                  "api_name": "CustomerName",
                   "visible": true,
-                  "displayapiname": "Customer",
+                  "displayapiname": "CustomerName",
                   "inlineeditable": null,
                   "istitle": false,
                   "isdate": false,
@@ -11078,16 +11078,16 @@
                 },
                 {
                   "id": "Pay010",
-                  "name": "Reference / Transaction ID",
+                  "name": "Transaction ID",
                   "lablekey": "lbl-users-jobtitle",
                   "columnwidth": 230,
                   "seqno": 20,
                   "masterid": "",
                   "controltype": null,
                   "attrtype": "text",
-                  "api_name": "Reference/TransactionID",
+                  "api_name": "TransactionID",
                   "visible": true,
-                  "displayapiname": "Reference/TransactionID",
+                  "displayapiname": "TransactionID",
                   "inlineeditable": null,
                   "istitle": false,
                   "isdate": false,
@@ -11111,12 +11111,12 @@
                 },
                 {
                   "id": "66666666-6666-6666-6666-666666666603",
-                  "name": "Customer",
+                  "name": "Customer Name",
                   "lablekey": "lbl-user-status",
                   "seqno": 20,
                   "filtercontroltype": "multiselect",
                   "isquickfilter": true,
-                  "api_name": "Customer",
+                  "api_name": "CustomerName",
                   "islookup": false,
                   "masterid": "1010",
                   "apioutputskey": null,
@@ -11201,8 +11201,8 @@
             "masterid": "0",
             "controltype": null,
             "attrtype": "text",
-            "api_name": "Customer",
-            "columnwidth": 150
+            "api_name": "CustomerName",
+            "columnwidth": 180
           },
           {
             "id": "Pay03",
@@ -11273,7 +11273,7 @@
             "masterid": "0",
             "controltype": null,
             "attrtype": "text",
-            "api_name": "Reference/TransactionID",
+            "api_name": "TransactionID",
             "columnwidth": 230
           }
         ]
@@ -11289,7 +11289,7 @@
         {
           "id": 1,
           "PaymentID": "PAY-1001",
-          "Customer": "ABC co",
+          "CustomerName": "ABC co",
           "PaymentDate": "12-Dec-2025",
           "PaymentMethod": "ACH",
           "TotalAmount": "$5000",
@@ -11297,12 +11297,12 @@
           "UnappliedAmount": "$2000",
           "Status": "Partially Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "TRX-00123"
+          "TransactionID": "TRX-00124"
         },
         {
           "id": 2,
           "PaymentID": "PAY-1002",
-          "Customer": "XYZ Ltd",
+          "CustomerName": "Joe Steels Pvt Ltd",
           "PaymentDate": "11-Dec-2025",
           "PaymentMethod": "Credit Card",
           "TotalAmount": "$2000",
@@ -11310,12 +11310,12 @@
           "UnappliedAmount": "$0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "TRX-00456"
+          "TransactionID": "TRX-00132"
         },
         {
           "id": 3,
           "PaymentID": "PAY-1003",
-          "Customer": "DEF Inc",
+          "CustomerName": "STU Industries",
           "PaymentDate": "12-Dec-2025",
           "PaymentMethod": "Check",
           "TotalAmount": "$1500",
@@ -11323,12 +11323,12 @@
           "UnappliedAmount": "$1500",
           "Status": "Received",
           "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "CHK-07890"
+          "TransactionID": "TRX-00149"
         },
         {
           "id": 4,
           "PaymentID": "PAY-1004",
-          "Customer": "GHI Co",
+          "CustomerName": "MNO Corp",
           "PaymentDate": "10-Dec-2025",
           "PaymentMethod": "Wire",
           "TotalAmount": "$3000",
@@ -11336,12 +11336,12 @@
           "UnappliedAmount": "$3000",
           "Status": "Failed",
           "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "TRX-00987"
+          "TransactionID": ""
         },
         {
           "id": 5,
           "PaymentID": "PAY-1005",
-          "Customer": "JKL Ltd",
+          "CustomerName": "Sheera Fashion Store",
           "PaymentDate": "12-Dec-2025",
           "PaymentMethod": "ACH",
           "TotalAmount": "$2500",
@@ -11349,12 +11349,12 @@
           "UnappliedAmount": "$0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "TRX-01234"
+          "TransactionID": "TRX-00168"
         },
         {
           "id": 6,
           "PaymentID": "PAY-1006",
-          "Customer": "MNO Corp",
+          "CustomerName": "Wang Industries",
           "PaymentDate": "09-Dec-2025",
           "PaymentMethod": "Credit Card",
           "TotalAmount": "$4000",
@@ -11362,12 +11362,12 @@
           "UnappliedAmount": "$500",
           "Status": "Partially Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1016\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1017\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "TRX-06789"
+          "TransactionID": "TRX-00178"
         },
         {
           "id": 7,
           "PaymentID": "PAY-1007",
-          "Customer": "PQR Ltd",
+          "CustomerName": "IKG Groups Pvt Ltd",
           "PaymentDate": "13-Dec-2025",
           "PaymentMethod": "Wire",
           "TotalAmount": "$3200",
@@ -11375,12 +11375,12 @@
           "UnappliedAmount": "$0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "TRX-09876"
+          "TransactionID": "TRX-00193"
         },
         {
           "id": 8,
           "PaymentID": "PAY-1008",
-          "Customer": "STU Industries",
+          "CustomerName": "IKG Groups Pvt Ltd",
           "PaymentDate": "12-Dec-2025",
           "PaymentMethod": "Check",
           "TotalAmount": "$1800",
@@ -11388,25 +11388,25 @@
           "UnappliedAmount": "$1200",
           "Status": "Partially Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "CHK-04567"
+          "TransactionID": "TRX-00193"
         },
         {
           "id": 9,
           "PaymentID": "PAY-1009",
-          "Customer": "VWX Enterprises",
+          "CustomerName": "VWX Enterprises",
           "PaymentDate": "10-Dec-2025",
           "PaymentMethod": "ACH",
           "TotalAmount": "$2750",
           "AppliedAmount": "$0",
           "UnappliedAmount": "$2750",
-          "Status": "Pending",
+          "Status": "Failed",
           "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "TRX-02233"
+          "TransactionID": "TRX-02233"
         },
         {
           "id": 10,
           "PaymentID": "PAY-1010",
-          "Customer": "YZA Co",
+          "CustomerName": "YZA Co",
           "PaymentDate": "14-Dec-2025",
           "PaymentMethod": "Wire",
           "TotalAmount": "$6000",
@@ -11414,7 +11414,7 @@
           "UnappliedAmount": "$0",
           "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1014\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Reference/TransactionID": "TRX-04789"
+          "TransactionID": "TRX-04789"
         }
       ],
       "totalRecords": 15,
@@ -12733,6 +12733,56 @@
       "message": "List of Masters for Tenant",
       "data": [
         {
+          "id": 1009,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "PAY-1001"
+            },
+            {
+              "id": 101102,
+              "valueKey": "PAY-1002"
+            },
+            {
+              "id": 101103,
+              "valueKey": "PAY-1003"
+            },
+            {
+              "id": 101104,
+              "valueKey": "PAY-1004"
+            },
+            {
+              "id": 101105,
+              "valueKey": "PAY-1005"
+            },
+            {
+              "id": 101106,
+              "valueKey": "PAY-1006"
+            },
+            {
+              "id": 101107,
+              "valueKey": "PAY-1007"
+            },
+            {
+              "id": 101108,
+              "valueKey": "PAY-1008"
+            },
+            {
+              "id": 101109,
+              "valueKey": "PAY-1009"
+            },
+            {
+              "id": 101110,
+              "valueKey": "PAY-1010"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
           "id": 1010,
           "valuekey": "userstatus",
           "labels": {},
@@ -12740,19 +12790,19 @@
           "masterdata": [
             {
               "id": 101101,
-              "valueKey": "Vendor A"
+              "valueKey": "STU Industries"
             },
             {
               "id": 101102,
-              "valueKey": "Vendor B"
+              "valueKey": "ABZ co"
             },
             {
               "id": 101103,
-              "valueKey": "Vendor C"
+              "valueKey": "Wang Industries"
             },
             {
               "id": 101104,
-              "valueKey": "Vendor D"
+              "valueKey": "IKG Groups Pvt Ltd"
             }
           ],
           "isactive": true,
@@ -12766,15 +12816,19 @@
           "masterdata": [
             {
               "id": 101101,
-              "valueKey": "Success"
+              "valueKey": "Partially Applied"
             },
             {
               "id": 101102,
-              "valueKey": "Failed"
+              "valueKey": "Fully Applied"
             },
             {
               "id": 101103,
-              "valueKey": "Processing"
+              "valueKey": "Received"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Failed"
             }
           ],
           "isactive": true,
@@ -12816,7 +12870,7 @@
                   "id": "Pay01",
                   "name": "Payment ID",
                   "lablekey": "lbl-users-timezone",
-                  "columnwidth": 100,
+                  "columnwidth": 150,
                   "seqno": 1,
                   "masterid": "1009",
                   "controltype": null,
@@ -12831,6 +12885,23 @@
                 },
                 {
                   "id": "Pay02",
+                  "name": "Customer Name",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 180,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "CustomerName",
+                  "visible": true,
+                  "displayapiname": "CustomerName",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay03",
                   "name": "Payment Date",
                   "lablekey": "lbl-users-country",
                   "columnwidth": 150,
@@ -12847,27 +12918,10 @@
                   "islookup": false
                 },
                 {
-                  "id": "Pay03",
-                  "name": "Vendor Name",
-                  "lablekey": "lbl-users-country",
-                  "columnwidth": 150,
-                  "seqno": 2,
-                  "masterid": "1008",
-                  "controltype": null,
-                  "attrtype": "text",
-                  "api_name": "VendorName",
-                  "visible": true,
-                  "displayapiname": "VendorName",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
                   "id": "Pay04",
                   "name": "Payment Method",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
+                  "columnwidth": 180,
                   "seqno": 5,
                   "masterid": "",
                   "controltype": null,
@@ -12882,16 +12936,16 @@
                 },
                 {
                   "id": "Pay05",
-                  "name": "Paid Amount",
+                  "name": "Total Amount",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 180,
+                  "columnwidth": 150,
                   "seqno": 16,
                   "masterid": "",
                   "controltype": null,
                   "attrtype": "numeric",
-                  "api_name": "PaidAmount",
+                  "api_name": "TotalAmount",
                   "visible": true,
-                  "displayapiname": "PaidAmount",
+                  "displayapiname": "TotalAmount",
                   "inlineeditable": null,
                   "istitle": false,
                   "isdate": false,
@@ -12899,16 +12953,16 @@
                 },
                 {
                   "id": "Pay06",
-                  "name": "Payment Type",
+                  "name": "Applied Amount",
                   "lablekey": "lbl-users-jobtitle",
                   "columnwidth": 150,
                   "seqno": 18,
                   "masterid": "",
                   "controltype": null,
-                  "attrtype": "text",
-                  "api_name": "PaymentType",
+                  "attrtype": "numeric",
+                  "api_name": "AppliedAmount",
                   "visible": true,
-                  "displayapiname": "PaymentType",
+                  "displayapiname": "AppliedAmount",
                   "inlineeditable": null,
                   "istitle": false,
                   "isdate": false,
@@ -12916,16 +12970,16 @@
                 },
                 {
                   "id": "Pay07",
-                  "name": "Invoice No(s)",
+                  "name": "Unapplied Amount",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 200,
+                  "columnwidth": 150,
                   "seqno": 18,
                   "masterid": "",
-                  "controltype": "groupdropdown",
-                  "attrtype": "text",
-                  "api_name": "InvoiceNo(s)",
+                  "controltype": null,
+                  "attrtype": "numeric",
+                  "api_name": "UnappliedAmount",
                   "visible": true,
-                  "displayapiname": "InvoiceNo(s)",
+                  "displayapiname": "UnappliedAmount",
                   "inlineeditable": null,
                   "istitle": false,
                   "isdate": false,
@@ -12936,7 +12990,7 @@
                   "name": "Status",
                   "lablekey": "lbl-users-jobtitle",
                   "columnwidth": 150,
-                  "seqno": 17,
+                  "seqno": 18,
                   "masterid": "",
                   "controltype": null,
                   "attrtype": "text",
@@ -12950,10 +13004,27 @@
                 },
                 {
                   "id": "Pay09",
+                  "name": "Invoice No(s)",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 230,
+                  "seqno": 17,
+                  "masterid": "",
+                  "controltype": "groupdropdown",
+                  "attrtype": "text",
+                  "api_name": "InvoiceNo(s)",
+                  "visible": true,
+                  "displayapiname": "InvoiceNo(s)",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Pay010",
                   "name": "Transaction ID",
                   "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 18,
+                  "columnwidth": 230,
+                  "seqno": 20,
                   "masterid": "",
                   "controltype": null,
                   "attrtype": "text",
@@ -12972,29 +13043,30 @@
                   "name": "Payment ID",
                   "lablekey": "lbl-user-username",
                   "seqno": 10,
-                  "filtercontroltype": "textbox",
+                  "filtercontroltype": "multiselect",
                   "isquickfilter": true,
-                  "api_name": "PaymentID",
+                  "api_name": "Payment_ID",
                   "islookup": false,
-                  "masterid": "",
+                  "masterid": "1009",
                   "apioutputskey": null,
                   "isvisible": false,
                   "apioutputvalue": null
                 },
                 {
                   "id": "66666666-6666-6666-6666-666666666603",
-                  "name": "Vendor Name",
+                  "name": "Customer Name",
                   "lablekey": "lbl-user-status",
                   "seqno": 20,
                   "filtercontroltype": "multiselect",
                   "isquickfilter": true,
-                  "api_name": "is_active",
+                  "api_name": "CustomerName",
                   "islookup": false,
                   "masterid": "1010",
                   "apioutputskey": null,
                   "isvisible": false,
                   "apioutputvalue": null
                 },
+
                 {
                   "id": "66666666-6666-6666-6666-666666666605",
                   "name": "Status",
@@ -13002,7 +13074,7 @@
                   "seqno": 20,
                   "filtercontroltype": "multiselect",
                   "isquickfilter": true,
-                  "api_name": "is_active",
+                  "api_name": "Status",
                   "islookup": false,
                   "masterid": "1011",
                   "apioutputskey": null,
@@ -13011,17 +13083,6 @@
                 }
               ],
               "groupbyfields": [
-                {
-                  "id": "Pay03",
-                  "name": "Vendor Name",
-                  "labelkey": "lbl-Workitem-chunk",
-                  "seqno": 1,
-                  "api_name": "VendorName",
-                  "type": "vertical",
-                  "direction": "asc",
-                  "masterid": "351000000",
-                  "displayapiname": "CustomerName"
-                },
                 {
                   "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
                   "name": "Status",
@@ -13056,7 +13117,17 @@
         "isdefault": null,
         "last_accessed_time": "2025-07-18T11:12:14",
         "filters": [],
-        "groupby": [],
+        "groupby": [
+          {
+            "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
+            "type": "Horizontal",
+            "direction": "asc",
+            "defaultvalue": "All",
+            "api_name": "Status",
+            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
+            "seq": null
+          }
+        ],
         "columns": [
           {
             "id": "Pay01",
@@ -13065,24 +13136,24 @@
             "controltype": null,
             "attrtype": "text",
             "api_name": "PaymentID",
-            "columnwidth": 100
+            "columnwidth": 150
           },
           {
             "id": "Pay02",
             "seqno": 20,
             "masterid": "0",
             "controltype": null,
-            "attrtype": "date",
-            "api_name": "PaymentDate",
-            "columnwidth": 150
+            "attrtype": "text",
+            "api_name": "CustomerName",
+            "columnwidth": 180
           },
           {
             "id": "Pay03",
             "seqno": 20,
             "masterid": "0",
             "controltype": null,
-            "attrtype": "text",
-            "api_name": "VendorName",
+            "attrtype": "date",
+            "api_name": "PaymentDate",
             "columnwidth": 150
           },
           {
@@ -13092,7 +13163,7 @@
             "controltype": null,
             "attrtype": "text",
             "api_name": "PaymentMethod",
-            "columnwidth": 150
+            "columnwidth": 180
           },
           {
             "id": "Pay05",
@@ -13100,26 +13171,26 @@
             "masterid": "0",
             "controltype": null,
             "attrtype": "numeric",
-            "api_name": "PaidAmount",
-            "columnwidth": 180
+            "api_name": "TotalAmount",
+            "columnwidth": 150
           },
           {
             "id": "Pay06",
             "seqno": 50,
             "masterid": "0",
             "controltype": null,
-            "attrtype": "text",
-            "api_name": "PaymentType",
+            "attrtype": "numeric",
+            "api_name": "AppliedAmount",
             "columnwidth": 150
           },
           {
             "id": "Pay07",
             "seqno": 60,
             "masterid": "0",
-            "controltype": "groupdropdown",
-            "attrtype": "text",
-            "api_name": "InvoiceNo(s)",
-            "columnwidth": 200
+            "controltype": null,
+            "attrtype": "numeric",
+            "api_name": "UnappliedAmount",
+            "columnwidth": 150
           },
           {
             "id": "Pay08",
@@ -13134,10 +13205,19 @@
             "id": "Pay09",
             "seqno": 80,
             "masterid": "0",
+            "controltype": "groupdropdown",
+            "attrtype": "text",
+            "api_name": "InvoiceNo(s)",
+            "columnwidth": 230
+          },
+          {
+            "id": "Pay010",
+            "seqno": 90,
+            "masterid": "0",
             "controltype": null,
             "attrtype": "text",
             "api_name": "TransactionID",
-            "columnwidth": 150
+            "columnwidth": 230
           }
         ]
       },
@@ -13151,260 +13231,152 @@
       "datas": [
         {
           "id": 1,
-          "PaymentID": "PAY_001",
-          "PaymentDate": "04-Jan-2025",
-          "VendorName": "Vendor A",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$1,200.00",
-          "PaymentType": "Invoice Payment",
+          "PaymentID": "PAY-1001",
+          "CustomerName": "ABC co",
+          "PaymentDate": "12-Dec-2025",
+          "PaymentMethod": "ACH",
+          "TotalAmount": "$5000",
+          "AppliedAmount": "$3000",
+          "UnappliedAmount": "$2000",
+          "Status": "Partially Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789451"
+          "TransactionID": "TRX-00124"
         },
         {
           "id": 2,
-          "PaymentID": "PAY_002",
-          "PaymentDate": "05-Jan-2025",
-          "VendorName": "Vendor B",
-          "PaymentMethod": "Bank Transfer",
-          "PaidAmount": "$2,000.00",
-          "PaymentType": "Invoice Payment",
+          "PaymentID": "PAY-1002",
+          "CustomerName": "Joe Steels Pvt Ltd",
+          "PaymentDate": "11-Dec-2025",
+          "PaymentMethod": "Credit Card",
+          "TotalAmount": "$2000",
+          "AppliedAmount": "$2000",
+          "UnappliedAmount": "$0",
+          "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Processing",
-          "TransactionID": "TXN-789452"
+          "TransactionID": "TRX-00132"
         },
         {
           "id": 3,
-          "PaymentID": "PAY_003",
-          "PaymentDate": "06-Jan-2025",
-          "VendorName": "Vendor C",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$3,500.00",
-          "PaymentType": "Invoice Payment",
+          "PaymentID": "PAY-1003",
+          "CustomerName": "STU Industries",
+          "PaymentDate": "12-Dec-2025",
+          "PaymentMethod": "Check",
+          "TotalAmount": "$1500",
+          "AppliedAmount": "$0",
+          "UnappliedAmount": "$1500",
+          "Status": "Received",
           "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789453"
+          "TransactionID": "TRX-00149"
         },
         {
           "id": 4,
-          "PaymentID": "PAY_004",
-          "PaymentDate": "07-Jan-2025",
-          "VendorName": "Vendor A",
-          "PaymentMethod": "Bank Transfer",
-          "PaidAmount": "$500.00",
-          "PaymentType": "Custom Payment",
+          "PaymentID": "PAY-1004",
+          "CustomerName": "MNO Corp",
+          "PaymentDate": "10-Dec-2025",
+          "PaymentMethod": "Wire",
+          "TotalAmount": "$3000",
+          "AppliedAmount": "$0",
+          "UnappliedAmount": "$3000",
+          "Status": "Failed",
           "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789454"
+          "TransactionID": ""
         },
         {
           "id": 5,
-          "PaymentID": "PAY_005",
-          "PaymentDate": "08-Jan-2025",
-          "VendorName": "Vendor D",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$900.00",
-          "PaymentType": "Invoice Payment",
+          "PaymentID": "PAY-1005",
+          "CustomerName": "Sheera Fashion Store",
+          "PaymentDate": "12-Dec-2025",
+          "PaymentMethod": "ACH",
+          "TotalAmount": "$2500",
+          "AppliedAmount": "$2500",
+          "UnappliedAmount": "$0",
+          "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Failed",
-          "TransactionID": "TXN-789455"
+          "TransactionID": "TRX-00168"
         },
         {
           "id": 6,
-          "PaymentID": "PAY_006",
-          "PaymentDate": "09-Jan-2025",
-          "VendorName": "Vendor E",
-          "PaymentMethod": "PayPal",
-          "PaidAmount": "$1,050.00",
-          "PaymentType": "Invoice Payment",
+          "PaymentID": "PAY-1006",
+          "CustomerName": "Wang Industries",
+          "PaymentDate": "09-Dec-2025",
+          "PaymentMethod": "Credit Card",
+          "TotalAmount": "$4000",
+          "AppliedAmount": "$3500",
+          "UnappliedAmount": "$500",
+          "Status": "Partially Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1016\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1017\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789456"
+          "TransactionID": "TRX-00178"
         },
         {
           "id": 7,
-          "PaymentID": "PAY_007",
-          "PaymentDate": "10-Jan-2025",
-          "VendorName": "Vendor B",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$2,750.00",
-          "PaymentType": "Invoice Payment",
+          "PaymentID": "PAY-1007",
+          "CustomerName": "IKG Groups Pvt Ltd",
+          "PaymentDate": "13-Dec-2025",
+          "PaymentMethod": "Wire",
+          "TotalAmount": "$3200",
+          "AppliedAmount": "$3200",
+          "UnappliedAmount": "$0",
+          "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Processing",
-          "TransactionID": "TXN-789457"
+          "TransactionID": "TRX-00193"
         },
         {
           "id": 8,
-          "PaymentID": "PAY_008",
-          "PaymentDate": "11-Jan-2025",
-          "VendorName": "Vendor C",
-          "PaymentMethod": "Bank Transfer",
-          "PaidAmount": "$620.00",
-          "PaymentType": "Custom Payment",
+          "PaymentID": "PAY-1008",
+          "CustomerName": "IKG Groups Pvt Ltd",
+          "PaymentDate": "12-Dec-2025",
+          "PaymentMethod": "Check",
+          "TotalAmount": "$1800",
+          "AppliedAmount": "$600",
+          "UnappliedAmount": "$1200",
+          "Status": "Partially Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789458"
+          "TransactionID": "TRX-00193"
         },
         {
           "id": 9,
-          "PaymentID": "PAY_009",
-          "PaymentDate": "12-Jan-2025",
-          "VendorName": "Vendor A",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$4,200.00",
-          "PaymentType": "Invoice Payment",
+          "PaymentID": "PAY-1009",
+          "CustomerName": "VWX Enterprises",
+          "PaymentDate": "10-Dec-2025",
+          "PaymentMethod": "ACH",
+          "TotalAmount": "$2750",
+          "AppliedAmount": "$0",
+          "UnappliedAmount": "$2750",
+          "Status": "Failed",
           "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789459"
+          "TransactionID": "TRX-02233"
         },
         {
           "id": 10,
-          "PaymentID": "PAY_010",
-          "PaymentDate": "13-Jan-2025",
-          "VendorName": "Vendor F",
-          "PaymentMethod": "Bank Transfer",
-          "PaidAmount": "$1,800.00",
-          "PaymentType": "Invoice Payment",
+          "PaymentID": "PAY-1010",
+          "CustomerName": "YZA Co",
+          "PaymentDate": "14-Dec-2025",
+          "PaymentMethod": "Wire",
+          "TotalAmount": "$6000",
+          "AppliedAmount": "$6000",
+          "UnappliedAmount": "$0",
+          "Status": "Fully Applied",
           "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1014\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Failed",
-          "TransactionID": "TXN-789460"
-        },
-        {
-          "id": 11,
-          "PaymentID": "PAY_011",
-          "PaymentDate": "14-Jan-2025",
-          "VendorName": "Vendor D",
-          "PaymentMethod": "PayPal",
-          "PaidAmount": "$300.00",
-          "PaymentType": "Custom Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789461"
-        },
-        {
-          "id": 12,
-          "PaymentID": "PAY_012",
-          "PaymentDate": "15-Jan-2025",
-          "VendorName": "Vendor E",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$2,150.00",
-          "PaymentType": "Invoice Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-
-          "Status": "Processing",
-          "TransactionID": "TXN-789462"
-        },
-        {
-          "id": 13,
-          "PaymentID": "PAY_013",
-          "PaymentDate": "16-Jan-2025",
-          "VendorName": "Vendor B",
-          "PaymentMethod": "Bank Transfer",
-          "PaidAmount": "$750.00",
-          "PaymentType": "Invoice Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789463"
-        },
-        {
-          "id": 14,
-          "PaymentID": "PAY_014",
-          "PaymentDate": "17-Jan-2025",
-          "VendorName": "Vendor C",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$5,000.00",
-          "PaymentType": "Invoice Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1016\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1017\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789464"
-        },
-        {
-          "id": 15,
-          "PaymentID": "PAY_015",
-          "PaymentDate": "18-Jan-2025",
-          "VendorName": "Vendor A",
-          "PaymentMethod": "Bank Transfer",
-          "PaidAmount": "$1,100.00",
-          "PaymentType": "Invoice Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1012\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1013\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1014\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-
-          "Status": "Failed",
-          "TransactionID": "TXN-789465"
-        },
-        {
-          "id": 16,
-          "PaymentID": "PAY_016",
-          "PaymentDate": "19-Jan-2025",
-          "VendorName": "Vendor F",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$2,600.00",
-          "PaymentType": "Invoice Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1002\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789466"
-        },
-        {
-          "id": 17,
-          "PaymentID": "PAY_017",
-          "PaymentDate": "20-Jan-2025",
-          "VendorName": "Vendor D",
-          "PaymentMethod": "Bank Transfer",
-          "PaidAmount": "$980.00",
-          "PaymentType": "Custom Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1015\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1001\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Processing",
-          "TransactionID": "TXN-789467"
-        },
-        {
-          "id": 18,
-          "PaymentID": "PAY_018",
-          "PaymentDate": "21-Jan-2025",
-          "VendorName": "Vendor E",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$3,300.00",
-          "PaymentType": "Invoice Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1003\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1004\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1005\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789468"
-        },
-        {
-          "id": 19,
-          "PaymentID": "PAY_019",
-          "PaymentDate": "22-Jan-2025",
-          "VendorName": "Vendor B",
-          "PaymentMethod": "PayPal",
-          "PaidAmount": "$1,450.00",
-          "PaymentType": "Invoice Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1006\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Success",
-          "TransactionID": "TXN-789469"
-        },
-        {
-          "id": 20,
-          "PaymentID": "PAY_020",
-          "PaymentDate": "23-Jan-2025",
-          "VendorName": "Vendor C",
-          "PaymentMethod": "Credit Card",
-          "PaidAmount": "$2,900.00",
-          "PaymentType": "Invoice Payment",
-          "InvoiceNo(s)": "[{\"name\":\"INV-1007\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1008\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1011\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1010\",\"colorcode\":12,\"tagid\":\"A11B\"},{\"name\":\"INV-1009\",\"colorcode\":12,\"tagid\":\"A11B\"}]",
-          "Status": "Processing",
-          "TransactionID": "TXN-789470"
+          "TransactionID": "TRX-04789"
         }
       ],
-      "totalRecords": 20,
+      "totalRecords": 15,
       "groupbydetails": [
         {
           "groupbyid": "1",
-          "groupbytext": "Success"
+          "groupbytext": "Partially Applied"
         },
         {
           "groupbyid": "2",
-          "groupbytext": "Failed"
+          "groupbytext": "Fully Applied"
         },
         {
           "groupbyid": "3",
-          "groupbytext": "Processing"
+          "groupbytext": "Received"
+        },
+        {
+          "groupbyid": "4",
+          "groupbytext": "Failed"
         }
       ]
     },
@@ -17351,7 +17323,7 @@
           "InvocieNumber": "INV_002",
           "VendorName": "Michael Smith",
           "DueDate": "04/25/2025",
-          "Status": "Paid",
+          "Status": "Unpaid",
           "VendorAccountNumber": "984354083312",
           "AmountDue": "$0.00"
         },
@@ -17360,7 +17332,7 @@
           "InvocieNumber": "INV_003",
           "VendorName": "David Lee",
           "DueDate": "02/28/2025",
-          "Status": "Overdue",
+          "Status": "Partially Paid",
           "VendorAccountNumber": "567890123456",
           "AmountDue": "$1,200.75"
         },
@@ -17369,7 +17341,7 @@
           "InvocieNumber": "INV_004",
           "VendorName": "Sarah Johnson",
           "DueDate": "05/05/2025",
-          "Status": "Paid",
+          "Status": "Unpaid",
           "VendorAccountNumber": "230145678901",
           "AmountDue": "$0.00"
         },
@@ -17387,7 +17359,7 @@
           "InvocieNumber": "INV_006",
           "VendorName": "David Lee",
           "DueDate": "04/01/2025",
-          "Status": "Paid",
+          "Status": "Overdue",
           "VendorAccountNumber": "785412369854",
           "AmountDue": "$0.00"
         },
@@ -17414,7 +17386,7 @@
           "InvocieNumber": "INV_009",
           "VendorName": "Sophia Martinez",
           "DueDate": "04/12/2025",
-          "Status": "Paid",
+          "Status": "Overdue",
           "VendorAccountNumber": "112233445566",
           "AmountDue": "$0.00"
         },
@@ -17441,7 +17413,7 @@
           "InvocieNumber": "INV_012",
           "VendorName": "Michael Smith",
           "DueDate": "04/28/2025",
-          "Status": "Paid",
+          "Status": "Unpaid",
           "VendorAccountNumber": "990011223344",
           "AmountDue": "$0.00"
         }
@@ -17468,7 +17440,7 @@
     },
     "correlationId": ""
   },
-    "email_template_getlookupdatabyid": {
+  "email_template_getlookupdatabyid": {
     "data": {
       "statusCode": 1000,
       "message": "List of Masters for Tenant",
@@ -17836,7 +17808,11 @@
           "CreateOn": "01-10-2026",
           "LastModified": "01-14-2026",
           "Category": "Invoice Created",
-          "IsActive": { "status": "false", "disabled": false, "tooltip": "Default template cannot be deactivated" }
+          "IsActive": {
+            "status": "false",
+            "disabled": false,
+            "tooltip": "Default template cannot be deactivated"
+          }
         },
         {
           "id": 2,
@@ -17971,7 +17947,11 @@
           "CreateOn": "01-15-2026",
           "LastModified": "01-19-2026",
           "Category": "After Due",
-          "IsActive": { "status": "true", "disabled": true, "tooltip": "Default template cannot be deactivated" }
+          "IsActive": {
+            "status": "true",
+            "disabled": true,
+            "tooltip": "Default template cannot be deactivated"
+          }
         },
         {
           "id": 14,
@@ -17982,7 +17962,11 @@
           "CreateOn": "01-15-2026",
           "LastModified": "01-20-2026",
           "Category": "After Due",
-          "IsActive": { "status": "true", "disabled": true, "tooltip": "Default template cannot be deactivated" }
+          "IsActive": {
+            "status": "true",
+            "disabled": true,
+            "tooltip": "Default template cannot be deactivated"
+          }
         },
         {
           "id": 15,
