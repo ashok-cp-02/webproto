@@ -11445,6 +11445,56 @@
       "message": "List of Masters for Tenant",
       "data": [
         {
+          "id": 1009,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Ven_001"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Ven_002"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Ven_003"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Ven_004"
+            },
+            {
+              "id": 101105,
+              "valueKey": "Ven_005"
+            },
+            {
+              "id": 101106,
+              "valueKey": "Ven_006"
+            },
+            {
+              "id": 101107,
+              "valueKey": "Ven_007"
+            },
+            {
+              "id": 101108,
+              "valueKey": "Ven_008"
+            },
+            {
+              "id": 101109,
+              "valueKey": "Ven_009"
+            },
+            {
+              "id": 101110,
+              "valueKey": "Ven_010"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
           "id": 1010,
           "valuekey": "userstatus",
           "labels": {},
@@ -11629,11 +11679,11 @@
                   "name": "Vendor ID",
                   "lablekey": "lbl-user-username",
                   "seqno": 10,
-                  "filtercontroltype": "textbox",
+                  "filtercontroltype": "multiselect",
                   "isquickfilter": true,
                   "api_name": "invoice_number",
                   "islookup": false,
-                  "masterid": "",
+                  "masterid": "1009",
                   "apioutputskey": null,
                   "isvisible": false,
                   "apioutputvalue": null
@@ -11781,7 +11831,7 @@
       "datas": [
         {
           "id": 1,
-          "VendorID": "ven_011",
+          "VendorID": "Ven_001",
           "VendorName": "Vendor A",
           "City": "New York",
           "Mobile": "(214) 555-1001",
@@ -11790,7 +11840,7 @@
         },
         {
           "id": 2,
-          "VendorID": "ven_010",
+          "VendorID": "Ven_002",
           "VendorName": "Vendor B",
           "City": "Los Angeles",
           "Mobile": "(214) 555-1001",
@@ -11799,7 +11849,7 @@
         },
         {
           "id": 3,
-          "VendorID": "ven_009",
+          "VendorID": "Ven_003",
           "VendorName": "Vendor D",
           "City": "Houston",
           "Mobile": "(214) 555-1001",
@@ -11808,7 +11858,7 @@
         },
         {
           "id": 4,
-          "VendorID": "ven_00a",
+          "VendorID": "Ven_004",
           "VendorName": "Vendor A",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
@@ -11817,7 +11867,7 @@
         },
         {
           "id": 5,
-          "VendorID": "ven_007",
+          "VendorID": "Ven_005",
           "VendorName": "Vendor A",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
@@ -11826,7 +11876,7 @@
         },
         {
           "id": 6,
-          "VendorID": "ven_006",
+          "VendorID": "Ven_006",
           "VendorName": "Vendor A",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
@@ -11835,7 +11885,7 @@
         },
         {
           "id": 7,
-          "VendorID": "ven_005",
+          "VendorID": "Ven_007",
           "VendorName": "Vendor A",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
@@ -11844,7 +11894,7 @@
         },
         {
           "id": 8,
-          "VendorID": "ven_004",
+          "VendorID": "Ven_008",
           "VendorName": "Vendor A",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
@@ -11853,7 +11903,7 @@
         },
         {
           "id": 9,
-          "VendorID": "ven_003",
+          "VendorID": "Ven_009",
           "VendorName": "Vendor B",
           "City": "Houston",
           "Mobile": "(214) 555-1001",
@@ -11862,7 +11912,7 @@
         },
         {
           "id": 10,
-          "VendorID": "ven_002",
+          "VendorID": "Ven_010",
           "VendorName": "Vendor D",
           "City": "New York",
           "Mobile": "(214) 555-1001",
@@ -11871,7 +11921,7 @@
         },
         {
           "id": 11,
-          "VendorID": "ven_012",
+          "VendorID": "Ven_011",
           "VendorName": "Vendor A",
           "City": "Los Angeles",
           "Mobile": "(214) 555-1001",
@@ -11880,7 +11930,7 @@
         },
         {
           "id": 12,
-          "VendorID": "ven_013",
+          "VendorID": "Ven_012",
           "VendorName": "Vendor B",
           "City": "Dallas",
           "Mobile": "(214) 555-1001",
@@ -11889,7 +11939,7 @@
         },
         {
           "id": 13,
-          "VendorID": "ven_014",
+          "VendorID": "Ven_013",
           "VendorName": "Vendor D",
           "City": "Houston",
           "Mobile": "(214) 555-1001",
@@ -11898,7 +11948,7 @@
         },
         {
           "id": 14,
-          "VendorID": "ven_015",
+          "VendorID": "Ven_014",
           "VendorName": "Vendor A",
           "City": "New York",
           "Mobile": "(214) 555-1001",
@@ -11907,7 +11957,7 @@
         },
         {
           "id": 15,
-          "VendorID": "ven_016",
+          "VendorID": "Ven_015",
           "VendorName": "Vendor B",
           "City": "Los Angeles",
           "Mobile": "(214) 555-1001",
@@ -13100,17 +13150,7 @@
         "isdefault": null,
         "last_accessed_time": "2025-07-18T11:12:14",
         "filters": [],
-        "groupby": [
-          {
-            "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-            "type": "Horizontal",
-            "direction": "asc",
-            "defaultvalue": "All",
-            "api_name": "Status",
-            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
-            "seq": null
-          }
-        ],
+        "groupby": [],
         "columns": [
           {
             "id": "Pay01",
@@ -13211,7 +13251,7 @@
           "PaymentMethod": "Credit Card",
           "PaidAmount": "$1200",
           "PaymentType": "Invoice Payment",
-          "Status": "Partially Applied",
+          "Status": "Success",
           "InvoiceNo(s)": "[{\"label\":\"INV-1001\",\"value\":\"2\"},{\"label\":\"INV-2001\",\"value\":\"3\"},{\"label\":\"INV-2021\",\"value\":\"4\"},{\"label\":\"INV-2011\",\"value\":\"4\"},{\"label\":\"INV-2024\",\"value\":\"4\"},{\"label\":\"INV-2025\",\"value\":\"4\"},{\"label\":\"INV-2026\",\"value\":\"4\"},{\"label\":\"INV-2027\",\"value\":\"4\"},{\"label\":\"INV-2028\",\"value\":\"4\"},{\"label\":\"INV-2029\",\"value\":\"4\"},{\"label\":\"INV-2030\",\"value\":\"4\"},{\"label\":\"INV-2031\",\"value\":\"4\"},{\"label\":\"INV-2032\",\"value\":\"4\"}]",
           "TransactionID": "TRX-00124"
         },
@@ -13223,7 +13263,7 @@
           "PaymentMethod": "Bank Transfer",
           "PaidAmount": "$2000",
           "PaymentType": "Invoice Payment",
-          "Status": "Fully Applied",
+          "Status": "Processing",
           "InvoiceNo(s)": "[{\"label\":\"INV-1002\",\"value\":\"2\"},{\"label\":\"INV-2001\",\"value\":\"3\"},{\"label\":\"INV-2021\",\"value\":\"4\"},{\"label\":\"INV-2011\",\"value\":\"4\"},{\"label\":\"INV-2024\",\"value\":\"4\"},{\"label\":\"INV-2025\",\"value\":\"4\"},{\"label\":\"INV-2026\",\"value\":\"4\"},{\"label\":\"INV-2027\",\"value\":\"4\"},{\"label\":\"INV-2028\",\"value\":\"4\"},{\"label\":\"INV-2029\",\"value\":\"4\"},{\"label\":\"INV-2030\",\"value\":\"4\"},{\"label\":\"INV-2031\",\"value\":\"4\"},{\"label\":\"INV-2032\",\"value\":\"4\"}]",
           "TransactionID": "TRX-00132"
         },
@@ -13235,7 +13275,7 @@
           "PaymentMethod": "Credit Card",
           "PaidAmount": "$3500",
           "PaymentType": "Invoice Payment",
-          "Status": "Received",
+          "Status": "Success",
           "InvoiceNo(s)": "[{\"label\":\"INV-1003\",\"value\":\"2\"},{\"label\":\"INV-3001\",\"value\":\"3\"},{\"label\":\"INV-3021\",\"value\":\"4\"},{\"label\":\"INV-3011\",\"value\":\"4\"},{\"label\":\"INV-3024\",\"value\":\"4\"},{\"label\":\"INV-3025\",\"value\":\"4\"},{\"label\":\"INV-3026\",\"value\":\"4\"},{\"label\":\"INV-3027\",\"value\":\"4\"},{\"label\":\"INV-3028\",\"value\":\"4\"},{\"label\":\"INV-3029\",\"value\":\"4\"},{\"label\":\"INV-3030\",\"value\":\"4\"},{\"label\":\"INV-3031\",\"value\":\"4\"},{\"label\":\"INV-3032\",\"value\":\"4\"}]",
           "TransactionID": "TRX-00149"
         },
@@ -13247,8 +13287,8 @@
           "PaymentMethod": "Bank Transfer",
           "PaidAmount": "$500",
           "PaymentType": "Custom Payment",
-          "Status": "Failed",
-          "InvoiceNo(s)": "[{\"label\":\"INV-1004\",\"value\":\"2\"},{\"label\":\"INV-4001\",\"value\":\"3\"},{\"label\":\"INV-4021\",\"value\":\"4\"},{\"label\":\"INV-4011\",\"value\":\"4\"},{\"label\":\"INV-4024\",\"value\":\"4\"},{\"label\":\"INV-4025\",\"value\":\"4\"},{\"label\":\"INV-4026\",\"value\":\"4\"},{\"label\":\"INV-4027\",\"value\":\"4\"},{\"label\":\"INV-4028\",\"value\":\"4\"},{\"label\":\"INV-4029\",\"value\":\"4\"},{\"label\":\"INV-4030\",\"value\":\"4\"},{\"label\":\"INV-4031\",\"value\":\"4\"},{\"label\":\"INV-4032\",\"value\":\"4\"}]",
+          "Status": "Success",
+          "InvoiceNo(s)": "",
           "TransactionID": ""
         },
         {
@@ -13259,7 +13299,7 @@
           "PaymentMethod": "Credit Card",
           "PaidAmount": "$900",
           "PaymentType": "Invoice Payment",
-          "Status": "Fully Applied",
+          "Status": "Success",
           "InvoiceNo(s)": "[{\"label\":\"INV-1005\",\"value\":\"2\"},{\"label\":\"INV-5001\",\"value\":\"3\"},{\"label\":\"INV-5021\",\"value\":\"4\"},{\"label\":\"INV-5011\",\"value\":\"4\"},{\"label\":\"INV-5024\",\"value\":\"4\"},{\"label\":\"INV-5025\",\"value\":\"4\"},{\"label\":\"INV-5026\",\"value\":\"4\"},{\"label\":\"INV-5027\",\"value\":\"4\"},{\"label\":\"INV-5028\",\"value\":\"4\"},{\"label\":\"INV-5029\",\"value\":\"4\"},{\"label\":\"INV-5030\",\"value\":\"4\"},{\"label\":\"INV-5031\",\"value\":\"4\"},{\"label\":\"INV-5032\",\"value\":\"4\"}]",
           "TransactionID": "TRX-00168"
         },
@@ -13271,8 +13311,8 @@
           "PaymentMethod": "Bank Transfer",
           "PaidAmount": "$4000",
           "PaymentType": "Custom Payment",
-          "Status": "Partially Applied",
-          "InvoiceNo(s)": "[{\"label\":\"INV-1006\",\"value\":\"2\"},{\"label\":\"INV-6001\",\"value\":\"3\"},{\"label\":\"INV-6021\",\"value\":\"4\"},{\"label\":\"INV-6011\",\"value\":\"4\"},{\"label\":\"INV-6024\",\"value\":\"4\"},{\"label\":\"INV-6025\",\"value\":\"4\"},{\"label\":\"INV-6026\",\"value\":\"4\"},{\"label\":\"INV-6027\",\"value\":\"4\"},{\"label\":\"INV-6028\",\"value\":\"4\"},{\"label\":\"INV-6029\",\"value\":\"4\"},{\"label\":\"INV-6030\",\"value\":\"4\"},{\"label\":\"INV-6031\",\"value\":\"4\"},{\"label\":\"INV-6032\",\"value\":\"4\"}]",
+          "Status": "Failed",
+          "InvoiceNo(s)": "",
           "TransactionID": "TRX-00178"
         },
         {
@@ -13282,8 +13322,8 @@
           "PaymentDate": "13-Dec-2025",
           "PaymentMethod": "Credit Card",
           "PaidAmount": "$3200",
-          "PaymentType": "Custom Payment",
-          "Status": "Fully Applied",
+          "PaymentType": "Invoice Payment",
+          "Status": "Processing",
           "InvoiceNo(s)": "[{\"label\":\"INV-1007\",\"value\":\"2\"},{\"label\":\"INV-7001\",\"value\":\"3\"},{\"label\":\"INV-7021\",\"value\":\"4\"},{\"label\":\"INV-7011\",\"value\":\"4\"},{\"label\":\"INV-7024\",\"value\":\"4\"},{\"label\":\"INV-7025\",\"value\":\"4\"},{\"label\":\"INV-7026\",\"value\":\"4\"},{\"label\":\"INV-7027\",\"value\":\"4\"},{\"label\":\"INV-7028\",\"value\":\"4\"},{\"label\":\"INV-7029\",\"value\":\"4\"},{\"label\":\"INV-7030\",\"value\":\"4\"},{\"label\":\"INV-7031\",\"value\":\"4\"},{\"label\":\"INV-7032\",\"value\":\"4\"}]",
           "TransactionID": "TRX-00193"
         },
@@ -13295,7 +13335,7 @@
           "PaymentMethod": "Bank Transfer",
           "PaidAmount": "$1800",
           "PaymentType": "Invoice Payment",
-          "Status": "Partially Applied",
+          "Status": "Success",
           "InvoiceNo(s)": "[{\"label\":\"INV-1008\",\"value\":\"2\"},{\"label\":\"INV-8001\",\"value\":\"3\"},{\"label\":\"INV-8021\",\"value\":\"4\"},{\"label\":\"INV-8011\",\"value\":\"4\"},{\"label\":\"INV-8024\",\"value\":\"4\"},{\"label\":\"INV-8025\",\"value\":\"4\"},{\"label\":\"INV-8026\",\"value\":\"4\"},{\"label\":\"INV-8027\",\"value\":\"4\"},{\"label\":\"INV-8028\",\"value\":\"4\"},{\"label\":\"INV-8029\",\"value\":\"4\"},{\"label\":\"INV-8030\",\"value\":\"4\"},{\"label\":\"INV-8031\",\"value\":\"4\"},{\"label\":\"INV-8032\",\"value\":\"4\"}]",
           "TransactionID": "TRX-00193"
         },
@@ -13308,7 +13348,7 @@
           "PaidAmount": "$2750",
           "PaymentType": "Custom Payment",
           "Status": "Failed",
-          "InvoiceNo(s)": "[{\"label\":\"INV-1009\",\"value\":\"2\"},{\"label\":\"INV-9001\",\"value\":\"3\"},{\"label\":\"INV-9021\",\"value\":\"4\"},{\"label\":\"INV-9011\",\"value\":\"4\"},{\"label\":\"INV-9024\",\"value\":\"4\"},{\"label\":\"INV-9025\",\"value\":\"4\"},{\"label\":\"INV-9026\",\"value\":\"4\"},{\"label\":\"INV-9027\",\"value\":\"4\"},{\"label\":\"INV-9028\",\"value\":\"4\"},{\"label\":\"INV-9029\",\"value\":\"4\"},{\"label\":\"INV-9030\",\"value\":\"4\"},{\"label\":\"INV-9031\",\"value\":\"4\"},{\"label\":\"INV-9032\",\"value\":\"4\"}]",
+          "InvoiceNo(s)": "",
           "TransactionID": "TRX-02233"
         },
         {
@@ -13319,7 +13359,7 @@
           "PaymentMethod": "Bank Transfer",
           "PaidAmount": "$6000",
           "PaymentType": "Invoice Payment",
-          "Status": "Fully Applied",
+          "Status": "Success",
           "InvoiceNo(s)": "[{\"label\":\"INV-1101\",\"value\":\"2\"},{\"label\":\"INV-1101\",\"value\":\"3\"},{\"label\":\"INV-1121\",\"value\":\"4\"},{\"label\":\"INV-1111\",\"value\":\"4\"},{\"label\":\"INV-1124\",\"value\":\"4\"},{\"label\":\"INV-1125\",\"value\":\"4\"},{\"label\":\"INV-1126\",\"value\":\"4\"},{\"label\":\"INV-1127\",\"value\":\"4\"},{\"label\":\"INV-1128\",\"value\":\"4\"},{\"label\":\"INV-1129\",\"value\":\"4\"},{\"label\":\"INV-1130\",\"value\":\"4\"},{\"label\":\"INV-1131\",\"value\":\"4\"},{\"label\":\"INV-1132\",\"value\":\"4\"}]",
           "TransactionID": "TRX-04789"
         }
