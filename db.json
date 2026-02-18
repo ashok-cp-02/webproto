@@ -18245,5 +18245,1314 @@
       ]
     },
     "correlationId": ""
+  },
+  "allinvoices_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1011,
+          "valuekey": "customer",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "0-7 Days"
+            },
+            {
+              "id": 101102,
+              "valueKey": "8-15 Days"
+            },
+            {
+              "id": 101103,
+              "valueKey": "16-30 Days"
+            },
+            {
+              "id": 101104,
+              "valueKey": "31-60 Days"
+            },
+            {
+              "id": 101105,
+              "valueKey": "61+ Days"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1012,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "New"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Reminder Scheduled"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Reminder Sent"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Payment Request Created"
+            },
+            {
+              "id": 101105,
+              "valueKey": "Partially Paid"
+            },
+            {
+              "id": 101106,
+              "valueKey": "Paid"
+            },
+            {
+              "id": 101107,
+              "valueKey": "Overdue"
+            },
+            {
+              "id": 101108,
+              "valueKey": "Escalated"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1013,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "New"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Paid"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Unpaid"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Partially Paid"
+            },
+            {
+              "id": 101105,
+              "valueKey": "Overdue"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "allinvoices_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "Manage and collect payments for synced invoices",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Inv01",
+                  "name": "Customer",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Customer",
+                  "visible": true,
+                  "displayapiname": "Customer",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv02",
+                  "name": "Invoice No",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "InvoiceNo",
+                  "visible": true,
+                  "displayapiname": "InvoiceNo",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv03",
+                  "name": "Invoice Date",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "InvoiceDate",
+                  "visible": true,
+                  "displayapiname": "InvoiceDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv04",
+                  "name": "Due Date",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "DueDate",
+                  "visible": true,
+                  "displayapiname": "DueDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv05",
+                  "name": "Payment Status",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 220,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "PaymentStatus",
+                  "visible": true,
+                  "displayapiname": "PaymentStatus",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv06",
+                  "name": "Total Amount",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "numeric",
+                  "api_name": "TotalAmount",
+                  "visible": true,
+                  "displayapiname": "TotalAmount",
+                  "inlineeditable": null,
+                  "currencytype": "USD",
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv07",
+                  "name": "Paid Amount",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "numeric",
+                  "api_name": "PaidAmount",
+                  "visible": true,
+                  "displayapiname": "PaidAmount",
+                  "inlineeditable": null,
+                  "currencytype": "USD",
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv08",
+                  "name": "Balance Due",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "numeric",
+                  "api_name": "BalanceDue",
+                  "visible": true,
+                  "displayapiname": "BalanceDue",
+                  "inlineeditable": null,
+                  "currencytype": "USD",
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv09",
+                  "name": "Paid Date",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "PaidDate",
+                  "visible": true,
+                  "displayapiname": "PaidDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv10",
+                  "name": "Aging Days",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "numeric",
+                  "api_name": "AgingDays",
+                  "visible": true,
+                  "displayapiname": "AgingDays",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Inv11",
+                  "name": "Email Sent",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 150,
+                  "seqno": 1,
+                  "masterid": "1010",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "EmailSent",
+                  "visible": true,
+                  "displayapiname": "EmailSent",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225esdf4d57",
+                  "name": "Customer",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "customer",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Invoice Number",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "invoice_number",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Age Filter",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "age_filter",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-6666665",
+                  "name": "Life Cycle Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "life_cycle_status",
+                  "islookup": false,
+                  "masterid": "1012",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Payment Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "payment_status",
+                  "islookup": false,
+                  "masterid": "1013",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": [
+                {
+                  "id": "Inv05",
+                  "name": "Payment Status",
+                  "labelkey": "lbl-customer-status",
+                  "seqno": 4,
+                  "api_name": "PaymentStatus",
+                  "type": "Horizontal",
+                  "direction": "-",
+                  "masterid": "2010",
+                  "displayapiname": null
+                },
+                {
+                  "id": "Inv01",
+                  "name": "Customer",
+                  "labelkey": "lbl-customer-status",
+                  "seqno": 5,
+                  "api_name": "Customer",
+                  "type": "Vertical",
+                  "direction": "-",
+                  "masterid": "2010",
+                  "displayapiname": null
+                },
+                {
+                  "id": "Inv11",
+                  "name": "Email Sent",
+                  "labelkey": "lbl-customer-status",
+                  "seqno": 6,
+                  "api_name": "EmailSent",
+                  "type": "Vertical",
+                  "direction": "-",
+                  "masterid": "2010",
+                  "displayapiname": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "allinvoices_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Payments",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "Inv01",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Customer",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv02",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "InvoiceNo",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv03",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "InvoiceDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv04",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "DueDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv05",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "PaymentStatus",
+            "columnwidth": 220
+          },
+          {
+            "id": "Inv06",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "numeric",
+            "api_name": "TotalAmount",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv07",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "numeric",
+            "api_name": "PaidAmount",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv08",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "numeric",
+            "api_name": "BalanceDue",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv09",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "PaidDate",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv10",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "numeric",
+            "api_name": "AgingDays",
+            "columnwidth": 150
+          },
+          {
+            "id": "Inv11",
+            "seqno": 1,
+            "masterid": "1010",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "EmailSent",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "allinvoices_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "InvoiceNo": "INV-2026-001",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Jan 05, 2026",
+          "DueDate": "Feb 04, 2026",
+          "PaymentStatus": "Paid",
+          "TotalAmount": "12000.00",
+          "PaidAmount": "12000.00",
+          "BalanceDue": "0.00",
+          "PaidDate": "Jan 10, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 2,
+          "InvoiceNo": "INV-2026-002",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Jan 08, 2026",
+          "DueDate": "Feb 07, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "8500.50",
+          "PaidAmount": "0.00",
+          "BalanceDue": "8500.50",
+          "PaidDate": "Feb 08, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 3,
+          "InvoiceNo": "INV-2026-003",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Jan 10, 2026",
+          "DueDate": "Feb 09, 2026",
+          "PaymentStatus": "Overdue",
+          "TotalAmount": "9500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "9500.00",
+          "PaidDate": "Feb 12, 2026",
+          "AgingDays": "15",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 4,
+          "InvoiceNo": "INV-2026-004",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Jan 12, 2026",
+          "DueDate": "Feb 11, 2026",
+          "PaymentStatus": "Partially Paid",
+          "TotalAmount": "19500.00",
+          "PaidAmount": "9750.00",
+          "BalanceDue": "9750.00",
+          "PaidDate": "Feb 01, 2026",
+          "AgingDays": "5",
+          "EmailSent": "No"
+        },
+        {
+          "id": 5,
+          "InvoiceNo": "INV-2026-005",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Jan 14, 2026",
+          "DueDate": "Feb 13, 2026",
+          "PaymentStatus": "Payment Request Created",
+          "TotalAmount": "22000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "22000.00",
+          "PaidDate": "Feb 14, 2026",
+          "AgingDays": "3",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 6,
+          "InvoiceNo": "INV-2026-006",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Jan 18, 2026",
+          "DueDate": "Feb 17, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "11000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "11000.00",
+          "PaidDate": "Feb 18, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 7,
+          "InvoiceNo": "INV-2026-007",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Jan 20, 2026",
+          "DueDate": "Feb 19, 2026",
+          "PaymentStatus": "Reminder Sent",
+          "TotalAmount": "6750.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "6750.00",
+          "PaidDate": "Feb 20, 2026",
+          "AgingDays": "7",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 8,
+          "InvoiceNo": "INV-2026-008",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Jan 22, 2026",
+          "DueDate": "Feb 21, 2026",
+          "PaymentStatus": "Escalated",
+          "TotalAmount": "45000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "45000.00",
+          "PaidDate": "Feb 25, 2026",
+          "AgingDays": "20",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 9,
+          "InvoiceNo": "INV-2026-009",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Jan 25, 2026",
+          "DueDate": "Feb 24, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "13200.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "13200.00",
+          "PaidDate": "Feb 24, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 10,
+          "InvoiceNo": "INV-2026-010",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Jan 28, 2026",
+          "DueDate": "Feb 27, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "28000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "28000.00",
+          "PaidDate": "Feb 27, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+
+        {
+          "id": 11,
+          "InvoiceNo": "INV-2026-011",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Feb 01, 2026",
+          "DueDate": "Mar 03, 2026",
+          "PaymentStatus": "Partially Paid",
+          "TotalAmount": "16000.00",
+          "PaidAmount": "6000.00",
+          "BalanceDue": "10000.00",
+          "PaidDate": "Feb 15, 2026",
+          "AgingDays": "4",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 12,
+          "InvoiceNo": "INV-2026-012",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Feb 03, 2026",
+          "DueDate": "Mar 05, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "9200.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "9200.00",
+          "PaidDate": "Mar 05, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 13,
+          "InvoiceNo": "INV-2026-013",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Feb 05, 2026",
+          "DueDate": "Mar 07, 2026",
+          "PaymentStatus": "Reminder Scheduled",
+          "TotalAmount": "17800.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "17800.00",
+          "PaidDate": "Mar 07, 2026",
+          "AgingDays": "2",
+          "EmailSent": "No"
+        },
+        {
+          "id": 14,
+          "InvoiceNo": "INV-2026-014",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Feb 07, 2026",
+          "DueDate": "Mar 09, 2026",
+          "PaymentStatus": "Payment Request Created",
+          "TotalAmount": "21000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "21000.00",
+          "PaidDate": "Mar 09, 2026",
+          "AgingDays": "1",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 15,
+          "InvoiceNo": "INV-2026-015",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Feb 09, 2026",
+          "DueDate": "Mar 11, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "30500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "30500.00",
+          "PaidDate": "Mar 11, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+
+        {
+          "id": 16,
+          "InvoiceNo": "INV-2026-016",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Feb 10, 2026",
+          "DueDate": "Mar 12, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "9800.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "9800.00",
+          "PaidDate": "Mar 12, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 17,
+          "InvoiceNo": "INV-2026-017",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Feb 11, 2026",
+          "DueDate": "Mar 13, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "7500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "7500.00",
+          "PaidDate": "Mar 13, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 18,
+          "InvoiceNo": "INV-2026-018",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Feb 12, 2026",
+          "DueDate": "Mar 14, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "26500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "26500.00",
+          "PaidDate": "Mar 14, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 19,
+          "InvoiceNo": "INV-2026-019",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Feb 13, 2026",
+          "DueDate": "Mar 15, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "18900.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "18900.00",
+          "PaidDate": "Mar 15, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 20,
+          "InvoiceNo": "INV-2026-020",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Feb 14, 2026",
+          "DueDate": "Mar 16, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "33000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "33000.00",
+          "PaidDate": "Mar 16, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+
+        {
+          "id": 21,
+          "InvoiceNo": "INV-2026-021",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Feb 15, 2026",
+          "DueDate": "Mar 17, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "14200.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "14200.00",
+          "PaidDate": "Mar 17, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 22,
+          "InvoiceNo": "INV-2026-022",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Feb 16, 2026",
+          "DueDate": "Mar 18, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "8100.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "8100.00",
+          "PaidDate": "Mar 18, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 23,
+          "InvoiceNo": "INV-2026-023",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Feb 17, 2026",
+          "DueDate": "Mar 19, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "29200.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "29200.00",
+          "PaidDate": "Mar 19, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 24,
+          "InvoiceNo": "INV-2026-024",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Feb 18, 2026",
+          "DueDate": "Mar 20, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "17400.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "17400.00",
+          "PaidDate": "Mar 20, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 25,
+          "InvoiceNo": "INV-2026-025",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Feb 19, 2026",
+          "DueDate": "Mar 21, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "36000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "36000.00",
+          "PaidDate": "Mar 21, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+
+        {
+          "id": 26,
+          "InvoiceNo": "INV-2026-026",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Feb 20, 2026",
+          "DueDate": "Mar 22, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "15800.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "15800.00",
+          "PaidDate": "Mar 22, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 27,
+          "InvoiceNo": "INV-2026-027",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Feb 21, 2026",
+          "DueDate": "Mar 23, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "9050.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "9050.00",
+          "PaidDate": "Mar 23, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 28,
+          "InvoiceNo": "INV-2026-028",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Feb 22, 2026",
+          "DueDate": "Mar 24, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "27500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "27500.00",
+          "PaidDate": "Mar 24, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 29,
+          "InvoiceNo": "INV-2026-029",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Feb 23, 2026",
+          "DueDate": "Mar 25, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "16800.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "16800.00",
+          "PaidDate": "Mar 25, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 30,
+          "InvoiceNo": "INV-2026-030",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Feb 24, 2026",
+          "DueDate": "Mar 26, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "34200.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "34200.00",
+          "PaidDate": "Mar 26, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+
+        {
+          "id": 31,
+          "InvoiceNo": "INV-2026-031",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Feb 25, 2026",
+          "DueDate": "Mar 27, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "14900.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "14900.00",
+          "PaidDate": "Mar 27, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 32,
+          "InvoiceNo": "INV-2026-032",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Feb 26, 2026",
+          "DueDate": "Mar 28, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "9900.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "9900.00",
+          "PaidDate": "Mar 28, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 33,
+          "InvoiceNo": "INV-2026-033",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Feb 27, 2026",
+          "DueDate": "Mar 29, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "31000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "31000.00",
+          "PaidDate": "Mar 29, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 34,
+          "InvoiceNo": "INV-2026-034",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Feb 28, 2026",
+          "DueDate": "Mar 30, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "18200.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "18200.00",
+          "PaidDate": "Mar 30, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 35,
+          "InvoiceNo": "INV-2026-035",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Mar 01, 2026",
+          "DueDate": "Mar 31, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "35500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "35500.00",
+          "PaidDate": "Mar 31, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+
+        {
+          "id": 36,
+          "InvoiceNo": "INV-2026-036",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Mar 02, 2026",
+          "DueDate": "Apr 01, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "16500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "16500.00",
+          "PaidDate": "Apr 01, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 37,
+          "InvoiceNo": "INV-2026-037",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Mar 03, 2026",
+          "DueDate": "Apr 02, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "8800.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "8800.00",
+          "PaidDate": "Apr 02, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 38,
+          "InvoiceNo": "INV-2026-038",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Mar 04, 2026",
+          "DueDate": "Apr 03, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "29800.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "29800.00",
+          "PaidDate": "Apr 03, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 39,
+          "InvoiceNo": "INV-2026-039",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Mar 05, 2026",
+          "DueDate": "Apr 04, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "17600.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "17600.00",
+          "PaidDate": "Apr 04, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 40,
+          "InvoiceNo": "INV-2026-040",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Mar 06, 2026",
+          "DueDate": "Apr 05, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "36800.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "36800.00",
+          "PaidDate": "Apr 05, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+
+        {
+          "id": 41,
+          "InvoiceNo": "INV-2026-041",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Mar 07, 2026",
+          "DueDate": "Apr 06, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "17200.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "17200.00",
+          "PaidDate": "Apr 06, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 42,
+          "InvoiceNo": "INV-2026-042",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Mar 08, 2026",
+          "DueDate": "Apr 07, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "9400.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "9400.00",
+          "PaidDate": "Apr 07, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 43,
+          "InvoiceNo": "INV-2026-043",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Mar 09, 2026",
+          "DueDate": "Apr 08, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "32200.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "32200.00",
+          "PaidDate": "Apr 08, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 44,
+          "InvoiceNo": "INV-2026-044",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Mar 10, 2026",
+          "DueDate": "Apr 09, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "19000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "19000.00",
+          "PaidDate": "Apr 09, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 45,
+          "InvoiceNo": "INV-2026-045",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Mar 11, 2026",
+          "DueDate": "Apr 10, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "38000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "38000.00",
+          "PaidDate": "Apr 10, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+
+        {
+          "id": 46,
+          "InvoiceNo": "INV-2026-046",
+          "Customer": "Nexus Industries",
+          "InvoiceDate": "Mar 12, 2026",
+          "DueDate": "Apr 11, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "18000.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "18000.00",
+          "PaidDate": "Apr 11, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 47,
+          "InvoiceNo": "INV-2026-047",
+          "Customer": "TechStart Inc.",
+          "InvoiceDate": "Mar 13, 2026",
+          "DueDate": "Apr 12, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "10200.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "10200.00",
+          "PaidDate": "Apr 12, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 48,
+          "InvoiceNo": "INV-2026-048",
+          "Customer": "Acme Corporation",
+          "InvoiceDate": "Mar 14, 2026",
+          "DueDate": "Apr 13, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "33500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "33500.00",
+          "PaidDate": "Apr 13, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        },
+        {
+          "id": 49,
+          "InvoiceNo": "INV-2026-049",
+          "Customer": "Phoenix Ventures",
+          "InvoiceDate": "Mar 15, 2026",
+          "DueDate": "Apr 14, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "20500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "20500.00",
+          "PaidDate": "Apr 14, 2026",
+          "AgingDays": "0",
+          "EmailSent": "No"
+        },
+        {
+          "id": 50,
+          "InvoiceNo": "INV-2026-050",
+          "Customer": "Global Solutions Ltd",
+          "InvoiceDate": "Mar 16, 2026",
+          "DueDate": "Apr 15, 2026",
+          "PaymentStatus": "New",
+          "TotalAmount": "39500.00",
+          "PaidAmount": "0.00",
+          "BalanceDue": "39500.00",
+          "PaidDate": "Apr 15, 2026",
+          "AgingDays": "0",
+          "EmailSent": "Yes"
+        }
+      ],
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Paid"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Partially Paid"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "New"
+        },
+        {
+          "groupbyid": "4",
+          "groupbytext": "Payment Request Created"
+        },
+        {
+          "groupbyid": "5",
+          "groupbytext": "Reminder Sent"
+        },
+        {
+          "groupbyid": "6",
+          "groupbytext": "Escalated"
+        }
+      ],
+      "totalRecords": 50
+    },
+    "correlationId": ""
   }
 }
