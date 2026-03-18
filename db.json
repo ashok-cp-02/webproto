@@ -9824,6 +9824,66 @@
           ],
           "isactive": true,
           "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1014,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "0-7 Days"
+            },
+            {
+              "id": 101102,
+              "valueKey": "8-15 Days"
+            },
+            {
+              "id": 101103,
+              "valueKey": "16-30 Days"
+            },
+            {
+              "id": 101104,
+              "valueKey": "31-60 Days"
+            },
+            {
+              "id": 101105,
+              "valueKey": "61+ Days"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1015,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "0-7 Days"
+            },
+            {
+              "id": 101102,
+              "valueKey": "8-15 Days"
+            },
+            {
+              "id": 101103,
+              "valueKey": "16-30 Days"
+            },
+            {
+              "id": 101104,
+              "valueKey": "31-60 Days"
+            },
+            {
+              "id": 101105,
+              "valueKey": "61+ Days"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
         }
       ],
       "correlationId": null
@@ -10109,17 +10169,72 @@
                   "isvisible": false,
                   "apioutputvalue": null
                 },
-
                 {
                   "id": "66666666-6666-6666-6666-666666666605",
                   "name": "Status",
                   "lablekey": "lbl-user-status",
-                  "seqno": 20,
+                  "seqno": 50,
                   "filtercontroltype": "multiselect",
                   "isquickfilter": true,
                   "api_name": "is_active",
                   "islookup": false,
                   "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666606",
+                  "name": "Invoice Date",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 40,
+                  "filtercontroltype": "daterangepicker",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1012",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666607",
+                  "name": "Due Date",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 30,
+                  "filtercontroltype": "daterangepicker",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1013",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666608",
+                  "name": "Due In",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 60,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1014",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666609",
+                  "name": "Days Overdue",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 70,
+                  "filtercontroltype": "multiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1015",
                   "apioutputskey": null,
                   "isvisible": false,
                   "apioutputvalue": null
