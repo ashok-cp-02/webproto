@@ -3476,1262 +3476,6 @@
     },
     "correlationId": ""
   },
-    "configurePayment_FormFields": {
-    "statusCode": 200,
-    "message": "FormConfiguration Data",
-    "data": {
-      "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaa0001",
-      "name": "Create User",
-      "groups": [
-        {
-          "id": "6d411934-5217-4552-8912-795b473681c3",
-          "name": "Processor Details",
-          "seqno": 40,
-          "fields": [
-            {
-              "id": "49f3ff1c-3d94-47b3-8d9c-9bee7fd6dc4f",
-              "name": "Processor Name",
-              "lablekey": "lbl-processor-name",
-              "seqno": 1,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "processor_name",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Processor Name",
-              "islookup": false,
-              "masterid": "101",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Environment",
-              "lablekey": "lbl-environment-stage",
-              "seqno": 2,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "environment_stage",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Environment",
-              "islookup": false,
-              "masterid": "102",
-              "visible": true
-            },
-            {
-              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
-              "name": "API Base URL",
-              "lablekey": "lbl-api-base-url",
-              "seqno": 3,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "api_base_url",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "API Base URL",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
-              "name": "Finix API Version",
-              "lablekey": "lbl-finix-api-version",
-              "seqno": 4,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "finix_api_version",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Finix API Version",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
-              "name": "Application ID",
-              "lablekey": "lbl-application-id",
-              "seqno": 5,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "application_id",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Application ID (Username)",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
-              "name": "API Secret / Password",
-              "lablekey": "lbl-api-secret-password",
-              "seqno": 6,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "api_secret",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "API Secret / Password",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
-              "name": "Authentication Type",
-              "lablekey": "lbl-authentication-type",
-              "seqno": 7,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "authentication_type",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Authentication Type",
-              "islookup": false,
-              "masterid": "103",
-              "visible": true
-            },
-            {
-              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
-              "name": "Merchant Processor",
-              "lablekey": "lbl-merchant-processor",
-              "seqno": 8,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "merchant_processor",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Merchant Processor",
-              "islookup": false,
-              "masterid": "104",
-              "visible": true
-            }
-          ]
-        }
-      ],
-      "subform": []
-    },
-    "correlationId": null
-  },
-
-    "configurePayment_GetMastersAndMasterDatasbyid": {
-    "data": {
-      "statusCode": 1000,
-      "message": "List of Masters for Tenant",
-      "data": [
-        {
-          "id": 101,
-          "valuekey": "Processor Name",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100812,
-              "valueKey": "Stripe"
-            },
-            {
-              "id": 100813,
-              "valueKey": "Plaid"
-            },
-            {
-              "id": 100813,
-              "valueKey": "Dwolla"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-          "id": 102,
-          "valuekey": "Environment",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100812,
-              "valueKey": "ACH & Card"
-            },
-            {
-              "id": 100813,
-              "valueKey": "ACH"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-          "id": 103,
-          "valuekey": "AuthenticationType",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100812,
-              "valueKey": "All"
-            },
-            {
-              "id": 100813,
-              "valueKey": "Scheduled"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        }, 
-        {
-          "id": 104,
-          "valuekey": "MarchantProcessor",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100812,
-              "valueKey": "Active"
-            },
-            {
-              "id": 100813,
-              "valueKey": "Maintenance"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        }  
-      ],
-      "correlationId": null
-    }
-  },
-
-  "addClient_FormFields": {
-    "statusCode": 200,
-    "message": "FormConfiguration Data",
-    "data": {
-      "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaa0001",
-      "name": "Add Client",
-      "groups": [
-        {
-          "id": "6d411934-5217-4552-8912-795b473681c3",
-          "name": "Business Profile",
-          "seqno": 1,
-          "fields": [
-            {
-              "id": "49f3ff1c-3d94-47b3-8d9c-9bee7fd6dc4f",
-              "name": "Legal Business Name",
-              "lablekey": "lbl-legal-business-name",
-              "seqno": 1,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "legal_business_name",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Legal Business Name",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Business Type",
-              "lablekey": "lbl-business-type",
-              "seqno": 2,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "business_type",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Business Type",
-              "islookup": false,
-              "masterid": "101",
-              "visible": true
-            },
-            {
-              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
-              "name": "Merchant Category Code (MCC)",
-              "lablekey": "lbl-merchant-category-code",
-              "seqno": 3,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "merchant_category_code",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Merchant Category Code (MCC)",
-              "islookup": false,
-              "masterid": "102",
-              "visible": true
-            },
-            {
-              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
-              "name": "Business Description",
-              "lablekey": "lbl-business-description",
-              "seqno": 4,
-              "controltype": "textarea",
-              "attributedatatype": "nvarchar",
-              "api_name": "business_description",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "250",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Business Description",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "cf37a4a2-a7a5-4e33-9d6c-728ae11b8670",
-              "name": "Website URL",
-              "lablekey": "lbl-website-url",
-              "seqno": 5,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "website_url",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Website URL",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            }
-          ]
-        },
-        {
-          "id": "6d411934-5217-4552-8912-795b473681c3",
-          "name": "Business Contact",
-          "seqno": 2,
-          "fields": [
-            {
-              "id": "49f3ff1c-3d94-47b3-8d9c-9bee7fd6dc4f",
-              "name": "Business Email",
-              "lablekey": "lbl-business-email",
-              "seqno": 1,
-              "controltype": "emailtextbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "business_email",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Business Email",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Business Phone",
-              "lablekey": "lbl-business-phone",
-              "seqno": 2,
-              "controltype": "number",
-              "attributedatatype": "nvarchar",
-              "api_name": "business_phone",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Business Phone",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            }
-            
-          ]
-        },
-         {
-          "id": "6d411934-5217-4552-8912-795b473681c3",
-          "name": "Business Address",
-          "seqno": 3,
-          "fields": [
-            {
-              "id": "49f3ff1c-3d94-47b3-8d9c-9bee7fd6dc4f",
-              "name": "Address Line 1",
-              "lablekey": "lbl-address-line-1",
-              "seqno": 1,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "address_line1",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Address Line 1",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "City",
-              "lablekey": "lbl-city",
-              "seqno": 2,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "city",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "City",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "State / Region",
-              "lablekey": "lbl-state-region",
-              "seqno": 3,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "state_region",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "State / Region",
-              "islookup": false,
-              "masterid": "103",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Postal Code",
-              "lablekey": "lbl-postal-code",
-              "seqno": 4,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "postal_code",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Postal Code",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Country",
-              "lablekey": "lbl-country",
-              "seqno": 5,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "country",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Country",
-              "islookup": false,
-              "masterid": "104",
-              "visible": true
-            }
-            
-          ]
-        },
-         {
-          "id": "6d411934-5217-4552-8912-795b473681c3",
-          "name": "Business Registration",
-          "seqno": 4,
-          "fields": [
-            {
-              "id": "49f3ff1c-3d94-47b3-8d9c-9bee7fd6dc4f",
-              "name": "Incorporation Date",
-              "lablekey": "lbl-incorporation-date",
-              "seqno": 1,
-              "controltype": "datepicker",
-              "attributedatatype": "nvarchar",
-              "api_name": "incorporation_date",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Incorporation Date",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Business Tax ID",
-              "lablekey": "lbl-business-tax-id",
-              "seqno": 2,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "business_tax_id",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Business Tax ID",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            }
-            
-          ]
-        },
-         {
-          "id": "6d411934-5217-4552-8912-795b473681c3",
-          "name": "Primary Owner",
-          "seqno": 5,
-          "fields": [
-            {
-              "id": "49f3ff1c-3d94-47b3-8d9c-9bee7fd6dc4f",
-              "name": "Title",
-              "lablekey": "lbl-title",
-              "seqno": 1,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "title",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Title",
-              "islookup": false,
-              "masterid": "105",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "First Name",
-              "lablekey": "lbl-first-name",
-              "seqno": 2,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "first_name",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "First Name",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Last Name",
-              "lablekey": "lbl-last-name",
-              "seqno": 3,
-              "controltype": "textbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "last_name",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Last Name",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-           
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Email",
-              "lablekey": "lbl-email",
-              "seqno": 4,
-              "controltype": "emailtextbox",
-              "attributedatatype": "nvarchar",
-              "api_name": "email",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Email",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-             {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Phone",
-              "lablekey": "lbl-phone",
-              "seqno": 5,
-              "controltype": "number",
-              "attributedatatype": "nvarchar",
-              "api_name": "phone",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Phone",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-             {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Date of Birth",
-              "lablekey": "lbl-date-of-birth",
-              "seqno": 5,
-              "controltype": "datepicker",
-              "attributedatatype": "nvarchar",
-              "api_name": "date_of_birth",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Date of Birth",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-             {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Tax ID",
-              "lablekey": "lbl-tax-id",
-              "seqno": 5,
-              "controltype": "number",
-              "attributedatatype": "nvarchar",
-              "api_name": "tax-id",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Tax ID",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            }
-            
-          ]
-        },
-         {
-          "id": "6d411934-5217-4552-8912-795b473681c3",
-          "name": "Settlement Bank Account",
-          "seqno": 5,
-          "fields": [
-            {
-              "id": "49f3ff1c-3d94-47b3-8d9c-9bee7fd6dc4f",
-              "name": "Account Holder Name",
-              "lablekey": "lbl-account-holder-name",
-              "seqno": 1,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "account-holder-name",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Account Holder Name",
-              "islookup": false,
-              "masterid": "106",
-              "visible": true
-            },
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Bank Routing Number",
-              "lablekey": "lbl-bank-routing-nuber",
-              "seqno": 2,
-              "controltype": "number",
-              "attributedatatype": "nvarchar",
-              "api_name": "bank-routing-nuber",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Bank Routing Number",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-           {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Account Number",
-              "lablekey": "lbl-account-number",
-              "seqno": 3,
-              "controltype": "number",
-              "attributedatatype": "nvarchar",
-              "api_name": "account-number",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Account Number",
-              "islookup": false,
-              "masterid": "",
-              "visible": true
-            },
-           
-            {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Account Type",
-              "lablekey": "lbl-account-type",
-              "seqno": 4,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "account-type",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Account Type",
-              "islookup": false,
-              "masterid": "107",
-              "visible": true
-            },
-             {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Currency",
-              "lablekey": "lbl-currency",
-              "seqno": 5,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "currency",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Currency",
-              "islookup": false,
-              "masterid": "108",
-              "visible": true
-            },
-             {
-              "id": "799bd7c3-5ec5-4a91-8cdb-715bf564dc08",
-              "name": "Country",
-              "lablekey": "lbl-country",
-              "seqno": 6,
-              "controltype": "dropdown",
-              "attributedatatype": "nvarchar",
-              "api_name": "country",
-              "table_name": "arc_users",
-              "required": false,
-              "field_read_only": true,
-              "tooltip": "",
-              "validation_rule": "",
-              "decimal_place": "0",
-              "maxlength": "100",
-              "placeholder": "",
-              "default_value": "",
-              "default_value_text": "",
-              "label_text": "Country",
-              "islookup": false,
-              "masterid": "104",
-              "visible": true
-            }
-            
-          ]
-        }
-      ],
-      "subform": []
-    },
-    "correlationId": null
-  },
-
-  "addClient_GetMastersAndMasterDatasbyid": {
-    "data": {
-      "statusCode": 1000,
-      "message": "List of Masters for Tenant",
-      "data": [
-        {
-          "id": 101,
-          "valuekey": "Processor Name",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100812,
-              "valueKey": "Stripe"
-            },
-            {
-              "id": 100813,
-              "valueKey": "Plaid"
-            },
-            {
-              "id": 100813,
-              "valueKey": "Dwolla"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-          "id": 102,
-          "valuekey": "Environment",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100812,
-              "valueKey": "ACH & Card"
-            },
-            {
-              "id": 100813,
-              "valueKey": "ACH"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-          "id": 103,
-          "valuekey": "AuthenticationType",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100812,
-              "valueKey": "All"
-            },
-            {
-              "id": 100813,
-              "valueKey": "Scheduled"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        }, 
-       {
-          "id": 104,
-          "valuekey": "Country",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100801,
-              "valueKey": "India"
-            },
-            {
-              "id": 100802,
-              "valueKey": "United States"
-            },
-            {
-              "id": 100803,
-              "valueKey": "China"
-            },
-            {
-              "id": 100804,
-              "valueKey": "United Kingdom"
-            },
-            {
-              "id": 100805,
-              "valueKey": "Germany"
-            },
-            {
-              "id": 100806,
-              "valueKey": "France"
-            },
-            {
-              "id": 100807,
-              "valueKey": "Japan"
-            },
-            {
-              "id": 100808,
-              "valueKey": "Canada"
-            },
-            {
-              "id": 100809,
-              "valueKey": "Australia"
-            },
-            {
-              "id": 100810,
-              "valueKey": "Brazil"
-            },
-            {
-              "id": 100811,
-              "valueKey": "Russia"
-            },
-            {
-              "id": 100812,
-              "valueKey": "Italy"
-            },
-            {
-              "id": 100813,
-              "valueKey": "Spain"
-            },
-            {
-              "id": 100814,
-              "valueKey": "South Korea"
-            },
-            {
-              "id": 100815,
-              "valueKey": "Netherlands"
-            },
-            {
-              "id": 100816,
-              "valueKey": "Mexico"
-            },
-            {
-              "id": 100817,
-              "valueKey": "Indonesia"
-            },
-            {
-              "id": 100818,
-              "valueKey": "Turkey"
-            },
-            {
-              "id": 100819,
-              "valueKey": "Saudi Arabia"
-            },
-            {
-              "id": 100820,
-              "valueKey": "Argentina"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-         {
-          "id": 105,
-          "valuekey": "Title",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100812,
-              "valueKey": "Mr."
-            },
-            {
-              "id": 100813,
-              "valueKey": "Ms."
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-         {
-          "id": 106,
-          "valuekey": "Name",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100812,
-              "valueKey": "Acme Corporation"
-            },
-            {
-              "id": 100813,
-              "valueKey": "TechStart Inc."
-            },
-            {
-              "id": 100814,
-              "valueKey": "Global Solutions LLC"
-            },
-            {
-              "id": 100815,
-              "valueKey": "TechStart Inc."
-            },
-            {
-              "id": 100815,
-              "valueKey": "Digital Ventures"
-            },
-            {
-              "id": 100816,
-              "valueKey": "TechStart Inc."
-            },
-            {
-              "id": 100817,
-              "valueKey": "BrightEdge Ltd."
-            },
-            {
-              "id": 100818,
-              "valueKey": "NovaTech Solutions"
-            },
-            {
-              "id": 100819,
-              "valueKey": "Zenith Corp"
-            },
-            {
-              "id": 100820,
-              "valueKey": "PixelWorks Inc."
-            },
-            {
-              "id": 100821,
-              "valueKey": "Apex Financial"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-          "id": 107,
-          "valuekey": "Account Type",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 100822,
-              "valueKey": "Savings"
-            },
-            {
-              "id": 100823,
-              "valueKey": "Checking"
-            },
-            {
-              "id": 100824,
-              "valueKey": "Business"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-  "id": 108,
-  "valuekey": "Currency",
-  "labels": {},
-  "jsonmetadata": null,
-  "masterdata": [
-    { "id": 100801, "valueKey": "INR" },
-    { "id": 100802, "valueKey": "USD" },
-    { "id": 100803, "valueKey": "CNY" },
-    { "id": 100804, "valueKey": "GBP" },
-    { "id": 100805, "valueKey": "EUR" },
-    { "id": 100806, "valueKey": "EUR" },
-    { "id": 100807, "valueKey": "JPY" },
-    { "id": 100808, "valueKey": "CAD" },
-    { "id": 100809, "valueKey": "AUD" },
-    { "id": 100810, "valueKey": "BRL" },
-    { "id": 100811, "valueKey": "RUB" },
-    { "id": 100812, "valueKey": "EUR" },
-    { "id": 100813, "valueKey": "EUR" },
-    { "id": 100814, "valueKey": "KRW" },
-    { "id": 100815, "valueKey": "EUR" },
-    { "id": 100816, "valueKey": "MXN" },
-    { "id": 100817, "valueKey": "IDR" },
-    { "id": 100818, "valueKey": "TRY" },
-    { "id": 100819, "valueKey": "SAR" },
-    { "id": 100820, "valueKey": "ARS" }
-  ],
-  "isactive": true,
-  "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-}
-          
-      ],
-      "correlationId": null
-    }
-  },
-
   "account_getlookupdatabyid": {
     "data": {
       "statusCode": 1000,
@@ -10607,34 +9351,7 @@
                 "datasetid": "66666666-6666-6666-6666-666666666601",
                 "title": "All Invoices",
                 "isdefault": true,
-                "isselected": false,
-                "owner": "Ashok C",
-                "viewtype": "",
-                "seqno": 1
-              },
-              {
-                "datasetid": "66666666-6666-6666-6666-666666666as601",
-                "title": "Paid",
-                "isdefault": false,
-                "isselected": false,
-                "owner": "Ashok C",
-                "viewtype": "",
-                "seqno": 1
-              },
-              {
-                "datasetid": "66666666-6666-666as6-6666-666666666601",
-                "title": "Unpaid",
-                "isdefault": false,
                 "isselected": true,
-                "owner": "Ashok C",
-                "viewtype": "",
-                "seqno": 1
-              },
-              {
-                "datasetid": "663666666-6666-666as6-6666-666666666601",
-                "title": "Partially Paid",
-                "isdefault": false,
-                "isselected": false,
                 "owner": "Ashok C",
                 "viewtype": "",
                 "seqno": 1
@@ -10947,7 +9664,7 @@
                   "isquickfilter": true,
                   "api_name": "is_active",
                   "islookup": false,
-                  "masterid": "1011",
+                  "masterid": "1017",
                   "apioutputskey": null,
                   "isvisible": false,
                   "apioutputvalue": null
@@ -11623,829 +10340,6 @@
     },
     "correlationId": ""
   },
-
-    "billclients_getlookupdatabyid": {
-    "data": {
-      "statusCode": 1000,
-      "message": "List of Masters for Tenant",
-      "data": [
-        {
-          "id": 1009,
-          "valuekey": "ClientID",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 101101,
-              "valueKey": "TXN-2024-456789"
-            },
-            {
-              "id": 101102,
-              "valueKey": "TXN-2024-450001"
-            },
-            {
-              "id": 101103,
-              "valueKey": "TXN-2024-450002"
-            },
-            {
-              "id": 101104,
-              "valueKey": "TXN-2024-450003"
-            },
-            {
-              "id": 101105,
-              "valueKey": "TXN-2024-450004"
-            },
-            {
-              "id": 101106,
-              "valueKey": "TXN-2024-450005"
-            },
-            {
-              "id": 101107,
-              "valueKey": "TXN-2024-450006"
-            },
-            {
-              "id": 101108,
-              "valueKey": "TXN-2024-450007"
-            },
-            {
-              "id": 101109,
-              "valueKey": "TXN-2024-450008"
-            },
-            {
-              "id": 101110,
-              "valueKey": "TXN-2024-450009"
-            },
-            {
-              "id": 101111,
-              "valueKey": "TXN-2024-450010"
-            },
-            {
-              "id": 101112,
-              "valueKey": "TXN-2024-450011"
-            }
-           
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-          "id": 1010,
-          "valuekey": "Name",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 101101,
-              "valueKey": "Acme Corporation"
-            },
-            {
-              "id": 101102,
-              "valueKey": "TechStart Inc."
-            },
-            {
-              "id": 101103,
-              "valueKey": "Digital Ventures"
-            },
-            {
-              "id": 101104,
-              "valueKey": "NovaTech Solutions"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-          "id": 1011,
-          "valuekey": "Email",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 101101,
-              "valueKey": "admin@acmecorp.com"
-            },
-            {
-              "id": 101102,
-              "valueKey": "admin2@acmecorp.com"
-            },
-            {
-              "id": 101103,
-              "valueKey": "admin3@acmecorp.com"
-            },
-            {
-              "id": 101104,
-              "valueKey": "admin4@acmecorp.com"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
-        {
-          "id": 1012,
-          "valuekey": "Status",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 101101,
-              "valueKey": "Active"
-            },
-            {
-              "id": 101102,
-              "valueKey": "Inactive"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        }
-      ],
-      "correlationId": null
-    }
-  },
-
-    "billclients_getlistconfigbyid": {
-    "result": {
-      "statusCode": 1000,
-      "message": "Fetched successfully",
-      "data": {
-        "list": {
-          "id": "44444444-4444-4444-4444-444444444401",
-          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
-          "entityname": "arc_roles",
-          "name": "All Lead details",
-          "header": {
-            "name": "arc_roles"
-          },
-          "type": "List",
-          "data": {
-            "dataset": [
-              {
-                "datasetid": "66666666-6666-6666-6666-666666666601",
-                "title": "All Payments",
-                "isdefault": true,
-                "isselected": false,
-                "owner": "Ashok C",
-                "viewtype": "",
-                "seqno": 1
-              }
-            ],
-            "config": {
-              "listfields": [
-                {
-                  "id": "Inv01",
-                  "name": "Client ID",
-                  "lablekey": "lbl-users-timezone",
-                  "columnwidth": 150,
-                  "seqno": 1,
-                  "masterid": "1009",
-                  "controltype": null,
-                  "attrtype": "nvarchar",
-                  "api_name": "ClientID",
-                  "visible": true,
-                  "displayapiname": "ClientID",
-                  "inlineeditable": null,
-                  "istitle": true,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv02",
-                  "name": "Name",
-                  "lablekey": "lbl-users-country",
-                  "columnwidth": 180,
-                  "seqno": 2,
-                  "masterid": "1010",
-                  "controltype": null,
-                  "attrtype": "text",
-                  "api_name": "Name",
-                  "visible": true,
-                  "displayapiname": "Name",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv022",
-                  "name": "Email",
-                  "lablekey": "lbl-users-country",
-                  "columnwidth": 150,
-                  "seqno": 3,
-                  "masterid": "1011",
-                  "controltype": null,
-                  "attrtype": "text",
-                  "api_name": "Email",
-                  "visible": true,
-                  "displayapiname": "Email",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv11",
-                  "name": "Total Volume",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 4,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "text",
-                  "api_name": "TotalVolume",
-                  "visible": true,
-                  "displayapiname": "TotalVolume",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv03",
-                  "name": "Transactions",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 5,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "numeric",
-                  "api_name": "Transactions",
-                  "visible": true,
-                  "displayapiname": "Transactions",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv04",
-                  "name": "Active Requests",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 180,
-                  "seqno": 6,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "numeric",
-                  "api_name": "ActiveRequests",
-                  "visible": true,
-                  "displayapiname": "ActiveRequests",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv05",
-                  "name": "LastActivity",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 7,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "datetime",
-                  "api_name": "LastActivity",
-                  "visible": true,
-                  "displayapiname": "LastActivity",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": true,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv06",
-                  "name": "Status",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 8,
-                  "masterid": "1012",
-                  "controltype": null,
-                  "attrtype": "text",
-                  "api_name": "Status",
-                  "visible": true,
-                  "displayapiname": "Status",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": false,
-                  "islookup": false
-                },
-                {
-                  "id": "Inv07",
-                  "name": "Date & Time",
-                  "lablekey": "lbl-users-jobtitle",
-                  "columnwidth": 150,
-                  "seqno": 9,
-                  "masterid": "",
-                  "controltype": null,
-                  "attrtype": "date",
-                  "api_name": "DateTime",
-                  "visible": true,
-                  "displayapiname": "DateTime",
-                  "inlineeditable": null,
-                  "istitle": false,
-                  "isdate": true,
-                  "islookup": false
-                }
-              ],
-              "filterfields": [
-                {
-                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
-                  "name": "Client ID",
-                  "lablekey": "lbl-user-username",
-                  "seqno": 10,
-                  "filtercontroltype": "multiselect",
-                  "isquickfilter": true,
-                  "api_name": "ClientID",
-                  "islookup": false,
-                  "masterid": "1009",
-                  "apioutputskey": null,
-                  "isvisible": false,
-                  "apioutputvalue": null
-                },
-                {
-                  "id": "66666666-6666-6666-6666-666666666603",
-                  "name": "Name",
-                  "lablekey": "lbl-user-status",
-                  "seqno": 20,
-                  "filtercontroltype": "multiselect",
-                  "isquickfilter": true,
-                  "api_name": "Name",
-                  "islookup": false,
-                  "masterid": "1010",
-                  "apioutputskey": null,
-                  "isvisible": false,
-                  "apioutputvalue": null
-                },
-
-                {
-                  "id": "66666666-6666-6666-6666-666666666604",
-                  "name": "Email",
-                  "lablekey": "lbl-user-status",
-                  "seqno": 20,
-                  "filtercontroltype": "multiselect",
-                  "isquickfilter": true,
-                  "api_name": "Email",
-                  "islookup": false,
-                  "masterid": "1011",
-                  "apioutputskey": null,
-                  "isvisible": false,
-                  "apioutputvalue": null
-                },
-                {
-                  "id": "66666666-6666-6666-6666-666666666605",
-                  "name": "Status",
-                  "lablekey": "lbl-user-status",
-                  "seqno": 20,
-                  "filtercontroltype": "multiselect",
-                  "isquickfilter": true,
-                  "api_name": "Status",
-                  "islookup": false,
-                  "masterid": "1012",
-                  "apioutputskey": null,
-                  "isvisible": false,
-                  "apioutputvalue": null
-                },
-                {
-                  "id": "66666666-6666-6666-6666-666666666606",
-                  "name": "Date & Time",
-                  "lablekey": "lbl-user-status",
-                  "seqno": 20,
-                  "filtercontroltype": "datepicker",
-                  "isquickfilter": true,
-                  "api_name": "DateTime",
-                  "islookup": false,
-                  "masterid": "",
-                  "apioutputskey": null,
-                  "isvisible": false,
-                  "apioutputvalue": null
-                }
-              ],
-              "groupbyfields": []
-            }
-          }
-        }
-      },
-      "correlationId": ""
-    }
-  },
-  
-  "billclients_getdatasetfieldinfobyid": {
-    "result": {
-      "statusCode": 1000,
-      "message": "Fetched successfully",
-      "data": {
-        "id": "66666666-6666-6666-6666-666666666601",
-        "name": "All Payments",
-        "owner": "Ashok C",
-        "listsortfield": "created_on",
-        "viewtype": null,
-        "celldataviewtype": null,
-        "listsortdir": "desc",
-        "isdefault": null,
-        "last_accessed_time": "2025-07-18T11:12:14",
-        "filters": [],
-        "groupby": [],
-        "columns": [
-          {
-            "id": "Inv01",
-            "seqno": 1,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "ClientID",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv02",
-            "seqno": 2,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "Name",
-            "columnwidth": 180
-          },
-          {
-            "id": "Inv022",
-            "seqno": 3,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "Email",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv11",
-            "seqno": 4,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "TotalVolume",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv03",
-            "seqno": 5,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "Transactions",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv04",
-            "seqno": 6,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "ActiveRequests",
-            "columnwidth": 180
-          },
-          {
-            "id": "Inv05",
-            "seqno": 7,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "LastActivity",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv06",
-            "seqno": 8,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "text",
-            "api_name": "Status",
-            "columnwidth": 150
-          },
-          {
-            "id": "Inv07",
-            "seqno": 9,
-            "masterid": "0",
-            "controltype": null,
-            "attrtype": "nvarchar",
-            "api_name": "DateTime",
-            "columnwidth": 150
-          }
-         
-        ]
-      },
-      "correlationId": ""
-    }
-  },
-
-  "billclients_listdata": {
-    "statusCode": 1000,
-    "message": "Fetched successfully",
-    "data": {
-      "datas": [
-        {
-          "id": 1,
-          "ClientID": "TXN-2024-450001",
-          "Name": "Acme Corporation",
-          "Email": "contact1@company.com",
-          "TotalVolume": "$102,345.00",
-          "Transactions": "210",
-          "ActiveRequests": "5",
-          "LastActivity": "Mar 10, 2026",
-          "Status":"Active",
-          "DateTime": "2026-03-10 11:20:10"
-        },
-        {
-          "id": 2,
-          "ClientID": "TXN-2024-450002",
-          "Name": "TechNova Ltd",
-          "Email": "contact2@company.com",
-          "TotalVolume": "$89,120.00",
-          "Transactions": "120",
-          "ActiveRequests": "3",
-          "LastActivity": "Mar 11, 2026",
-          "Status": "Inactive",
-          "DateTime": "2026-03-11 10:15:22"
-        },
-        {
-          "id": 3,
-          "ClientID": "TXN-2024-450003",
-          "Name": "BlueWave Solutions",
-          "Email": "contact3@company.com",
-          "TotalVolume": "$56,780.00",
-          "Transactions": "75",
-          "ActiveRequests": "1",
-          "LastActivity": "Mar 12, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-12 09:45:33"
-        },
-        {
-          "id": 4,
-          "ClientID": "TXN-2024-450004",
-          "Name": "Skyline Corp",
-          "Email": "contact4@company.com",
-          "TotalVolume": "$150,990.00",
-          "Transactions": "610",
-          "ActiveRequests": "15",
-          "LastActivity": "Mar 13, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-13 12:10:05"
-        },
-        {
-          "id": 5,
-          "ClientID": "TXN-2024-450005",
-          "Name": "NextGen Systems",
-          "Email": "contact5@company.com",
-          "TotalVolume": "$73,500.00",
-          "Transactions": "98",
-          "ActiveRequests": "2",
-          "LastActivity": "Mar 14, 2026",
-          "Status": "Inactive",
-          "DateTime": "2026-03-14 08:55:41"
-        },
-        {
-          "id": 6,
-          "ClientID": "TXN-2024-450006",
-          "Name": "FusionWorks",
-          "Email": "contact6@company.com",
-          "TotalVolume": "$45,230.00",
-          "Transactions": "60",
-          "ActiveRequests": "0",
-          "LastActivity": "Mar 15, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-15 07:35:20"
-        },
-        {
-          "id": 7,
-          "ClientID": "TXN-2024-450007",
-          "Name": "QuantumEdge",
-          "Email": "contact7@company.com",
-          "TotalVolume": "$200,000.00",
-          "Transactions": "800",
-          "ActiveRequests": "20",
-          "LastActivity": "Mar 16, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-16 13:25:19"
-        },
-        {
-          "id": 8,
-          "ClientID": "TXN-2024-450008",
-          "Name": "Vertex Solutions",
-          "Email": "contact8@company.com",
-          "TotalVolume": "$33,210.00",
-          "Transactions": "45",
-          "ActiveRequests": "1",
-          "LastActivity": "Mar 17, 2026",
-          "Status": "Inactive",
-          "DateTime": "2026-03-17 15:45:10"
-        },
-        {
-          "id": 9,
-          "ClientID": "TXN-2024-450009",
-          "Name": "NovaTech",
-          "Email": "contact9@company.com",
-          "TotalVolume": "$67,800.00",
-          "Transactions": "110",
-          "ActiveRequests": "4",
-          "LastActivity": "Mar 18, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-18 09:20:55"
-        },
-        {
-          "id": 10,
-          "ClientID": "TXN-2024-450010",
-          "Name": "Zenith Corp",
-          "Email": "contact10@company.com",
-          "TotalVolume": "$120,500.00",
-          "Transactions": "305",
-          "ActiveRequests": "7",
-          "LastActivity": "Mar 19, 2026",
-          "Status": "Inactive",
-          "DateTime": "2026-03-19 16:40:33"
-        },
-        {
-          "id": 11,
-          "ClientID": "TXN-2024-450011",
-          "Name": "Orbit Systems",
-          "Email": "contact11@company.com",
-          "TotalVolume": "$89,999.00",
-          "Transactions": "220",
-          "ActiveRequests": "6",
-          "LastActivity": "Mar 20, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-20 11:10:12"
-        },
-        {
-          "id": 12,
-          "ClientID": "TXN-2024-450012",
-          "Name": "Prime Logic",
-          "Email": "contact12@company.com",
-          "TotalVolume": "$54,600.00",
-          "Transactions": "95",
-          "ActiveRequests": "3",
-          "LastActivity": "Mar 21, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-21 10:50:44"
-        },
-        {
-          "id": 13,
-          "ClientID": "TXN-2024-450013",
-          "Name": "BrightPath",
-          "Email": "contact13@company.com",
-          "TotalVolume": "$77,300.00",
-          "Transactions": "130",
-          "ActiveRequests": "5",
-          "LastActivity": "Mar 22, 2026",
-          "Status": "Inactive",
-          "DateTime": "2026-03-22 09:30:21"
-        },
-        {
-          "id": 14,
-          "ClientID": "TXN-2024-450014",
-          "Name": "CloudSync",
-          "Email": "contact14@company.com",
-          "TotalVolume": "$99,000.00",
-          "Transactions": "250",
-          "ActiveRequests": "8",
-          "LastActivity": "Mar 23, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-23 14:00:00"
-        },
-        {
-          "id": 15,
-          "ClientID": "TXN-2024-450015",
-          "Name": "DataBridge",
-          "Email": "contact15@company.com",
-          "TotalVolume": "$61,750.00",
-          "Transactions": "145",
-          "ActiveRequests": "2",
-          "LastActivity": "Mar 24, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-24 12:22:11"
-        },
-        {
-          "id": 16,
-          "ClientID": "TXN-2024-450016",
-          "Name": "InnoSoft",
-          "Email": "contact16@company.com",
-          "TotalVolume": "$43,890.00",
-          "Transactions": "80",
-          "ActiveRequests": "1",
-          "LastActivity": "Mar 25, 2026",
-          "Status": "Inactive",
-          "DateTime": "2026-03-25 08:18:09"
-        },
-        {
-          "id": 17,
-          "ClientID": "TXN-2024-450017",
-          "Name": "HyperNet",
-          "Email": "contact17@company.com",
-          "TotalVolume": "$132,450.00",
-          "Transactions": "340",
-          "ActiveRequests": "9",
-          "LastActivity": "Mar 26, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-26 13:00:45"
-        },
-        {
-          "id": 18,
-          "ClientID": "TXN-2024-450018",
-          "Name": "AlphaCore",
-          "Email": "contact18@company.com",
-          "TotalVolume": "$28,000.00",
-          "Transactions": "50",
-          "ActiveRequests": "0",
-          "LastActivity": "Mar 27, 2026",
-          "Status": "Inactive",
-          "DateTime": "2026-03-27 10:05:30"
-        },
-        {
-          "id": 19,
-          "ClientID": "TXN-2024-450019",
-          "Name": "DeltaWorks",
-          "Email": "contact19@company.com",
-          "TotalVolume": "$76,890.00",
-          "Transactions": "160",
-          "ActiveRequests": "4",
-          "LastActivity": "Mar 28, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-28 15:15:55"
-        },
-        {
-          "id": 20,
-          "ClientID": "TXN-2024-450020",
-          "Name": "Nexus Global",
-          "Email": "contact20@company.com",
-          "TotalVolume": "$88,300.00",
-          "Transactions": "190",
-          "ActiveRequests": "6",
-          "LastActivity": "Mar 29, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-29 09:45:00"
-        },
-        {
-          "id": 21,
-          "ClientID": "TXN-2024-450021",
-          "Name": "CoreVision",
-          "Email": "contact21@company.com",
-          "TotalVolume": "$111,200.00",
-          "Transactions": "275",
-          "ActiveRequests": "10",
-          "LastActivity": "Mar 30, 2026",
-          "Status": "Inactive",
-          "DateTime": "2026-03-30 11:35:17"
-        },
-        {
-          "id": 22,
-          "ClientID": "TXN-2024-450022",
-          "Name": "SmartEdge",
-          "Email": "contact22@company.com",
-          "TotalVolume": "$95,600.00",
-          "Transactions": "230",
-          "ActiveRequests": "7",
-          "LastActivity": "Mar 31, 2026",
-          "Status": "Active",
-          "DateTime": "2026-03-31 14:42:28"
-        },
-        {
-          "id": 23,
-          "ClientID": "TXN-2024-450023",
-          "Name": "LogicSphere",
-          "Email": "contact23@company.com",
-          "TotalVolume": "$48,900.00",
-          "Transactions": "90",
-          "ActiveRequests": "2",
-          "LastActivity": "Apr 01, 2026",
-          "Status": "Inactive",
-          "DateTime": "2026-04-01 08:30:00"
-        },
-        {
-          "id": 24,
-          "ClientID": "TXN-2024-450024",
-          "Name": "TechBridge",
-          "Email": "contact24@company.com",
-          "TotalVolume": "$134,000.00",
-          "Transactions": "360",
-          "ActiveRequests": "11",
-          "LastActivity": "Apr 02, 2026",
-          "Status": "Active",
-          "DateTime": "2026-04-02 12:10:10"
-        },
-        {
-          "id": 25,
-          "ClientID": "TXN-2024-450025",
-          "Name": "Inspire Labs",
-          "Email": "contact25@company.com",
-          "TotalVolume": "$59,999.00",
-          "Transactions": "140",
-          "ActiveRequests": "3",
-          "LastActivity": "Apr 03, 2026",
-          "Status": "Active",
-          "DateTime": "2026-04-03 16:55:42"
-        }
-      ],
-      "totalRecords": 25
-    },
-    "correlationId": ""
-  },
-
-
-
-
   "Invoice_GetLookupMasterDatasforaddById": {
     "statusCode": 1000,
     "message": "List of Masters for Tenant",
@@ -12495,56 +10389,6 @@
       "statusCode": 1000,
       "message": "List of Masters for Tenant",
       "data": [
-        {
-          "id": 1009,
-          "valuekey": "userstatus",
-          "labels": {},
-          "jsonmetadata": null,
-          "masterdata": [
-            {
-              "id": 101101,
-              "valueKey": "PAY-1001"
-            },
-            {
-              "id": 101102,
-              "valueKey": "PAY-1002"
-            },
-            {
-              "id": 101103,
-              "valueKey": "PAY-1003"
-            },
-            {
-              "id": 101104,
-              "valueKey": "PAY-1004"
-            },
-            {
-              "id": 101105,
-              "valueKey": "PAY-1005"
-            },
-            {
-              "id": 101106,
-              "valueKey": "PAY-1006"
-            },
-            {
-              "id": 101107,
-              "valueKey": "PAY-1007"
-            },
-            {
-              "id": 101108,
-              "valueKey": "PAY-1008"
-            },
-            {
-              "id": 101109,
-              "valueKey": "PAY-1009"
-            },
-            {
-              "id": 101110,
-              "valueKey": "PAY-1010"
-            }
-          ],
-          "isactive": true,
-          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
-        },
         {
           "id": 1010,
           "valuekey": "userstatus",
@@ -12823,7 +10667,7 @@
                   "name": "Payment ID",
                   "lablekey": "lbl-user-username",
                   "seqno": 10,
-                  "filtercontroltype": "multiselect",
+                  "filtercontroltype": "textbox",
                   "isquickfilter": true,
                   "api_name": "Payment_ID",
                   "islookup": false,
@@ -12837,7 +10681,7 @@
                   "name": "Customer Name",
                   "lablekey": "lbl-user-status",
                   "seqno": 20,
-                  "filtercontroltype": "multiselect",
+                  "filtercontroltype": "onclickloadmultiselect",
                   "isquickfilter": true,
                   "api_name": "CustomerName",
                   "islookup": false,
@@ -12846,13 +10690,12 @@
                   "isvisible": false,
                   "apioutputvalue": null
                 },
-
                 {
                   "id": "66666666-6666-6666-6666-666666666605",
                   "name": "Status",
                   "lablekey": "lbl-user-status",
                   "seqno": 20,
-                  "filtercontroltype": "multiselect",
+                  "filtercontroltype": "onclickloadmultiselect",
                   "isquickfilter": true,
                   "api_name": "Status",
                   "islookup": false,
@@ -12862,19 +10705,7 @@
                   "apioutputvalue": null
                 }
               ],
-              "groupbyfields": [
-                {
-                  "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-                  "name": "Status",
-                  "labelkey": "lbl-Workitem-priority",
-                  "seqno": 4,
-                  "api_name": "Status",
-                  "type": "Horizontal",
-                  "direction": "-",
-                  "masterid": "7041",
-                  "displayapiname": null
-                }
-              ]
+              "groupbyfields": []
             }
           }
         }
@@ -12897,17 +10728,7 @@
         "isdefault": null,
         "last_accessed_time": "2025-07-18T11:12:14",
         "filters": [],
-        "groupby": [
-          {
-            "id": "f2037586-381e-422d-84e4-09ebf1d507f8",
-            "type": "Horizontal",
-            "direction": "asc",
-            "defaultvalue": "All",
-            "api_name": "Status",
-            "masterid": "0462F02F-D350-4244-9B76-3CBC965207BB",
-            "seq": null
-          }
-        ],
+        "groupby": [],
         "columns": [
           {
             "id": "Pay01",
@@ -12997,15 +10818,6 @@
             "controltype": null,
             "attrtype": "text",
             "api_name": "TransactionID",
-            "columnwidth": 230
-          },
-          {
-            "id": "Pay11",
-            "seqno": 11,
-            "masterid": "0",
-            "controltype": "multivaluegridcell",
-            "attrtype": "nvarchar",
-            "api_name": "InvoiceNo(s)",
             "columnwidth": 230
           }
         ]
@@ -13171,7 +10983,7 @@
         },
         {
           "groupbyid": "3",
-          "groupbytext": "Received"
+          "groupbytext": "Unapplied"
         },
         {
           "groupbyid": "4",
@@ -21611,5 +19423,937 @@
       "totalRecords": 10
     },
     "correlationId": ""
+  },
+  "reminder_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Vendor A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Vendor B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Vendor C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Vendor D"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Success"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Failed"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Processing"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "reminder_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Rem01",
+                  "name": "Name",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 100,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Name",
+                  "visible": true,
+                  "displayapiname": "Name",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem02",
+                  "name": "Timing",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "Timing",
+                  "visible": true,
+                  "displayapiname": "Timing",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem03",
+                  "name": "Frequency",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Frequency",
+                  "visible": true,
+                  "displayapiname": "Frequency",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem04",
+                  "name": "Channels",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Channels",
+                  "visible": true,
+                  "displayapiname": "Channels",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem05",
+                  "name": "Created On",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 180,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "CreatedOn",
+                  "visible": true,
+                  "displayapiname": "CreatedOn",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem06",
+                  "name": "Created By",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "CreatedBy",
+                  "visible": true,
+                  "displayapiname": "CreatedBy",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem07",
+                  "name": "Is Active",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 200,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": "checkbox",
+                  "attrtype": "text",
+                  "api_name": "IsActive",
+                  "visible": true,
+                  "displayapiname": "IsActive",
+                  "is_inlineeditable": true,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Name",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "Name",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Created By",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "onclickloadmultiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Created On",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "daterangepicker",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": []
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "reminder_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Payments",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "Rem01",
+            "seqno": 1,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Name",
+            "columnwidth": 100
+          },
+          {
+            "id": "Rem02",
+            "seqno": 2,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Timing",
+            "columnwidth": 150
+          },
+          {
+            "id": "Rem03",
+            "seqno": 3,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Frequency",
+            "columnwidth": 150
+          },
+          {
+            "id": "Rem04",
+            "seqno": 4,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Channels",
+            "columnwidth": 150
+          },
+          {
+            "id": "Rem05",
+            "seqno": 5,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "CreatedOn",
+            "columnwidth": 180
+          },
+          {
+            "id": "Rem06",
+            "seqno": 6,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "CreatedBy",
+            "columnwidth": 150
+          },
+          {
+            "id": "Rem07",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": "checkbox",
+            "attrtype": "text",
+            "api_name": "IsActive",
+            "columnwidth": 200
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "reminder_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "Name": "Standard Invoice Reminder",
+          "Timing": "3d Before due date",
+          "Frequency": "Daily",
+          "Channels": "Email",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "Michael Wang",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        },
+        {
+          "id": 2,
+          "Name": "Payment Confirmation Receipt",
+          "Timing": "On due date",
+          "Frequency": "One-time",
+          "Channels": "Email",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "Sara Johnson",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        },
+        {
+          "id": 3,
+          "Name": "Monthly Subscription Renewal",
+          "Timing": "4d After due date",
+          "Frequency": "Monthly",
+          "Channels": "Email",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "James Smith",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        },
+        {
+          "id": 4,
+          "Name": "Annual Tax Statement",
+          "Timing": "On due date",
+          "Frequency": "Annually",
+          "Channels": "Email",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "Emily Davis",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        },
+        {
+          "id": 5,
+          "Name": "Customer Feedback Request",
+          "Timing": "8d Before due date",
+          "Frequency": "One-time",
+          "Channels": "Email",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "David Brown",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        }
+      ],
+      "totalRecords": 10,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Success"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Failed"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "Processing"
+        }
+      ]
+    },
+    "correlationId": ""
+  },
+  "Payment_GetLookupMasterDatasforaddById": {
+    "statusCode": 1000,
+    "message": "List of Masters for Tenant",
+    "data": {
+      "data": {
+        "lookupvalues": [
+          {
+            "mastervalues": [
+              {
+                "optionid": "101101",
+                "optionvalue": "Partially Paid"
+              },
+              {
+                "optionid": "101102",
+                "optionvalue": "Fully Applied"
+              },
+              {
+                "optionid": "101103",
+                "optionvalue": "Unapplied"
+              },
+              {
+                "optionid": "101104",
+                "optionvalue": "Failed"
+              }
+            ],
+            "totalcount": 2
+          }
+        ]
+      }
+    },
+    "correlationId": null
+  },
+  "create_payment_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Success"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Failed"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Processing"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "create_payment_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "PR01",
+                  "name": "Request Number",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 100,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "RequestNumber",
+                  "visible": true,
+                  "displayapiname": "RequestNumber",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "PR02",
+                  "name": "Customer Name",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 180,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "CustomerName",
+                  "visible": true,
+                  "displayapiname": "CustomerName",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "PR03",
+                  "name": "Status",
+                  "lablekey": "lbl-users-country",
+                  "columnwidth": 150,
+                  "seqno": 2,
+                  "masterid": "1008",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Status",
+                  "visible": true,
+                  "displayapiname": "Status",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "PR04",
+                  "name": "Request Amount",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 180,
+                  "seqno": 5,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "numeric",
+                  "api_name": "RequestAmount",
+                  "visible": true,
+                  "displayapiname": "RequestAmount",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "PR05",
+                  "name": "Created Date",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 180,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "CreatedDate",
+                  "visible": true,
+                  "displayapiname": "CreatedDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "PR06",
+                  "name": "Expiry Date",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "ExpiryDate",
+                  "visible": true,
+                  "displayapiname": "ExpiryDate",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "RequestNumber",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "RequestNumber",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Customer Name",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "onclickloadmultiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Status",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "onclickloadmultiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": []
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "create_payment_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Payments",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "PR01",
+            "seqno": 1,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "RequestNumber",
+            "columnwidth": 100
+          },
+          {
+            "id": "PR02",
+            "seqno": 2,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "CustomerName",
+            "columnwidth": 180
+          },
+          {
+            "id": "PR03",
+            "seqno": 3,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Status",
+            "columnwidth": 150
+          },
+          {
+            "id": "PR04",
+            "seqno": 4,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "numeric",
+            "api_name": "RequestAmount",
+            "columnwidth": 180
+          },
+          {
+            "id": "PR05",
+            "seqno": 5,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "CreatedOn",
+            "columnwidth": 180
+          },
+          {
+            "id": "PR06",
+            "seqno": 6,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "ExpiryDate",
+            "columnwidth": 150
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "create_payment_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "RequestNumber": "PAY-2026-001",
+          "CustomerName": "Acme Corporation",
+          "Status": "Sent",
+          "RequestAmount": "$5,000.00",
+          "CreatedDate": "2/15/2026",
+          "ExpiryDate": "2/15/2026"
+        },
+        {
+          "id": 2,
+          "RequestNumber": "PAY-2026-002",
+          "CustomerName": "Quantum Corporation",
+          "Status": "Paid",
+          "RequestAmount": "$12,000.00",
+          "CreatedDate": "4/15/2026",
+          "ExpiryDate": "4/15/2026"
+        },
+        {
+          "id": 3,
+          "RequestNumber": "PAY-2026-003",
+          "CustomerName": "Beta Solutions",
+          "Status": "Created",
+          "RequestAmount": "$7,500.00",
+          "CreatedDate": "6/20/2026",
+          "ExpiryDate": "6/20/2026"
+        },
+        {
+          "id": 4,
+          "RequestNumber": "PAY-2026-005",
+          "CustomerName": "Delta Enterprises",
+          "Status": "Paid",
+          "RequestAmount": "$18,000.00",
+          "CreatedDate": "8/05/2026",
+          "ExpiryDate": "8/05/2026"
+        },
+        {
+          "id": 5,
+          "RequestNumber": "PAY-2026-006",
+          "CustomerName": "Epsilon LLC",
+          "Status": "Partially Paid",
+          "RequestAmount": "$4,200.00",
+          "CreatedDate": "9/25/2026",
+          "ExpiryDate": "9/25/2026"
+        },
+        {
+          "id": 6,
+          "RequestNumber": "PAY-2026-007",
+          "CustomerName": "Zeta Group",
+          "Status": "Created",
+          "RequestAmount": "$9,800.00",
+          "CreatedDate": "10/12/2026",
+          "ExpiryDate": "10/12/2026"
+        },
+        {
+          "id": 7,
+          "RequestNumber": "PAY-2026-009",
+          "CustomerName": "Theta Solutions",
+          "Status": "Sent",
+          "RequestAmount": "$6,750.00",
+          "CreatedDate": "12/15/2026",
+          "ExpiryDate": "12/15/2026"
+        },
+        {
+          "id": 8,
+          "RequestNumber": "PAY-2026-010",
+          "CustomerName": "Iota Technologies",
+          "Status": "Paid",
+          "RequestAmount": "$15,500.00",
+          "CreatedDate": "1/30/2027",
+          "ExpiryDate": "1/30/2027"
+        },
+        {
+          "id": 9,
+          "RequestNumber": "PAY-2026-011",
+          "CustomerName": "Kappa Industries",
+          "Status": "Sent",
+          "RequestAmount": "$8,300.00",
+          "CreatedDate": "2/10/2027",
+          "ExpiryDate": "2/10/2027"
+        },
+        {
+          "id": 10,
+          "RequestNumber": "PAY-2026-012",
+          "CustomerName": "Lambda Corp",
+          "Status": "Created",
+          "RequestAmount": "$11,200.00",
+          "CreatedDate": "3/05/2027",
+          "ExpiryDate": "3/05/2027"
+        }
+      ],
+      "totalRecords": 10,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Paid"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Sent"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "Created"
+        },
+        {
+          "groupbyid": "4",
+          "groupbytext": "Partially Paid"
+        }
+      ]
+    },
+    "correlationId": ""
+  },
+  "customer_GetLookupMasterDatasforaddById": {
+    "statusCode": 1000,
+    "message": "List of Masters for Tenant",
+    "data": {
+      "data": {
+        "lookupvalues": [
+          {
+            "mastervalues": [
+              {
+                "optionid": "101101",
+                "optionvalue": "Alexander Thompson"
+              },
+              {
+                "optionid": "101102",
+                "optionvalue": "Sarah Martinez"
+              },
+              {
+                "optionid": "101103",
+                "optionvalue": "Michael Chen"
+              },
+              {
+                "optionid": "101104",
+                "optionvalue": "Emily Rodriguez"
+              },
+              {
+                "optionid": "101105",
+                "optionvalue": "James Anderson"
+              },
+              {
+                "optionid": "101106",
+                "optionvalue": "Jessica Williams"
+              },
+              {
+                "optionid": "101107",
+                "optionvalue": "David Kim"
+              },
+              {
+                "optionid": "101108",
+                "optionvalue": "Amanda Foster"
+              },
+              {
+                "optionid": "101109",
+                "optionvalue": "Christopher Lee"
+              },
+              {
+                "optionid": "101110",
+                "optionvalue": "Olivia Bennett"
+              }
+            ],
+            "totalcount": 2
+          }
+        ]
+      }
+    },
+    "correlationId": null
   }
 }
