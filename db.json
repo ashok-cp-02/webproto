@@ -20455,8 +20455,7 @@
                   "isdate": true,
                   "islookup": false
                 },
-                
-                
+
                 {
                   "id": "Inv07",
                   "name": "Total Amount",
@@ -21644,5 +21643,731 @@
       }
     },
     "correlationId": null
+  },
+  "epd_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "Name": "Standard Invoice Reminder",
+          "Discounts": "3",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "Michael Wang",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        },
+        {
+          "id": 2,
+          "Name": "Standard Invoice Reminder",
+          "Discounts": "3",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "Sarah Lopez",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        },
+        {
+          "id": 3,
+          "Name": "Standard Invoice Reminder",
+          "Discounts": "3",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "David Kim",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        },
+        {
+          "id": 4,
+          "Name": "Standard Invoice Reminder",
+          "Discounts": "3",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "Emily Chen",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        },
+        {
+          "id": 5,
+          "Name": "Standard Invoice Reminder",
+          "Discounts": "3",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "James Smith",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        }
+      ],
+      "totalRecords": 5,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Success"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Failed"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "Processing"
+        }
+      ]
+    },
+    "correlationId": ""
+  },
+  "epd_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Vendor A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Vendor B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Vendor C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Vendor D"
+            }
+          ],
+          "isactive": false,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Success"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Failed"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Processing"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "epd_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Discounts",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Rem01",
+                  "name": "Name",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 100,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Name",
+                  "visible": true,
+                  "displayapiname": "Name",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem02",
+                  "name": "Discounts",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 180,
+                  "seqno": 2,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Discounts",
+                  "visible": true,
+                  "displayapiname": "Discounts",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem03",
+                  "name": "Created On",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 180,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "CreatedOn",
+                  "visible": true,
+                  "displayapiname": "CreatedOn",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem04",
+                  "name": "Created By",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "CreatedBy",
+                  "visible": true,
+                  "displayapiname": "CreatedBy",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem05",
+                  "name": "Is Active",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 180,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": "checkbox",
+                  "attrtype": "text",
+                  "api_name": "IsActive",
+                  "visible": true,
+                  "displayapiname": "IsActive",
+                  "is_inlineeditable": true,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Name",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "Name",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Created By",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "onclickloadmultiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Created On",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "daterangepicker",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": []
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "epd_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Payments",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "Rem01",
+            "seqno": 1,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Name",
+            "columnwidth": 220
+          },
+          {
+            "id": "Rem02",
+            "seqno": 2,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Timing",
+            "columnwidth": 220
+          },
+          {
+            "id": "Rem03",
+            "seqno": 5,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "CreatedOn",
+            "columnwidth": 200
+          },
+          {
+            "id": "Rem04",
+            "seqno": 6,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "CreatedBy",
+            "columnwidth": 420
+          },
+          {
+            "id": "Rem05",
+            "seqno": 60,
+            "masterid": "0",
+            "controltype": "checkbox",
+            "attrtype": "text",
+            "api_name": "IsActive",
+            "columnwidth": 200
+          }
+        ]
+      },
+      "correlationId": ""
+    }
+  },
+  "paymentbehaviour_listdata": {
+    "statusCode": 1000,
+    "message": "Fetched successfully",
+    "data": {
+      "datas": [
+        {
+          "id": 1,
+          "Sno": 1,
+          "Name": "Pays on Time",
+          "Description": "Customer who pay the due and invoice on time.",
+          "CreatedOn": "2025-09-02",
+          "CreatedBy": "Michael Wang",
+          "IsActive": {
+            "status": "true",
+            "disabled": false,
+            "tooltip": "Active"
+          }
+        }
+      ],
+      "totalRecords": 1,
+      "groupbydetails": [
+        {
+          "groupbyid": "1",
+          "groupbytext": "Success"
+        },
+        {
+          "groupbyid": "2",
+          "groupbytext": "Failed"
+        },
+        {
+          "groupbyid": "3",
+          "groupbytext": "Processing"
+        }
+      ]
+    },
+    "correlationId": ""
+  },
+  "paymentbehaviour_getlookupdatabyid": {
+    "data": {
+      "statusCode": 1000,
+      "message": "List of Masters for Tenant",
+      "data": [
+        {
+          "id": 1010,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Vendor A"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Vendor B"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Vendor C"
+            },
+            {
+              "id": 101104,
+              "valueKey": "Vendor D"
+            }
+          ],
+          "isactive": false,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        },
+        {
+          "id": 1011,
+          "valuekey": "userstatus",
+          "labels": {},
+          "jsonmetadata": null,
+          "masterdata": [
+            {
+              "id": 101101,
+              "valueKey": "Success"
+            },
+            {
+              "id": 101102,
+              "valueKey": "Failed"
+            },
+            {
+              "id": 101103,
+              "valueKey": "Processing"
+            }
+          ],
+          "isactive": true,
+          "tenantid": "e7a13743-d7e8-4f2d-8f43-0c1b212264b1"
+        }
+      ],
+      "correlationId": null
+    }
+  },
+  "paymentbehaviour_getlistconfigbyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "list": {
+          "id": "44444444-4444-4444-4444-444444444401",
+          "entityid": "cd0c11c9-7103-4685-84d8-0a08b31f4d4e",
+          "entityname": "arc_roles",
+          "name": "All Lead details",
+          "header": {
+            "name": "arc_roles"
+          },
+          "type": "List",
+          "data": {
+            "dataset": [
+              {
+                "datasetid": "66666666-6666-6666-6666-666666666601",
+                "title": "All Discounts",
+                "isdefault": true,
+                "isselected": true,
+                "owner": "Ashok C",
+                "viewtype": "",
+                "seqno": 1
+              }
+            ],
+            "config": {
+              "listfields": [
+                {
+                  "id": "Rem01",
+                  "name": "S.no",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 100,
+                  "seqno": 1,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "number",
+                  "api_name": "Sno",
+                  "visible": true,
+                  "displayapiname": "Sno",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem02",
+                  "name": "Name",
+                  "lablekey": "lbl-users-timezone",
+                  "columnwidth": 100,
+                  "seqno": 2,
+                  "masterid": "1009",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Name",
+                  "visible": true,
+                  "displayapiname": "Name",
+                  "inlineeditable": null,
+                  "istitle": true,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem03",
+                  "name": "Description",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 300,
+                  "seqno": 3,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "Description",
+                  "visible": true,
+                  "displayapiname": "Description",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem04",
+                  "name": "Created On",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 180,
+                  "seqno": 16,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "date",
+                  "api_name": "CreatedOn",
+                  "visible": true,
+                  "displayapiname": "CreatedOn",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": true,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem05",
+                  "name": "Created By",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 150,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": null,
+                  "attrtype": "text",
+                  "api_name": "CreatedBy",
+                  "visible": true,
+                  "displayapiname": "CreatedBy",
+                  "inlineeditable": null,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                },
+                {
+                  "id": "Rem06",
+                  "name": "Is Active",
+                  "lablekey": "lbl-users-jobtitle",
+                  "columnwidth": 100,
+                  "seqno": 18,
+                  "masterid": "",
+                  "controltype": "checkbox",
+                  "attrtype": "text",
+                  "api_name": "IsActive",
+                  "visible": true,
+                  "displayapiname": "IsActive",
+                  "is_inlineeditable": true,
+                  "istitle": false,
+                  "isdate": false,
+                  "islookup": false
+                }
+              ],
+              "filterfields": [
+                {
+                  "id": "73377d8a-3138-4eb6-889c-312225ef4d57",
+                  "name": "Name",
+                  "lablekey": "lbl-user-username",
+                  "seqno": 10,
+                  "filtercontroltype": "textbox",
+                  "isquickfilter": true,
+                  "api_name": "Name",
+                  "islookup": false,
+                  "masterid": "",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666603",
+                  "name": "Created By",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "onclickloadmultiselect",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1010",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                },
+                {
+                  "id": "66666666-6666-6666-6666-666666666605",
+                  "name": "Created On",
+                  "lablekey": "lbl-user-status",
+                  "seqno": 20,
+                  "filtercontroltype": "daterangepicker",
+                  "isquickfilter": true,
+                  "api_name": "is_active",
+                  "islookup": false,
+                  "masterid": "1011",
+                  "apioutputskey": null,
+                  "isvisible": false,
+                  "apioutputvalue": null
+                }
+              ],
+              "groupbyfields": []
+            }
+          }
+        }
+      },
+      "correlationId": ""
+    }
+  },
+  "paymentbehaviour_getdatasetfieldinfobyid": {
+    "result": {
+      "statusCode": 1000,
+      "message": "Fetched successfully",
+      "data": {
+        "id": "66666666-6666-6666-6666-666666666601",
+        "name": "All Payments",
+        "owner": "Ashok C",
+        "listsortfield": "created_on",
+        "viewtype": null,
+        "celldataviewtype": null,
+        "listsortdir": "desc",
+        "isdefault": null,
+        "last_accessed_time": "2025-07-18T11:12:14",
+        "filters": [],
+        "groupby": [],
+        "columns": [
+          {
+            "id": "Rem01",
+            "seqno": 1,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Sno",
+            "columnwidth": 100
+          },
+          {
+            "id": "Rem02",
+            "seqno": 2,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Name",
+            "columnwidth": 100
+          },
+          {
+            "id": "Rem03",
+            "seqno": 3,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "Description",
+            "columnwidth": 400
+          },
+          {
+            "id": "Rem04",
+            "seqno": 4,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "date",
+            "api_name": "CreatedOn",
+            "columnwidth": 200
+          },
+          {
+            "id": "Rem05",
+            "seqno": 6,
+            "masterid": "0",
+            "controltype": null,
+            "attrtype": "text",
+            "api_name": "CreatedBy",
+            "columnwidth": 200
+          },
+          {
+            "id": "Rem06",
+            "seqno": 60,
+            "controltype": "checkbox",
+            "api_name": "IsActive",
+            "attrtype": "text",
+            "columnwidth": 160
+          }
+        ]
+      },
+      "correlationId": ""
+    }
   }
 }
